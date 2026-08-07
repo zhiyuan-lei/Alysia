@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+
+# Secrets and local configuration
+.env
+config.yaml
+
+# Generated Alysia data
+runs/*
+!runs/.gitkeep
+assets/generated/
+memory/*.db
+memory/*.sqlite*
+
+# Node
+node_modules/
+video/remotion/out/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

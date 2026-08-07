@@ -1,0 +1,11 @@
+{
+  "name": "@alysia/remotion",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "description": "Alysia Remotion 最小项目骨架（尚未实现视频模板）",
+  "type": "module",
+  "scripts": {
+    "check": "node -e \"console.log('Alysia Remotion skeleton ready')\""
+  }
+}
+

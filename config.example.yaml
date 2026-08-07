@@ -1,0 +1,50 @@
+project:
+  name: Alysia
+  root: 'D:\Alysia'
+
+video:
+  width: 1920
+  height: 1080
+  fps: 30
+  duration_minutes:
+    min: 2
+    max: 5
+
+llm:
+  provider: mock
+  model: qwen3.5:4b
+  base_url: http://127.0.0.1:11434
+  timeout_sec: 120
+
+content:
+  language: zh-CN
+  min_duration_sec: 120
+  max_duration_sec: 300
+  default_duration_sec: 180
+
+research:
+  provider: mock
+  max_sources: 5
+
+runtime:
+  retries: 1
+  runs_dir: runs
+
+resources:
+  gpu_execution: serial
+  max_concurrent_gpu_models: 1
+
+# alpha.1 的扩展点保留供后续 TTS/Search/Image 使用；alpha.2 的 LLM 读取上方 llm 配置。
+providers:
+  llm:
+    local:
+      provider: ollama
+      model: qwen3.5:4b
+    primary:
+      provider: cloud
+  tts:
+    provider: pending
+  search:
+    provider: pending
+  image:
+    provider: pending
