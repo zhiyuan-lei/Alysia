@@ -9,10 +9,15 @@
 | 项目 | 状态 |
 | --- | --- |
 | 远端 | `origin` → `https://github.com/zhiyuan-lei/Alysia.git` |
+| 可见性 | Public |
 | 默认分支 | `main` |
-| 入库文件数 | 1053（约 25 MB 工作树） |
+| 入库文件数 | 1062（仓库体积约 6.2 MB） |
+| CI | `.github/workflows/ci.yml`；Windows 上 Python 3.11 与 3.12 双绿 |
+| 描述与 Topics | 已设置：`ai-agent`、`bilibili`、`video-generation`、`python`、`remotion`、`content-pipeline`、`llm` |
 | 不含 | `models/`、`workspace/`、`runs/`、`supervisor/` 运行时日志、`audit/*.jsonl`、`tools/bilibili-mcp/bili_credential.json` |
 | 许可 | MIT |
+
+依赖由 Dependabot 按月提 PR（`.github/dependabot.yml`），合并方式为 squash。合并后动过的依赖，`uv.lock` 会随 PR 一起更新。
 
 ## 日常推送
 
@@ -45,20 +50,33 @@ uv run python -m pytest tests -m "not integration and not h3_local"
 
 `.github/workflows/ci.yml` 在 `windows-latest` 上跑 Python 3.11 与 3.12 两个版本：
 
-1. `uv sync --extra dev`
-2. `python -m alysia doctor`
-3. `python -m alysia create "... " --provider mock`（最小链路冒烟）
-4. `pytest tests -m "not integration and not h3_local"`
-5. 前端 `npm ci` / `npm run test -- --run` / `npm run build`
+1. `pip install uv`，`choco install ffmpeg`（`render.mock` 的 health 依赖 ffmpeg 在 PATH）
+2. `uv sync --extra dev`
+3. `python -m alysia doctor`
+4. `python -m alysia create "..." --provider mock`（最小链路冒烟）
+5. `pytest tests -m "not integration and not h3_local"`
+6. 工作树干净断言（`uv.lock` 除外）
+7. 前端 `npm ci` / `npm run test -- --run` / `npm run build`
+
+三个曾经踩过的坑，改动 CI 时不要退回去：
+
+- **强制 UTF-8**：`PYTHONUTF8=1` 与 `PYTHONIOENCODING=utf-8`。Windows runner 控制台默认 cp1252，Rich 输出中文表格会抛 `UnicodeEncodeError`。
+- **冒烟在临时目录跑**：`ALYSIA_CONFIG_FILE` 指向仓库的 `config.example.yaml`，工作目录用 `${{ runner.temp }}`，否则 `create` 会往检出的 `runs/` 与 `knowledge/` 写产物。
+- **工作树干净断言**：测试与冒烟不允许改动已入库文件。`uv.lock` 是唯一豁免项，Dependabot 改依赖区间后 `uv sync` 重写它属于预期行为。
 
 Linux 与 macOS 尚未取得实测证据，因此没有放进矩阵——把没跑过的平台标成通过违反本项目的证据约定。
 
-## 仓库设置建议
+## 仓库设置
 
-- 开启 **Private vulnerability reporting**（对应 `SECURITY.md` 的报告渠道）。
-- Description：`Alysia — 面向 B 站的自主创作者系统：可恢复的内容流水线，带人工审核与发布闸门`
-- Topics：`ai-agent`、`bilibili`、`video-generation`、`python`、`remotion`、`content-pipeline`
-- About 里勾选 Issues；Discussions 可按需开启。
+已完成的设置：
+
+- 可见性 **Public**；Description 与 Topics 已填。
+- Issues 开启，Wiki 与 Projects 关闭。
+- `SECURITY.md` 里的 Private vulnerability reporting 在 Public 仓库上可用（GitHub 要求先切公开才能对该端点操作）。
+
+仍建议手动确认的项目：
+
+- About 侧栏的 Releases / Packages 区块按需显示。
 - 不建议上传生成视频与大体积中间文件；README 顶部如需截图，控制在 500 KB 以内。
 
 ## 提交身份

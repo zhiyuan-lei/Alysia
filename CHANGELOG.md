@@ -5,8 +5,12 @@
 ## 未发布
 
 - 修复 `tests/helpers.py` 未隔离 `workflow.recipe_dir` 的问题：此前跑测试会写入仓库内 `memory/workflows/`，把 `git status` 弄脏。
+- 修复 `tests/helpers.py` 未隔离 `visual_generation.queue_dir` 与 `production.cache_dir` 的问题：并发跑两个 pytest 会共用一个 `workspace/visual_queue`，后启动的进程看到前一个的在跑 job，导致 3 个 studio 测试报出与被测行为无关的失败。
 - 修复 `tests/test_visual_generation.py` 依赖本机真实显存的问题：GPU 被 ComfyUI 占用时会误报 4 个失败；现固定显存/内存快照，结果与机器负载无关。
+- 修复 `tests/test_audio_pipeline.py` 假定系统装有中文 SAPI 语音的问题：纯英文语音对中文文本只切出一段，`>= 5` 时间戳断言会失败；改为断言时间戳存在、单调不减且落在音频时长内。
+- 修复 `EvaluationStore._write` 在 Windows 上写出 CRLF 的问题：入库产物是 LF，每次评测重写都会把 `evaluation/` 变成 git diff。改为显式 `newline="\n"`。
 - `config.example.yaml` 的 `project.root` 改为相对路径 `.`，clone 到任意目录都能直接用示例配置。
+- 新增 GitHub Actions CI、Dependabot、issue/PR 模板与行为准则。
 
 ## v0.1.0-alpha.22 — 真实创作者闭环 Beta
 
