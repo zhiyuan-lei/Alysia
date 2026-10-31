@@ -37,6 +37,11 @@ jobs:
       - name: Install uv
         run: python -m pip install --upgrade pip uv
 
+      - name: Install ffmpeg
+        # render.mock 的 health 取决于 ffmpeg 是否在 PATH；缺了它，create 会在
+        # ProductionPlan 阶段被 "render 没有满足约束的 provider" 拦下。
+        run: choco install ffmpeg --no-progress -y
+
       - name: Sync dependencies
         run: uv sync --extra dev --python ${{ matrix.python-version }}
 
