@@ -28,6 +28,7 @@ def make_config(runs_dir: Path, *, retries: int = 0) -> AlysiaConfig:
             "identity": {"directory": str(runs_dir.parent / "identity")},
             "knowledge": {"root_dir": str(runs_dir.parent / "knowledge")},
             "planning": {"plans_dir": str(runs_dir.parent / "plans")},
+            "workflow": {"recipe_dir": str(runs_dir.parent / "memory" / "workflows")},
             "runtime": {"retries": retries, "runs_dir": str(runs_dir)},
         }
     )

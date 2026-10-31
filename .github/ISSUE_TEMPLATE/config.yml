@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞
+    url: https://github.com/zhiyuan-lei/Alysia/security/advisories/new
+    about: 请通过 Private vulnerability reporting 私下报告，不要开公开 issue。
+  - name: 使用与配置问题
+    url: https://github.com/zhiyuan-lei/Alysia/blob/main/docs/local_start_zh.md
+    about: 安装、启动、CLI 与常见环境问题的说明。

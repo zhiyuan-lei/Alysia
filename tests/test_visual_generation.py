@@ -33,6 +33,19 @@ from alysia.workers.composition import CompositionWorker
 from tests.helpers import make_config
 
 
+@pytest.fixture(autouse=True)
+def _stable_resource_snapshot(monkeypatch: pytest.MonkeyPatch) -> None:
+    """固定显存/内存快照，避免本机 GPU 占用让 H3 路由与 QA 断言随环境漂移。"""
+    monkeypatch.setattr(
+        ResourceManager, "probe_vram",
+        staticmethod(lambda: {"total_mb": 8188, "used_mb": 512, "free_mb": 7676}),
+    )
+    monkeypatch.setattr(
+        ResourceManager, "probe_ram",
+        staticmethod(lambda: {"available_mb": 16384}),
+    )
+
+
 def _storyboard(dynamic: bool = True) -> Storyboard:
     return Storyboard(
         title="视觉测试", target_duration_sec=30,

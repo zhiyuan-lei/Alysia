@@ -1,6 +1,7 @@
 project:
   name: Alysia
-  root: 'D:\Alysia'
+  # 仓库根目录。相对路径按当前工作目录解析，便于在不同机器上 clone 后直接运行。
+  root: '.'
 
 video:
   renderer: remotion         # mock | remotion

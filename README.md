@@ -1,25 +1,66 @@
 # Alysia
 
+[![CI](https://github.com/zhiyuan-lei/Alysia/actions/workflows/ci.yml/badge.svg)](https://github.com/zhiyuan-lei/Alysia/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)](pyproject.toml)
+[![Status](https://img.shields.io/badge/status-alpha.22-orange.svg)](CHANGELOG.md)
+
 Alysia 是面向 B 站的自主创作者系统：把选题、研究取证、脚本、分镜、配音、剪辑、质检与投稿准备串成一条可恢复的流水线，并在审核与发布两处保留人工闸门。当前版本 `v0.1.0-alpha.22`。
 
 它的目标不是生成看起来热闹的 AI 视频，而是产出**依据可查、失败可续、边界清楚**的内容。系统默认只做到投稿准备包，真实发布需要具名的人工确认。
 
 - 许可：[MIT](LICENSE)
-- 参与开发：[CONTRIBUTING.md](CONTRIBUTING.md)
+- 变更记录：[CHANGELOG.md](CHANGELOG.md)
+- 参与开发：[CONTRIBUTING.md](CONTRIBUTING.md)、[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - 安全问题：[SECURITY.md](SECURITY.md)
 - 本地启动：[docs/local_start_zh.md](docs/local_start_zh.md)
+- 路线图与阶段边界：[docs/roadmap_alpha18_23.md](docs/roadmap_alpha18_23.md)
 
 ## 安装与最小验证
 
 ```powershell
-git clone <your-fork-url> alysia
-Set-Location alysia
+git clone https://github.com/zhiyuan-lei/Alysia.git
+Set-Location Alysia
 uv sync --extra dev --python 3.11
 uv run python -m alysia doctor
 uv run python -m alysia create "为什么AI Agent还不是AGI？" --provider mock
 ```
 
 不需要 GPU、模型权重或平台凭证就能跑通 mock 文本链路；本地音视频、H3 生成与真实投稿属于可选能力，按 `doctor` 的实时结果逐步补齐。
+
+`create` 会在当前工作目录写 `runs/<run_id>/`，因此请在仓库根目录执行；`runs/`、`workspace/` 与 `models/` 已被 `.gitignore` 排除。
+
+只用 pip 的话等价于：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.\.venv\Scripts\python.exe -m alysia doctor
+```
+
+### 测试
+
+```powershell
+uv run python -m pytest tests -m "not integration and not h3_local"
+```
+
+`integration` 与 `h3_local` 两个 marker 需要真实的 ComfyUI 实例与 H3 权重，默认不参与。当前基线：**534 passed, 1 deselected**（Windows 11 / Python 3.11.14）。前端另有 7 项 vitest：
+
+```powershell
+Set-Location control-center
+npm ci
+npm run test -- --run
+npm run build
+```
+
+### 运行会写哪些目录
+
+`create` / `resume` 会按配置里的相对路径落盘。仓库内的 `runs/`、`workspace/`、`plans/`、`supervisor/`、`audit/` 都已被 `.gitignore` 排除；`knowledge/` 例外——它是 alpha17 的可审计 demo 产物，入库以便对照，运行时会新增快照并改动 `index.json`。想保持工作树干净，把示例配置里的 `knowledge.root_dir` 指到仓库外：
+
+```yaml
+knowledge:
+  root_dir: ../alysia-knowledge
+```
 
 ## 当前能力
 

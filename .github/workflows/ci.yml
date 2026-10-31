@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    # 本机只在 Windows 上验证过全量测试：SAPI 配音、显存探测与 FFmpeg 路径都按
+    # Windows 语义实现。Linux/macOS 尚未取得实测证据，因此不放进矩阵，避免把
+    # "没跑过" 伪装成 "通过"。
+    name: Python ${{ matrix.python-version }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        run: python -m pip install --upgrade pip uv
+
+      - name: Sync dependencies
+        run: uv sync --extra dev --python ${{ matrix.python-version }}
+
+      - name: Self-check
+        run: uv run python -m alysia doctor
+
+      - name: Mock text pipeline smoke test
+        run: uv run python -m alysia create "为什么AI Agent还不是AGI？" --provider mock
+
+      - name: Unit tests
+        # integration 与 h3_local 需要真实的 ComfyUI 实例与 H3 权重，CI 不具备这些资源。
+        # 显式按 marker 排除，而不是靠环境探测静默跳过。
+        run: uv run python -m pytest tests -m "not integration and not h3_local" --disable-warnings
+
+      - name: Frontend tests
+        working-directory: control-center
+        run: |
+          npm ci
+          npm run test -- --run
+          npm run build
