@@ -10,6 +10,12 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  # Alysia 的 CLI 输出全是中文。Windows runner 的控制台默认是 cp1252，
+  # Rich 写表格时会抛 UnicodeEncodeError，因此强制 UTF-8。
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: utf-8
+
 jobs:
   python:
     # 本机只在 Windows 上验证过全量测试：SAPI 配音、显存探测与 FFmpeg 路径都按
@@ -38,12 +44,24 @@ jobs:
         run: uv run python -m alysia doctor
 
       - name: Mock text pipeline smoke test
-        run: uv run python -m alysia create "为什么AI Agent还不是AGI？" --provider mock
+        # 在 runner 临时目录里跑，用 ALYSIA_CONFIG_FILE 指向仓库示例配置，
+        # 避免 create 往仓库的 runs/ 与 knowledge/ 写产物。
+        working-directory: ${{ runner.temp }}
+        env:
+          ALYSIA_CONFIG_FILE: ${{ github.workspace }}\config.example.yaml
+        run: uv run --project "$env:GITHUB_WORKSPACE" python -m alysia create "为什么AI Agent还不是AGI？" --provider mock
 
       - name: Unit tests
         # integration 与 h3_local 需要真实的 ComfyUI 实例与 H3 权重，CI 不具备这些资源。
         # 显式按 marker 排除，而不是靠环境探测静默跳过。
         run: uv run python -m pytest tests -m "not integration and not h3_local" --disable-warnings
+
+      - name: Working tree must stay clean
+        # 测试与冒烟不允许改动已入库文件（历史上 tests/helpers.py 曾把
+        # memory/workflows 写脏）。这条断言把这个不变量钉在 CI 里。
+        run: |
+          git status --porcelain
+          if (git status --porcelain) { throw "工作树被测试写脏了，检查新增的持久化路径" }
 
       - name: Frontend tests
         working-directory: control-center
