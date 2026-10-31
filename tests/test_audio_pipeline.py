@@ -201,8 +201,14 @@ def test_sapi_tts_produces_speech_timings(tmp_path) -> None:
     assert info["sample_rate"] == 24000
     assert info["channels"] == 1
     assert result.metadata["voice"]
-    assert len(result.metadata["word_timings"]) >= 5
-    assert result.metadata["word_timings"][-1]["start_sec"] < result.duration_sec
+    # 词级时间戳来自 SAPI 的 SpeakProgress，数量取决于实际安装的语音：中文语音
+    # 会按词切分，纯英文语音对中文文本只切出一段。这里只断言"确实拿到了时间戳
+    # 且单调递增、落在音频时长内"，不把某个具体语音包的切分粒度写成契约。
+    timings = result.metadata["word_timings"]
+    assert timings
+    assert timings[-1]["start_sec"] < result.duration_sec
+    starts = [item["start_sec"] for item in timings]
+    assert starts == sorted(starts)
 
 
 def test_orchestrator_resume_to_audio_ready(tmp_path) -> None:
