@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "demo_a_writer_publish_denied": {
+    "status": "PASS",
+    "decision": {
+      "actor": "WriterAgent",
+      "permission": "PUBLISH",
+      "resource": "publish-job:demo-a",
+      "decision": "deny",
+      "reason": "explicit_role_policy",
+      "policy_refs": [
+        "D:\\Alysia\\config\\security_policy.yaml#alpha20.1:WriterAgent:PUBLISH"
+      ],
+      "approval_ref": null,
+      "timestamp": "2026-08-08T21:03:27.846016+08:00"
+    },
+    "provider_called": false
+  },
+  "demo_b_sandbox_denied": {
+    "status": "PASS",
+    "credential_denied": true,
+    "path_traversal_denied": true
+  },
+  "demo_c_invalid_approval_denied": {
+    "status": "PASS",
+    "decision": {
+      "actor": "PublisherAgent",
+      "permission": "PUBLISH",
+      "resource": "publish-job:demo-c",
+      "decision": "require_approval",
+      "reason": "approval_invalid:approval_artifact_hash_mismatch",
+      "policy_refs": [
+        "D:\\Alysia\\config\\security_policy.yaml#alpha20.1:PublisherAgent:PUBLISH"
+      ],
+      "approval_ref": "approval_560f7f3db5e8433e",
+      "timestamp": "2026-08-08T21:03:27.854000+08:00"
+    },
+    "provider_called": false
+  },
+  "demo_d_valid_mock_publish_allowed": {
+    "status": "PASS",
+    "decision": {
+      "actor": "PublisherAgent",
+      "permission": "PUBLISH",
+      "resource": "publish-job:demo-d-job",
+      "decision": "allow",
+      "reason": "valid_scoped_human_approval",
+      "policy_refs": [
+        "D:\\Alysia\\config\\security_policy.yaml#alpha20.1:PublisherAgent:PUBLISH"
+      ],
+      "approval_ref": "approval_460b6e507cd44365",
+      "timestamp": "2026-08-08T21:03:27.857995+08:00"
+    },
+    "provider_called": true,
+    "external_id": "mock_bv_cc27e1bd835ed3f5"
+  },
+  "fake_secret_redaction": {
+    "status": "PASS",
+    "evidence": "D:\\Alysia\\evaluation\\security_demos\\alpha20_final\\fake_secret_redaction.json"
+  },
+  "audit_log": "D:\\Alysia\\evaluation\\security_demos\\alpha20_final\\audit_log.jsonl",
+  "audit_events": 6
+}

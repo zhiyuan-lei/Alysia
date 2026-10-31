@@ -1,0 +1,20 @@
+{
+  "status": "safe",
+  "observed_values": {
+    "disk_free_gb": 243.378,
+    "estimated_output_mb": 512,
+    "ram_available_mb": 17747,
+    "vram_free_mb": 1927,
+    "comfyui_available": null
+  },
+  "thresholds": {
+    "min_disk_free_gb": 5.0,
+    "warning_disk_free_gb": 10.0,
+    "min_ram_available_mb": 2048,
+    "warning_ram_available_mb": 4096,
+    "min_vram_free_mb": 768,
+    "warning_vram_free_mb": 1536
+  },
+  "reasons": [],
+  "checked_at": "2026-08-08T20:17:21.765485+08:00"
+}

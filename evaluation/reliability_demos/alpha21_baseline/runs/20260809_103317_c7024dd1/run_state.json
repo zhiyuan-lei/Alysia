@@ -1,0 +1,396 @@
+{
+  "run_id": "20260809_103317_c7024dd1",
+  "topic": "Alpha19 Demo C State corruption",
+  "created_at": "2026-08-09T10:33:17.533062+08:00",
+  "updated_at": "2026-08-09T10:33:17.534062+08:00",
+  "current_stage": "created",
+  "completed_stages": [],
+  "failed_stage": null,
+  "error_message": null,
+  "artifacts": {
+    "input": "input.json",
+    "run_state": "run_state.json"
+  },
+  "config_snapshot": {
+    "project": {
+      "name": "Alysia",
+      "root": "D:\\Alysia"
+    },
+    "video": {
+      "renderer": "remotion",
+      "width": 320,
+      "height": 180,
+      "fps": 12,
+      "codec": "h264",
+      "audio_codec": "aac"
+    },
+    "resources": {
+      "gpu_execution": "serial",
+      "max_concurrent_gpu_models": 1
+    },
+    "hardware_profile": {
+      "gpu": "NVIDIA GeForce RTX 4060 Ti",
+      "vram_mb": 8192,
+      "ram_gb": 24,
+      "sequential_gpu_required": true
+    },
+    "providers": {
+      "llm": {
+        "local": {
+          "provider": "ollama",
+          "model": "qwen3.5:4b"
+        },
+        "primary": {
+          "provider": "cloud"
+        }
+      },
+      "tts": {
+        "provider": "sapi"
+      },
+      "search": {
+        "provider": "pending"
+      },
+      "image": {
+        "provider": "pending"
+      }
+    },
+    "llm": {
+      "provider": "mock",
+      "model": "qwen3.5:4b",
+      "base_url": "http://127.0.0.1:11434",
+      "timeout_sec": 120.0
+    },
+    "content": {
+      "language": "zh-CN",
+      "min_duration_sec": 120,
+      "max_duration_sec": 300,
+      "default_duration_sec": 180
+    },
+    "research": {
+      "provider": "mock",
+      "max_sources": 5,
+      "manual_source_file": null
+    },
+    "tts": {
+      "provider": "sapi",
+      "language": "zh-CN",
+      "voice": "default",
+      "speed": 1.0,
+      "sample_rate": 24000,
+      "pause_between_scenes_ms": 250,
+      "model_dir": null,
+      "allow_test_tone": true
+    },
+    "asr": {
+      "enabled": false,
+      "provider": "none",
+      "model": "small",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "local_files_only": true
+    },
+    "subtitle": {
+      "max_chars_per_line": 22,
+      "min_duration_sec": 0.8,
+      "max_duration_sec": 6.0,
+      "deterministic_default": true,
+      "font_size": 54,
+      "position": "bottom",
+      "max_width": 0.82
+    },
+    "render": {
+      "temp_dir": "video\\temp",
+      "output_dir": "output",
+      "remotion_dir": "video\\remotion",
+      "ffmpeg_path": null,
+      "ffprobe_path": null
+    },
+    "publish": {
+      "title_candidates": 5,
+      "cover": {
+        "width": 1280,
+        "height": 720,
+        "format": "png"
+      },
+      "tags": {
+        "max_count": 10
+      }
+    },
+    "publishing": {
+      "provider": "mock",
+      "require_approval": true,
+      "save_credentials": false,
+      "workspace_dir": "workspace\\publishing"
+    },
+    "feedback": {
+      "provider": "manual"
+    },
+    "security": {
+      "enabled": true,
+      "default_deny": true,
+      "redact_credentials": true,
+      "policy_file": "config\\security_policy.yaml",
+      "credential_reference_file": "config\\credential_references.yaml",
+      "audit_log_path": "audit\\audit_log.jsonl",
+      "tool_allowlist": [
+        "ffmpeg",
+        "ffprobe",
+        "python",
+        "node",
+        "npm",
+        "npx"
+      ]
+    },
+    "qa": {
+      "strict": false
+    },
+    "learning": {
+      "memory_dir": "memory"
+    },
+    "operations": {
+      "default_channel_id": "main",
+      "recent_window": 10,
+      "minimum_experiment_group_size": 2
+    },
+    "creator": {
+      "name": "Alysia",
+      "require_human_approval": true,
+      "profile_file": "config\\creator_profile.yaml"
+    },
+    "trends": {
+      "provider": "mock",
+      "max_items": 50,
+      "freshness_days": 7,
+      "workspace_dir": "workspace\\trends",
+      "web_sources": []
+    },
+    "planning": {
+      "candidate_count": 10,
+      "selected_count": 3,
+      "horizon_days": 7,
+      "plans_dir": "plans",
+      "duplicate_threshold": 0.72,
+      "weights": {
+        "channel_relevance": 0.18,
+        "freshness": 0.12,
+        "audience_fit": 0.14,
+        "novelty_vs_history": 0.16,
+        "evidence_quality": 0.14,
+        "production_feasibility": 0.1,
+        "experiment_value": 0.16,
+        "duplication_penalty": 0.2,
+        "risk_penalty": 0.15
+      }
+    },
+    "creator_loop": {
+      "enabled": false,
+      "planning_interval_hours": 24,
+      "horizon_days": 7,
+      "candidate_count": 10,
+      "selected_count": 3,
+      "require_human_approval": true
+    },
+    "identity": {
+      "enabled": true,
+      "require_approval": true,
+      "version_control": true,
+      "directory": "identity"
+    },
+    "brand_voice": {
+      "technical_level": "medium",
+      "humor_level": "low",
+      "evidence_priority": "high"
+    },
+    "visual_identity": {
+      "template_version": "v1"
+    },
+    "visual_generation": {
+      "enabled": true,
+      "provider": "comfyui-h3",
+      "cache_dir": "workspace\\visual_cache",
+      "queue_dir": "workspace\\visual_queue",
+      "h3": {
+        "enabled": true,
+        "mode": "local_comfyui",
+        "low_vram": true,
+        "comfyui_base_url": "http://127.0.0.1:8188",
+        "comfyui_dir": "D:\\ComfyUI",
+        "workflow_dir": "workflows\\comfyui\\h3",
+        "model_path": "D:\\ComfyUI\\models\\diffusion_models\\minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "diffusion_model": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "text_encoder": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "video_vae": "minimax_h3_video_vae_fp16.safetensors",
+        "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+        "default_clip_duration_sec": 5.0,
+        "max_clip_duration_sec": 8.0,
+        "default_resolution_profile": "low",
+        "max_generated_seconds_per_video": 30.0,
+        "max_clips_per_video": 5,
+        "draft_max_generated_seconds": 0.0,
+        "draft_max_clips": 0,
+        "standard_max_generated_seconds": 18.0,
+        "standard_max_clips": 3,
+        "high_max_generated_seconds": 30.0,
+        "high_max_clips": 5,
+        "preview_width": 608,
+        "preview_height": 352,
+        "preview_steps": 6,
+        "preview_seed": 20260808,
+        "job_timeout_sec": 7200.0,
+        "measured_peak_vram_mb": 7678,
+        "measured_peak_ram_mb": 25919,
+        "measured_wall_time_sec": 170.81,
+        "measurement_profile": "608x352-73f-6steps-2026-08-08",
+        "sequential_gpu_required": true,
+        "unload_other_gpu_models": true,
+        "retry_limit": 1,
+        "api_timeout_sec": 30.0
+      },
+      "preserve_h3_audio_as_ambience": false,
+      "upscale": "ffmpeg"
+    },
+    "production": {
+      "quality_target": "standard",
+      "max_local_vram_mb": 7600,
+      "max_cloud_cost": null,
+      "max_wall_time_sec": null,
+      "prefer_local": true,
+      "allow_cloud": true,
+      "allow_fallback": true,
+      "sequential_gpu_required": true,
+      "offline_mode": false,
+      "reproducibility_priority": "high",
+      "provider_allowlist": [],
+      "provider_denylist": [],
+      "max_retries_per_stage": 2,
+      "research_cache_ttl_hours": 24,
+      "cache_dir": "workspace\\production_cache"
+    },
+    "optimization": {
+      "weights": {
+        "quality": 0.4,
+        "reliability": 0.3,
+        "latency": 0.15,
+        "cost": 0.1,
+        "local_preference": 0.05
+      },
+      "routing": {}
+    },
+    "studio": {
+      "enabled": true,
+      "mode": "sequential",
+      "max_review_rounds": 2,
+      "max_agent_hops": 20,
+      "require_handoff_records": true,
+      "enforce_artifact_ownership": true,
+      "human_escalation_on_loop_limit": true
+    },
+    "supervisor": {
+      "enabled": true,
+      "root_dir": "supervisor",
+      "max_actions_per_tick": 3,
+      "max_dispatches_per_tick": 1,
+      "max_goal_depth": 3,
+      "max_children_per_goal": 8,
+      "max_active_projects": 3,
+      "require_approval_for_major_replan": true
+    },
+    "governance": {
+      "max_runs_per_day": 2,
+      "max_runs_per_week": 7,
+      "max_cloud_cost_per_day": null,
+      "max_cloud_cost_per_week": null,
+      "max_failed_runs_before_pause": 3,
+      "budget_warning_ratio": 0.8
+    },
+    "capability": {
+      "root_dir": "workspace\\capabilities",
+      "sandbox_dir": "workspace\\sandbox\\skills",
+      "evidence_files": [
+        "evaluation\\capability_evidence_alpha14.json"
+      ],
+      "minimum_evidence_count": 1,
+      "require_human_approval": true,
+      "allow_network_in_sandbox": false,
+      "allow_credentials_in_sandbox": false,
+      "allow_core_source_write": false
+    },
+    "workflow": {
+      "enabled": true,
+      "mode": "sequential",
+      "max_steps": 20,
+      "max_repair_rounds": 2,
+      "max_skill_hops": 12,
+      "require_validation": true,
+      "allow_unapproved_skills": false,
+      "auto_recipe_candidate": true,
+      "recipe_validation_successes": 3,
+      "recipe_dir": "memory\\workflows"
+    },
+    "simulation": {
+      "enabled": true,
+      "max_candidates": 5,
+      "max_depth": 2,
+      "mode": "dry_run",
+      "allow_real_provider_preview": false,
+      "write_to_real_memory": false,
+      "require_uncertainty": true,
+      "auto_select_low_risk_only": true,
+      "root_dir": "simulations"
+    },
+    "knowledge": {
+      "enabled": true,
+      "root_dir": "knowledge",
+      "require_sources_for_facts": true,
+      "block_stale_critical_claims": true,
+      "preserve_historical_versions": true,
+      "maintenance_tick_enabled": true,
+      "max_research_sources": 8,
+      "max_research_rounds": 2
+    },
+    "freshness": {
+      "software_days": 14,
+      "pricing_days": 3,
+      "current_roles_days": 7,
+      "stable_definition_days": 365
+    },
+    "reliability": {
+      "max_retries_per_stage": 2,
+      "max_recovery_rounds": 3,
+      "exponential_backoff": true,
+      "backoff_base_sec": 1.0,
+      "require_checkpoint_before_destructive_rebuild": true,
+      "state_backup_count": 2,
+      "artifact_hash_enabled": false,
+      "fault_injection_enabled": false,
+      "resource_guard": {
+        "min_disk_free_gb": 5.0,
+        "warning_disk_free_gb": 10.0,
+        "min_ram_available_mb": 2048,
+        "warning_ram_available_mb": 4096,
+        "min_vram_free_mb": 768,
+        "warning_vram_free_mb": 1536
+      }
+    },
+    "runtime": {
+      "retries": 1,
+      "runs_dir": "D:\\Alysia\\evaluation\\reliability_demos\\alpha21_baseline\\runs",
+      "sequential_gpu": true
+    }
+  },
+  "pipeline_phase": "text",
+  "milestone": null,
+  "text_pipeline_completed": false,
+  "audio_pipeline_completed": false,
+  "video_pipeline_completed": false,
+  "package_pipeline_completed": false,
+  "review_ready": false,
+  "analytics_imported": false,
+  "analysis_completed": false,
+  "learning_completed": false,
+  "strategy_ready": false,
+  "publish_job_id": null,
+  "external_id": null,
+  "feedback_imported": false,
+  "planning_provenance": null
+}

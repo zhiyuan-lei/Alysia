@@ -1,0 +1,122 @@
+{
+  "phase": "keyframe",
+  "exit_code": 1,
+  "elapsed": 5.484000000004016,
+  "baseline": {
+    "gpu": {
+      "used_mib": 1334,
+      "free_mib": 6616
+    },
+    "system_used": 8792334336
+  },
+  "after": {
+    "gpu": {
+      "used_mib": 1326,
+      "free_mib": 6624
+    },
+    "system_used": 8787263488
+  },
+  "stop_reason": null,
+  "samples": [
+    {
+      "elapsed": 0.0,
+      "gpu": {
+        "used_mib": 1334,
+        "free_mib": 6616
+      },
+      "rss": 7671808,
+      "private": 1613824,
+      "system_used": 8806334464
+    },
+    {
+      "elapsed": 0.5469999999986612,
+      "gpu": {
+        "used_mib": 1334,
+        "free_mib": 6616
+      },
+      "rss": 477057024,
+      "private": 1545510912,
+      "system_used": 9279229952
+    },
+    {
+      "elapsed": 1.0940000000045984,
+      "gpu": {
+        "used_mib": 1332,
+        "free_mib": 6618
+      },
+      "rss": 522072064,
+      "private": 1589747712,
+      "system_used": 9339834368
+    },
+    {
+      "elapsed": 1.625,
+      "gpu": {
+        "used_mib": 1332,
+        "free_mib": 6618
+      },
+      "rss": 581988352,
+      "private": 1647960064,
+      "system_used": 9417834496
+    },
+    {
+      "elapsed": 2.1719999999986612,
+      "gpu": {
+        "used_mib": 1333,
+        "free_mib": 6617
+      },
+      "rss": 620544000,
+      "private": 1713119232,
+      "system_used": 9503916032
+    },
+    {
+      "elapsed": 2.7340000000040163,
+      "gpu": {
+        "used_mib": 1431,
+        "free_mib": 6519
+      },
+      "rss": 781541376,
+      "private": 2624548864,
+      "system_used": 9599180800
+    },
+    {
+      "elapsed": 3.2810000000026776,
+      "gpu": {
+        "used_mib": 1438,
+        "free_mib": 6512
+      },
+      "rss": 796217344,
+      "private": 2638127104,
+      "system_used": 9598255104
+    },
+    {
+      "elapsed": 3.8280000000013388,
+      "gpu": {
+        "used_mib": 1435,
+        "free_mib": 6515
+      },
+      "rss": 806277120,
+      "private": 2648608768,
+      "system_used": 9645805568
+    },
+    {
+      "elapsed": 4.375,
+      "gpu": {
+        "used_mib": 1436,
+        "free_mib": 6514
+      },
+      "rss": 848179200,
+      "private": 2684465152,
+      "system_used": 9710301184
+    },
+    {
+      "elapsed": 4.938000000001921,
+      "gpu": {
+        "used_mib": 1436,
+        "free_mib": 6514
+      },
+      "rss": 1378299904,
+      "private": 3267870720,
+      "system_used": 10182852608
+    }
+  ]
+}

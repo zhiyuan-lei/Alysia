@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "started_at": "2026-08-09T21:07:50.174488+08:00",
+  "finished_at": "2026-08-09T21:08:46.638696+08:00",
+  "elapsed_seconds": 56.469,
+  "exit_code_signed": 0,
+  "exit_code_hex": "0x0",
+  "same_interpreter": "D:\\ComfyUI\\.venv\\Scripts\\python.exe",
+  "component": "real H3 qwen3vl_32b_minimax_h3_nvfp4_awq text encoder",
+  "video_generation": false,
+  "vae_loaded": false,
+  "diffusion_loaded": false,
+  "child_result": {
+    "result": "PASS",
+    "model": "D:\\ComfyUI\\models\\text_encoders\\qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "model_size_bytes": 15687142551,
+    "device": "cpu",
+    "dtype_quantization": "deployed NVFP4-AWQ component",
+    "tokenizer_config_loaded": true,
+    "short_encode_completed": true,
+    "elapsed_seconds": 50.687
+  },
+  "resources": {
+    "ram_baseline_used_mib": 8371,
+    "ram_peak_used_mib": 25270,
+    "ram_after_used_mib": 8224,
+    "ram_min_available_mib": 7340,
+    "commit_min_available_mib": 6214,
+    "sample_interval_seconds": 0.25,
+    "sample_count": 220
+  },
+  "stdout_log": "D:\\Alysia\\alpha22\\field_smoke\\h3_native_crash\\text_encoder_isolation_stdout.log",
+  "stderr_log": "D:\\Alysia\\alpha22\\field_smoke\\h3_native_crash\\text_encoder_isolation_stderr.log"
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": "alpha16_demo_c_recipe",
+  "mode": "recommendation_only",
+  "selected_candidate_id": null,
+  "recommendation": "no_recommendation",
+  "required_approvals": [],
+  "dispatch_allowed": false,
+  "reasons": [
+    "simulation 只提供决策辅助；真实执行仍由现有 Supervisor/Studio/Production 分层负责",
+    "risk unknown，默认 conservative"
+  ],
+  "decided_at": "2026-08-08T16:48:40.413583+08:00"
+}

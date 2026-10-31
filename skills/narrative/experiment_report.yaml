@@ -1,0 +1,17 @@
+id: experiment_report
+purpose: 透明呈现实验问题、方法、结果与不确定性。
+structure:
+  - 提出假设
+  - 说明变量、对照和指标
+  - 展示执行过程
+  - 报告结果与异常
+  - 区分结论、限制和下一实验
+suitable_topics:
+  - A/B 测试
+  - 工程基准
+  - 内容实验复盘
+examples:
+  - 缩短开场是否提升完播率
+limitations:
+  - 样本不足时不能宣称因果结论
+  - 必须披露测试来源和缺失数据

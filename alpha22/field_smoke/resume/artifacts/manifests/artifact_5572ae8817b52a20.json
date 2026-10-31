@@ -1,0 +1,15 @@
+{
+  "artifact_id": "artifact_5572ae8817b52a20",
+  "job_id": "creator_alpha22_step8",
+  "task_id": "comfyui",
+  "artifact_type": "IMAGE",
+  "path": "D:\\Alysia\\alpha22\\field_smoke\\resume\\artifacts\\creator_alpha22_step8\\comfyui\\TEST_ONLY_comfyui_stage_a.png",
+  "created_at": "2026-08-09T20:22:30.735274+08:00",
+  "size": 434,
+  "hash": "fb2b62bf9a61f0a6d81175fba73fe1657cf4929e8d9886205cd1a8a39f6fe83b",
+  "status": "VALID",
+  "metadata": {
+    "test_only": true,
+    "provider": "REAL_COMFYUI"
+  }
+}

@@ -1,0 +1,10 @@
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {bundle} from '@remotion/bundler';
+import {renderStill,selectComposition} from '@remotion/renderer';
+const root='D:/Alysia/workspace/puzzle_video/horse_race_20261027_v3';
+const entryPoint=path.join(path.dirname(fileURLToPath(import.meta.url)),'publish-cover.jsx');
+const serveUrl=await bundle({entryPoint,publicDir:root});
+const composition=await selectComposition({serveUrl,id:'PublishCover'});
+await renderStill({serveUrl,composition,frame:0,output:'D:/Alysia/workspace/publishing/first_20261027/cover_4x3.png',imageFormat:'png'});
+console.log('PUBLISH_COVER_READY');

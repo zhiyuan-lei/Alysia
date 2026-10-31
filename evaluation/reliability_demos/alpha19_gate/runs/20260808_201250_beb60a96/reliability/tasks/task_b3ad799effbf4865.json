@@ -1,0 +1,15 @@
+{
+  "task_id": "task_b3ad799effbf4865",
+  "task_type": "tts",
+  "run_id": "20260808_201250_beb60a96",
+  "started_at": "2026-08-08T20:12:50.607303+08:00",
+  "last_heartbeat": "2026-08-08T20:12:50.685898+08:00",
+  "expected_timeout": 1800.0,
+  "status": "completed",
+  "pid": null,
+  "job_id": null,
+  "details": {
+    "scene_id": "s1",
+    "scene_index": 1
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "candidate_id": "fast_draft",
+    "actions": [
+      {
+        "type": "workflow_recipe_dry_run"
+      }
+    ],
+    "changed_variables": {
+      "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+      "quality_profile": "draft"
+    },
+    "held_constant": {
+      "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+      "real_steps_executed": false
+    },
+    "required_capabilities": [
+      "scene_selection"
+    ],
+    "expected_approvals": [],
+    "rationale": "快速内部草案"
+  },
+  {
+    "candidate_id": "standard_quality",
+    "actions": [
+      {
+        "type": "workflow_recipe_dry_run"
+      }
+    ],
+    "changed_variables": {
+      "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+      "quality_profile": "standard"
+    },
+    "held_constant": {
+      "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+      "real_steps_executed": false
+    },
+    "required_capabilities": [
+      "scene_selection"
+    ],
+    "expected_approvals": [
+      "content_review"
+    ],
+    "rationale": "标准质量门与人工审核"
+  }
+]

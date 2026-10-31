@@ -1,0 +1,8 @@
+{
+  "run_id": "golden-style",
+  "identity_version": 1,
+  "matched_elements": ["主题与频道专业领域相符", "未使用禁用表达"],
+  "violations": [],
+  "suggestions": ["暂无真实跨视频风格证据"],
+  "input_digest": "golden-style-input-digest"
+}

@@ -1,0 +1,23 @@
+profile_version: 1
+updated_at: 2026-10-01
+
+configured_operational_budget:
+  gpu: NVIDIA GeForce RTX 4060 Ti
+  vram_mb: 8192
+  ram_gb: 24
+  sequential_gpu_required: true
+  concurrent_gpu_heavy_jobs: 1
+  max_task_vram_mib: 6144
+
+detected_current_machine:
+  gpu: NVIDIA GeForce RTX 4060 Ti
+  vram_mib: 8188
+  physical_ram_bytes: 34193965056
+  physical_ram_gib: 31.85
+  pagefile_allocated_mb: 2048
+
+interpretation:
+  - Alysia 必须按用户指定的 24 GB RAM 预算规划和报告资源。
+  - Windows 当前检测到约 31.85 GiB 物理内存；这是检测事实，不覆盖 24 GB 运行预算。
+  - 历史报告中的 32 GB 测试记录保留原样；当前配置通过本文件覆盖，不篡改历史事实。
+  - pagefile 较小；部署流程不会自动修改系统虚拟内存设置。

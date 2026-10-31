@@ -1,0 +1,94 @@
+{
+  "test_only": true,
+  "mode": "direct",
+  "exit_code": 0,
+  "elapsed": 1.5,
+  "samples": [
+    {
+      "elapsed": 0.0,
+      "rss": 7696384,
+      "private": 1634304,
+      "system_used": 8789635072
+    },
+    {
+      "elapsed": 0.11000000000058208,
+      "rss": 41377792,
+      "private": 23347200,
+      "system_used": 8811122688
+    },
+    {
+      "elapsed": 0.21899999999732245,
+      "rss": 306925568,
+      "private": 719015936,
+      "system_used": 9104953344
+    },
+    {
+      "elapsed": 0.3280000000013388,
+      "rss": 386908160,
+      "private": 799084544,
+      "system_used": 9202864128
+    },
+    {
+      "elapsed": 0.4219999999986612,
+      "rss": 449122304,
+      "private": 1491103744,
+      "system_used": 9261244416
+    },
+    {
+      "elapsed": 0.5319999999992433,
+      "rss": 475889664,
+      "private": 1543430144,
+      "system_used": 9300525056
+    },
+    {
+      "elapsed": 0.6409999999959837,
+      "rss": 487526400,
+      "private": 1555046400,
+      "system_used": 9314762752
+    },
+    {
+      "elapsed": 0.75,
+      "rss": 500252672,
+      "private": 1567711232,
+      "system_used": 9326551040
+    },
+    {
+      "elapsed": 0.8439999999973224,
+      "rss": 512438272,
+      "private": 1579110400,
+      "system_used": 9347256320
+    },
+    {
+      "elapsed": 0.9530000000013388,
+      "rss": 512708608,
+      "private": 1580158976,
+      "system_used": 9344462848
+    },
+    {
+      "elapsed": 1.0630000000019209,
+      "rss": 519479296,
+      "private": 1586520064,
+      "system_used": 9357254656
+    },
+    {
+      "elapsed": 1.1719999999986612,
+      "rss": 530440192,
+      "private": 1597251584,
+      "system_used": 9282101248
+    },
+    {
+      "elapsed": 1.2819999999992433,
+      "rss": 535412736,
+      "private": 1634910208,
+      "system_used": 9292177408
+    },
+    {
+      "elapsed": 1.3909999999959837,
+      "rss": 496394240,
+      "private": 922320896,
+      "system_used": 9257549824
+    }
+  ],
+  "gpu_workload": false,
+  "model_file_bytes": 20970379616
+}

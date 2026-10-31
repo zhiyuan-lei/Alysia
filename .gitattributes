@@ -1,0 +1,24 @@
+# Normalize line endings so Windows checkouts do not produce diff noise.
+* text=auto eol=lf
+
+# Windows launchers must keep CRLF and are treated as text on purpose.
+*.cmd text eol=crlf
+*.ps1 text eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.mp4 binary
+*.wav binary
+*.mp3 binary
+*.webm binary
+*.ico binary
+
+# Large model / tensor files should never be committed; declared for safety.
+*.safetensors binary
+*.pt binary
+*.ckpt binary
+*.onnx binary

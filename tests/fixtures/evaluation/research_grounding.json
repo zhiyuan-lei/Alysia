@@ -1,0 +1,14 @@
+{
+  "good": {
+    "factual_sections": [
+      {"id": "definition", "claim_refs": ["claim-agent"], "source_refs": ["source-official"], "stale": false, "conflicted": false},
+      {"id": "limits", "claim_refs": ["claim-limits"], "source_refs": ["source-paper"], "stale": false, "conflicted": false}
+    ]
+  },
+  "bad": {
+    "factual_sections": [
+      {"id": "definition", "claim_refs": ["claim-agent"], "source_refs": ["source-official"], "stale": false, "conflicted": false},
+      {"id": "limits", "claim_refs": [], "source_refs": [], "stale": false, "conflicted": false}
+    ]
+  }
+}

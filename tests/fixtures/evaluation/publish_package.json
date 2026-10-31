@@ -1,0 +1,17 @@
+{
+  "good": {
+    "package": {
+      "title": "为什么 AI Agent 还不是 AGI？",
+      "description": "本期解释 Agent 与 AGI 的关键差距。\n\n## 参考资料\n- 官方文档",
+      "tags": ["AI Agent", "AGI", "人工智能"],
+      "cover_exists": true,
+      "video_qa_passed": true,
+      "package_hash": "golden-package-hash"
+    },
+    "approval": {"approved_by": "human:alpha18-fixture", "package_hash": "golden-package-hash"}
+  },
+  "bad": {
+    "package": {"title": "AI", "description": "", "tags": ["AI", "ai"], "cover_exists": false, "video_qa_passed": false, "package_hash": "changed"},
+    "approval": {"approved_by": "system", "package_hash": "old"}
+  }
+}

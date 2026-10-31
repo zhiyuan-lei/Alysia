@@ -1,0 +1,16 @@
+{
+  "task_id": "task_fb45d72513dd431d",
+  "task_type": "tts",
+  "run_id": "20260808_210336_a4bf166e",
+  "started_at": "2026-08-08T21:03:36.550435+08:00",
+  "last_heartbeat": "2026-08-08T21:03:36.573122+08:00",
+  "expected_timeout": 1800.0,
+  "status": "failed",
+  "pid": null,
+  "job_id": null,
+  "details": {
+    "scene_id": "s1",
+    "scene_index": 1,
+    "error": "controlled TTS provider failure"
+  }
+}

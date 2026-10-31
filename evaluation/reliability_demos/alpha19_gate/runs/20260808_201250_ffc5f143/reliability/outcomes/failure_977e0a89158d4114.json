@@ -1,0 +1,8 @@
+{
+  "failure_id": "failure_977e0a89158d4114",
+  "status": "recovered",
+  "reexecuted_stages": [
+    "visual"
+  ],
+  "recorded_at": "2026-08-08 20:12:50.879705+08:00"
+}

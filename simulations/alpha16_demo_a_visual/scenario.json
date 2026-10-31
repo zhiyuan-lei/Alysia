@@ -1,0 +1,121 @@
+{
+  "scenario_id": "alpha16_demo_a_visual",
+  "objective": "比较同一视频的 Remotion-only 与不同 H3 短镜头数量",
+  "baseline_state_refs": [
+    "provider:visual.comfyui-h3",
+    "config:visual_generation",
+    "hardware:doctor"
+  ],
+  "assumptions": [
+    {
+      "assumption_id": "visual_quality_relative",
+      "statement": "合格的 H3 短镜头可能提升视觉丰富度，但真实质量必须经过 preview 与 VisualQA",
+      "source": "alpha16 demo design",
+      "confidence": "low"
+    }
+  ],
+  "controllable_variables": {
+    "h3_clip_count": [
+      0,
+      2,
+      5
+    ],
+    "total_h3_seconds": [
+      0,
+      10,
+      25
+    ]
+  },
+  "fixed_variables": {
+    "topic": "为什么 AI Agent 还不是 AGI",
+    "video_duration_sec": 240,
+    "resolution": "1080p output"
+  },
+  "candidate_actions": [
+    {
+      "candidate_id": "remotion_only",
+      "actions": [
+        {
+          "type": "visual_route",
+          "provider": "remotion"
+        }
+      ],
+      "changed_variables": {
+        "h3_clip_count": 0,
+        "total_h3_seconds": 0
+      },
+      "required_capabilities": [
+        "visual_remotion",
+        "video_qa"
+      ],
+      "rationale": "最低资源、最高当前可执行性"
+    },
+    {
+      "candidate_id": "h3_two_clips",
+      "actions": [
+        {
+          "type": "visual_route",
+          "provider": "visual.comfyui-h3"
+        }
+      ],
+      "changed_variables": {
+        "h3_clip_count": 2,
+        "total_h3_seconds": 10
+      },
+      "required_capabilities": [
+        "visual_h3_local",
+        "visual_qa",
+        "video_qa"
+      ],
+      "rationale": "有限视觉增强"
+    },
+    {
+      "candidate_id": "h3_five_clips",
+      "actions": [
+        {
+          "type": "visual_route",
+          "provider": "visual.comfyui-h3"
+        }
+      ],
+      "changed_variables": {
+        "h3_clip_count": 5,
+        "total_h3_seconds": 25
+      },
+      "required_capabilities": [
+        "visual_h3_local",
+        "visual_qa",
+        "video_qa"
+      ],
+      "rationale": "更高视觉丰富度但资源与失败路径更多"
+    }
+  ],
+  "horizon": "single_video",
+  "resource_budget": {
+    "max_local_vram_mb": 7600,
+    "max_ram_mb": 24576,
+    "max_wall_time_sec": null,
+    "max_cloud_cost": null,
+    "allow_unknown_resources": false
+  },
+  "approval_policy": {
+    "required_gates": [
+      "content_review"
+    ],
+    "allow_auto_select": false,
+    "major_replan": false,
+    "identity_change": false,
+    "real_publish": false
+  },
+  "evaluation_metrics": [
+    "quality",
+    "latency",
+    "resource",
+    "risk",
+    "total_h3_seconds"
+  ],
+  "uncertainty_notes": [
+    "没有真实 H3 execution metrics 时 production latency 保持 unknown"
+  ],
+  "source_task_ref": null,
+  "created_at": "2026-08-08T18:00:00+08:00"
+}

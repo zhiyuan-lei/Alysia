@@ -1,0 +1,16 @@
+{
+  "scenario_id": "alpha16_demo_b_hook",
+  "mode": "recommendation_only",
+  "selected_candidate_id": null,
+  "recommendation": "no_recommendation",
+  "required_approvals": [
+    "experiment_approval"
+  ],
+  "dispatch_allowed": false,
+  "reasons": [
+    "simulation 只提供决策辅助；真实执行仍由现有 Supervisor/Studio/Production 分层负责",
+    "涉及审批、发布、身份或重大 replan，必须 recommendation_only",
+    "risk unknown，默认 conservative"
+  ],
+  "decided_at": "2026-08-08T16:48:38.797834+08:00"
+}

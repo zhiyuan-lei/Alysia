@@ -1,0 +1,65 @@
+{
+  "crash_timestamp_local": "2026-08-09T20:55:26+08:00",
+  "windows_event_log": {
+    "log": "Application",
+    "provider": "Application Error",
+    "event_id": 1000,
+    "faulting_application": "python.exe",
+    "faulting_application_version": "3.12.12150.1013",
+    "faulting_application_path": "<USERPROFILE>\\AppData\\Roaming\\uv\\python\\cpython-3.12.12-windows-x86_64-none\\python.exe",
+    "faulting_module": "torch_cpu.dll",
+    "faulting_module_version": "0.0.0.0",
+    "faulting_module_path": "D:\\ComfyUI\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+    "exception_code": "0xc0000005",
+    "fault_offset": "0x0000000008e4a279",
+    "report_id": "25143bfd-1011-4821-98ec-636e8bf90035"
+  },
+  "windows_error_reporting": {
+    "provider": "Windows Error Reporting",
+    "event_id": 1001,
+    "timestamp_local": "2026-08-09T20:55:30+08:00",
+    "event_name": "APPCRASH",
+    "faulting_module": "torch_cpu.dll",
+    "exception_code": "c0000005",
+    "fault_offset": "0000000008e4a279"
+  },
+  "python_faulthandler": {
+    "exception": "Windows fatal exception: access violation",
+    "top_python_frame": "torch.storage.py:471 __getitem__",
+    "comfyui_frame": "comfy.utils.py:136 load_torch_file",
+    "load_path": "nodes.CLIPLoader -> comfy.sd.load_clip -> safetensors get_tensor"
+  },
+  "architecture": {
+    "python": "AMD64",
+    "torch_cpu_dll": "AMD64",
+    "comfyui_venv": "AMD64",
+    "underlying_uv_base_interpreter": "AMD64"
+  },
+  "resource_evidence": {
+    "cuda_oom": false,
+    "system_ram_oom": false,
+    "vram_peak_mib": 1187,
+    "ram_peak_used_mib": 23925,
+    "ram_min_available_mib": 8685,
+    "commit_min_available_mib": 3518
+  },
+  "post_fix_reproduction": {
+    "crash_timestamp_local": "2026-08-09T21:16:44+08:00",
+    "windows_event_id": 1000,
+    "windows_error_reporting_event_id": 1001,
+    "faulting_application": "python.exe",
+    "faulting_module": "torch_cpu.dll",
+    "exception_code": "0xc0000005",
+    "fault_offset": "0x0000000008e4a279",
+    "report_id": "b41fcac9-4f6c-4aea-a2dd-f674721afad8",
+    "minimal_fix_under_test": "REMOVE_CPU_VAE",
+    "vae_log": "load device cuda:0, offload device cpu, dtype torch.float16",
+    "same_module_code_and_offset_as_original": true,
+    "cuda_oom": false,
+    "system_ram_oom": false,
+    "vram_peak_mib": 1103,
+    "ram_peak_used_mib": 19016,
+    "ram_min_available_mib": 13594,
+    "commit_min_available_mib": 4154
+  }
+}

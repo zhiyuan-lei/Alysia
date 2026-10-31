@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "checked_at": "2026-08-09T20:22:30.803700+08:00",
+  "production_id": "production_2222222222222222",
+  "adapter": "REAL_COMFYUI_ADAPTER",
+  "task_status": "SUCCEEDED",
+  "artifact_id": "artifact_5572ae8817b52a20",
+  "artifact_path": "D:\\Alysia\\alpha22\\field_smoke\\resume\\artifacts\\creator_alpha22_step8\\comfyui\\TEST_ONLY_comfyui_stage_a.png",
+  "artifact_valid": true,
+  "hash_before": "fb2b62bf9a61f0a6d81175fba73fe1657cf4929e8d9886205cd1a8a39f6fe83b",
+  "hash_after": "fb2b62bf9a61f0a6d81175fba73fe1657cf4929e8d9886205cd1a8a39f6fe83b",
+  "mtime_before_ns": 1786278080747968600,
+  "mtime_after_ns": 1786278080747968600,
+  "comfyui_invocation_count_before": 1,
+  "comfyui_invocation_count_after": 1,
+  "successful_real_task_regenerated": false
+}

@@ -1,0 +1,278 @@
+{
+  "channel_id": "main",
+  "sample_size": 3,
+  "non_testing_sample_size": 0,
+  "run_ids": [
+    "20260807_175616_cb2fbe40",
+    "20260807_225606_b78058f8",
+    "20260807_225658_1596ed8c"
+  ],
+  "metric_aggregates": [
+    {
+      "metric": "views",
+      "sample_count": 3,
+      "mean": 420.0,
+      "minimum": 420.0,
+      "maximum": 420.0,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "ctr",
+      "sample_count": 0,
+      "mean": null,
+      "minimum": null,
+      "maximum": null,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "completion_rate",
+      "sample_count": 0,
+      "mean": null,
+      "minimum": null,
+      "maximum": null,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "avg_view_percentage",
+      "sample_count": 0,
+      "mean": null,
+      "minimum": null,
+      "maximum": null,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "likes",
+      "sample_count": 3,
+      "mean": 28.0,
+      "minimum": 28.0,
+      "maximum": 28.0,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "favorites",
+      "sample_count": 3,
+      "mean": 19.0,
+      "minimum": 19.0,
+      "maximum": 19.0,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "comments",
+      "sample_count": 3,
+      "mean": 7.0,
+      "minimum": 7.0,
+      "maximum": 7.0,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    },
+    {
+      "metric": "followers_gained",
+      "sample_count": 3,
+      "mean": 3.0,
+      "minimum": 3.0,
+      "maximum": 3.0,
+      "previous_mean": null,
+      "recent_mean": null,
+      "relative_change": null
+    }
+  ],
+  "comparisons": [
+    {
+      "metric": "views",
+      "best_run_id": "20260807_175616_cb2fbe40",
+      "best_value": 420.0,
+      "weakest_run_id": "20260807_175616_cb2fbe40",
+      "weakest_value": 420.0,
+      "comparable_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "ctr",
+      "best_run_id": null,
+      "best_value": null,
+      "weakest_run_id": null,
+      "weakest_value": null,
+      "comparable_run_ids": []
+    },
+    {
+      "metric": "completion_rate",
+      "best_run_id": null,
+      "best_value": null,
+      "weakest_run_id": null,
+      "weakest_value": null,
+      "comparable_run_ids": []
+    },
+    {
+      "metric": "avg_view_percentage",
+      "best_run_id": null,
+      "best_value": null,
+      "weakest_run_id": null,
+      "weakest_value": null,
+      "comparable_run_ids": []
+    },
+    {
+      "metric": "likes",
+      "best_run_id": "20260807_175616_cb2fbe40",
+      "best_value": 28.0,
+      "weakest_run_id": "20260807_175616_cb2fbe40",
+      "weakest_value": 28.0,
+      "comparable_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "favorites",
+      "best_run_id": "20260807_175616_cb2fbe40",
+      "best_value": 19.0,
+      "weakest_run_id": "20260807_175616_cb2fbe40",
+      "weakest_value": 19.0,
+      "comparable_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "comments",
+      "best_run_id": "20260807_175616_cb2fbe40",
+      "best_value": 7.0,
+      "weakest_run_id": "20260807_175616_cb2fbe40",
+      "weakest_value": 7.0,
+      "comparable_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "followers_gained",
+      "best_run_id": "20260807_175616_cb2fbe40",
+      "best_value": 3.0,
+      "weakest_run_id": "20260807_175616_cb2fbe40",
+      "weakest_value": 3.0,
+      "comparable_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    }
+  ],
+  "trend_changes": [
+    {
+      "metric": "views",
+      "direction": "insufficient",
+      "statement": "views 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "ctr",
+      "direction": "insufficient",
+      "statement": "ctr 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": []
+    },
+    {
+      "metric": "completion_rate",
+      "direction": "insufficient",
+      "statement": "completion_rate 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": []
+    },
+    {
+      "metric": "avg_view_percentage",
+      "direction": "insufficient",
+      "statement": "avg_view_percentage 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": []
+    },
+    {
+      "metric": "likes",
+      "direction": "insufficient",
+      "statement": "likes 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "favorites",
+      "direction": "insufficient",
+      "statement": "favorites 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "comments",
+      "direction": "insufficient",
+      "statement": "comments 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    },
+    {
+      "metric": "followers_gained",
+      "direction": "insufficient",
+      "statement": "followers_gained 少于 4 个有效样本，不能判断趋势。",
+      "evidence_run_ids": [
+        "20260807_175616_cb2fbe40",
+        "20260807_225606_b78058f8",
+        "20260807_225658_1596ed8c"
+      ]
+    }
+  ],
+  "fatigue_signals": [
+    {
+      "dimension": "category",
+      "value": "科技",
+      "status": "insufficient",
+      "statement": "科技 少于 3 条具有可比率指标的内容，不能判断疲劳。",
+      "evidence_run_ids": []
+    }
+  ],
+  "topic_lifecycles": [
+    {
+      "topic_key": "科技",
+      "stage": "insufficient",
+      "sample_count": 0,
+      "statement": "科技 的有效样本不足，当前仅能视为探索阶段。",
+      "evidence_run_ids": []
+    }
+  ],
+  "missing_data": [
+    "ctr",
+    "completion_rate",
+    "avg_view_percentage"
+  ],
+  "evidence": [
+    "20260807_175616_cb2fbe40:mock:2026-08-07T20:38:43.529902+08:00",
+    "20260807_225606_b78058f8:mock:2026-08-07T22:56:13.241418+08:00",
+    "20260807_225658_1596ed8c:mock:2026-08-07T22:57:04.730466+08:00"
+  ],
+  "source_digest": "ba7e20119e447472cb2efb93862754eac35ce9fa47265f84c2f93f149bc52f7f",
+  "generated_at": "2026-08-07T22:57:04.843978+08:00"
+}

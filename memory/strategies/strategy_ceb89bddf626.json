@@ -1,0 +1,13 @@
+{
+  "id": "strategy_ceb89bddf626",
+  "rule": "下一期将 hook 控制在 8 秒以内",
+  "rationale": "当前较长 hook 与较低 30 秒留存同时出现，需要受控实验验证。",
+  "evidence_run_ids": [
+    "20260807_175616_cb2fbe40"
+  ],
+  "confidence": 0.2,
+  "applies_to": "科技",
+  "source": "testing",
+  "created_at": "2026-08-07T19:54:11.312211+08:00",
+  "updated_at": "2026-08-07T19:58:45.545095+08:00"
+}

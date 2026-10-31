@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="102.652" timestamp="2026-08-09T12:03:05.302131+08:00" hostname="DESKTOP-G4EAACD"><testcase classname="tests.test_h3_local_integration" name="test_real_h3_t2v_smoke" time="102.244" /></testsuite></testsuites>

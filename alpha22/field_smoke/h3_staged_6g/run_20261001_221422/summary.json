@@ -1,0 +1,63 @@
+{
+  "test_only": true,
+  "run_dir": "D:\\Alysia\\alpha22\\field_smoke\\h3_staged_6g\\run_20261001_221422",
+  "status": "FAIL",
+  "stages": [
+    {
+      "stage": "encode",
+      "exit_code": 1,
+      "command": [
+        "D:\\ComfyUI\\.venv\\Scripts\\python.exe",
+        "D:\\Alysia\\alpha22\\field_smoke\\h3_staged_6g\\stage_worker.py",
+        "--cpu",
+        "--cpu-vae",
+        "--disable-pinned-memory",
+        "--disable-smart-memory",
+        "--preview-method",
+        "none"
+      ],
+      "status": "FAIL",
+      "child": {
+        "stage": "encode",
+        "status": "FAIL",
+        "test_only": true,
+        "elapsed_seconds": 56.031
+      },
+      "baseline": {
+        "time": "2026-10-01T22:14:22.925123+08:00",
+        "gpu": {
+          "total_mb": 8188,
+          "used_mb": 1283,
+          "free_mb": 6667
+        },
+        "ram": {
+          "total_mb": 32610,
+          "used_mb": 9725,
+          "available_mb": 22884,
+          "commit_limit_mb": 34658,
+          "commit_available_mb": 21574
+        }
+      },
+      "after": {
+        "time": "2026-10-01T22:15:42.071558+08:00",
+        "gpu": {
+          "total_mb": 8188,
+          "used_mb": 1130,
+          "free_mb": 6820
+        },
+        "ram": {
+          "total_mb": 32610,
+          "used_mb": 7384,
+          "available_mb": 25226,
+          "commit_limit_mb": 35800,
+          "commit_available_mb": 23202
+        }
+      },
+      "sample_count": 147,
+      "observed_vram_peak_mib": 1301,
+      "observed_ram_peak_mib": 32595,
+      "elapsed_seconds": 79.156,
+      "cooperative_stop": true
+    }
+  ]
+}

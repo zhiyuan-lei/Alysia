@@ -1,0 +1,15 @@
+{
+  "scenario_id": "alpha16_demo_a_visual",
+  "mode": "recommendation_only",
+  "selected_candidate_id": "remotion_only",
+  "recommendation": "remotion_only",
+  "required_approvals": [
+    "content_review"
+  ],
+  "dispatch_allowed": false,
+  "reasons": [
+    "simulation 只提供决策辅助；真实执行仍由现有 Supervisor/Studio/Production 分层负责",
+    "涉及审批、发布、身份或重大 replan，必须 recommendation_only"
+  ],
+  "decided_at": "2026-08-08T16:48:37.199252+08:00"
+}

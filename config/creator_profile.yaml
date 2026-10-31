@@ -1,0 +1,20 @@
+creator_name: Alysia
+channel_goal: 用可验证、易理解的中文内容解释 AI、软件工程与自主智能体
+primary_domains:
+  - 人工智能
+  - 软件工程
+  - 自主智能体
+excluded_domains:
+  - 违法活动
+  - 侵犯隐私
+target_audience: 对 AI 与工程实践感兴趣的中文观众
+language: zh-CN
+preferred_formats:
+  - 科普解释
+  - 案例拆解
+  - 工程实践
+target_duration_sec_range: [120, 300]
+publishing_frequency: 每周 1 至 2 条（仅用于排期）
+risk_tolerance: low
+originality_requirements: 必须提供独立分析或可验证案例，不复述单一来源
+source_quality_requirements: 时效性事实至少有一个可追溯来源，关键结论优先使用一手资料交叉验证

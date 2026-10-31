@@ -1,0 +1,11 @@
+{
+  "review_method": "Assistant visual inspection of all 56 eye crops in chronological 8x7 contact sheet",
+  "complete_blink": "PASS",
+  "sequence": "eyes open at start; both eyelids closed around middle; eyes reopen toward end",
+  "blink_count_observed": 1,
+  "timing": "slow blink; closed-eye hold longer than a typical quick blink",
+  "limitations": "Small generative face/hair variation; not pixel-perfect motion isolation",
+  "synthetic_reverse_playback": false,
+  "upscaled_from_lower_resolution": false,
+  "production_integration": false
+}

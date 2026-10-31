@@ -1,0 +1,32 @@
+{
+  "production_id": "production_2222222222222222",
+  "job_id": "creator_alpha22_step8",
+  "creator_plan_id": "creator_plan_alpha22_step8",
+  "tasks": [
+    {
+      "task_id": "comfyui",
+      "task_type": "IMAGE",
+      "status": "SUCCEEDED",
+      "input_refs": [],
+      "output_refs": [
+        "artifact_5572ae8817b52a20"
+      ],
+      "depends_on": [],
+      "resource_class": "GPU_HEAVY",
+      "attempt_count": 1,
+      "max_attempts": 2,
+      "started_at": null,
+      "finished_at": null,
+      "error": null,
+      "metadata": {}
+    }
+  ],
+  "dependencies": {
+    "comfyui": []
+  },
+  "resource_requirements": {},
+  "artifact_targets": {},
+  "status": "SUCCEEDED",
+  "created_at": "2026-08-09T20:22:30.736276+08:00",
+  "updated_at": "2026-08-09T20:22:30.792196+08:00"
+}

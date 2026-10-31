@@ -1,0 +1,22 @@
+{
+  "id": "lesson_84d8dd16fec1",
+  "statement": "在科技内容中，控制时长和叙事密度可能有助于完播率",
+  "evidence_run_ids": [
+    "20260807_175616_cb2fbe40"
+  ],
+  "counter_evidence_run_ids": [],
+  "supporting_metrics": {
+    "20260807_175616_cb2fbe40": {
+      "completion_rate": 0.31,
+      "duration_sec": 82.233333,
+      "narration_speed_chars_per_sec": 4.085934
+    }
+  },
+  "confidence": 0.2,
+  "status": "tentative",
+  "category": "completion",
+  "scope": "科技",
+  "source": "testing",
+  "created_at": "2026-08-07T19:54:09.212999+08:00",
+  "updated_at": "2026-08-07T19:58:43.471256+08:00"
+}

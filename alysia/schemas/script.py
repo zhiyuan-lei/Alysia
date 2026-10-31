@@ -9,6 +9,7 @@ class ScriptSection(BaseModel):
     narration: str = Field(min_length=1)
     key_visual_hint: str = Field(min_length=1)
     source_refs: list[str] = Field(default_factory=list)
+    claim_refs: list[str] = Field(default_factory=list)
 
 
 class Script(BaseModel):
@@ -33,7 +34,8 @@ class Script(BaseModel):
         sections = "\n\n".join(
             f"## {section.id} · {section.purpose}\n\n{section.narration}\n\n"
             f"画面提示：{section.key_visual_hint}\n\n"
-            f"来源引用：{', '.join(section.source_refs) or '无'}"
+            f"来源引用：{', '.join(section.source_refs) or '无'}\n\n"
+            f"事实引用：{', '.join(section.claim_refs) or '无'}"
             for section in self.sections
         )
         return (

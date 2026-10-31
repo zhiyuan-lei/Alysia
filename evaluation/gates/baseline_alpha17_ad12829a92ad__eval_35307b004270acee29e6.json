@@ -1,0 +1,75 @@
+{
+  "baseline_id": "baseline_alpha17_ad12829a92ad",
+  "blocking_findings": [
+    {
+      "affected_capability": "subtitle_sync_semantic_split",
+      "baseline": 0,
+      "candidate": 1,
+      "delta": 1.0,
+      "evidence_refs": [
+        "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_bad.json",
+        "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_good.json"
+      ],
+      "gate_effect": "block",
+      "metric_id": "subtitle_sync_semantic_split.core.out_of_bounds_count",
+      "reason": "candidate increased by 1, beyond tolerance 0",
+      "severity": "critical",
+      "threshold": {
+        "absolute": 0.0,
+        "effective": 0.0,
+        "relative": 0.0
+      }
+    },
+    {
+      "affected_capability": "subtitle_sync_semantic_split",
+      "baseline": 0,
+      "candidate": 1,
+      "delta": 1.0,
+      "evidence_refs": [
+        "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_bad.json",
+        "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_good.json"
+      ],
+      "gate_effect": "block",
+      "metric_id": "subtitle_sync_semantic_split.core.overlap_count",
+      "reason": "candidate increased by 1, beyond tolerance 0",
+      "severity": "critical",
+      "threshold": {
+        "absolute": 0.0,
+        "effective": 0.0,
+        "relative": 0.0
+      }
+    },
+    {
+      "affected_capability": "subtitle_sync_semantic_split",
+      "baseline": 0,
+      "candidate": 1,
+      "delta": 1.0,
+      "evidence_refs": [
+        "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_bad.json",
+        "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_good.json"
+      ],
+      "gate_effect": "block",
+      "metric_id": "subtitle_sync_semantic_split.core.semantic_split_violations",
+      "reason": "candidate increased by 1, beyond tolerance 0",
+      "severity": "critical",
+      "threshold": {
+        "absolute": 0.0,
+        "effective": 0.0,
+        "relative": 0.0
+      }
+    }
+  ],
+  "evaluation_id": "eval_35307b004270acee29e6",
+  "evidence_refs": [
+    "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_bad.json",
+    "D:\\Alysia\\tests\\fixtures\\evaluation\\subtitle_good.json"
+  ],
+  "invariant_failures": [
+    "protected invariant failed: subtitle_sync_semantic_split.core.overlap_count=1 (max 0)",
+    "protected invariant failed: subtitle_sync_semantic_split.core.out_of_bounds_count=1 (max 0)",
+    "protected invariant failed: subtitle_sync_semantic_split.core.semantic_split_violations=1 (max 0)"
+  ],
+  "promotion_allowed": false,
+  "status": "BLOCKED",
+  "warnings": []
+}

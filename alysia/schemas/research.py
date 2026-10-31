@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from typing import Literal
 from urllib.parse import urlparse
 
 from pydantic import BaseModel, Field, field_validator
@@ -14,6 +15,20 @@ class Source(BaseModel):
     domain: str = Field(min_length=1)
     retrieved_at: datetime
     note: str = ""
+    author: str | None = None
+    published_at: datetime | None = None
+    source_type: Literal[
+        "official", "primary", "academic", "news", "documentation",
+        "community", "social", "unknown",
+    ] = "unknown"
+    content_hash: str | None = None
+    access_note: str = ""
+    citation_note: str | None = None
+    evidence_origin: Literal[
+        "research", "manual", "web", "mock", "trend", "simulation",
+        "feedback", "system_observation", "user_asserted",
+    ] = "research"
+    observation_scope: str | None = None
 
     @field_validator("url")
     @classmethod

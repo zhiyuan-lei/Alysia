@@ -1,0 +1,32 @@
+{
+  "status": "FAILED_OR_RESOURCE_STOP",
+  "stages": [
+    {
+      "phase": "keyframe",
+      "exit_code": 1,
+      "elapsed": 5.484000000004016,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1334,
+          "free_mib": 6616
+        },
+        "system_used": 8792334336
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1326,
+          "free_mib": 6624
+        },
+        "system_used": 8787263488
+      },
+      "stop_reason": null
+    }
+  ],
+  "width": 1280,
+  "height": 736,
+  "frames": 56,
+  "steps": 20,
+  "reference_sha256": "efe0b0fc79dcc450a07b7379ed11b5921fd26e50bc24d70d1ac333eab79512bd",
+  "prompt": "A locked-off shot of the exact silver-haired, blue-eyed anime woman in the reference image, reclining in the same pose and holding the same ornate blue umbrella. Preserve her face, eye shape, long flowing silver hair, intricate blue-and-white dress, jewelry, hands, umbrella, flowers, lighting, and the entire original composition. Her eyes are open at the beginning. Around the middle of the shot, she performs one gentle natural blink: both upper eyelids smoothly lower until both eyes are fully closed for a brief instant, then smoothly reopen to the original relaxed gaze. One blink only. Her head and body remain still. Her mouth stays closed. The hair, clothing, umbrella and background remain almost completely motionless. No camera movement, no zoom, no scene transition, no new objects, no change of identity or art style. Clean stable anime linework, consistent facial anatomy, subtle believable eyelid motion. Silent scene.\n",
+  "test_only": true
+}

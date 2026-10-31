@@ -1,0 +1,35 @@
+{
+  "baseline_id": "baseline_alpha17_ad12829a92ad",
+  "candidate_evaluation_id": "eval_2ba95f2e0102d37765f7",
+  "comparison_id": "cmp_a839f3189e427d7a",
+  "findings": [],
+  "improvements": [],
+  "overall_gate_status": "PASS",
+  "unchanged": [
+    "analytics_learning_correctness.core.isolation_violations",
+    "brand_style_consistency.core.style_level",
+    "knowledge_freshness_conflict.core.blocked_claim_usage",
+    "knowledge_freshness_conflict.core.eligible_claim_ratio",
+    "publish_package_correctness.core.approval_invariant",
+    "publish_package_correctness.core.package_error_count",
+    "render_stability.core.render_decodable",
+    "research_grounding.core.coverage",
+    "script_quality.core.rubric_total",
+    "storyboard_coverage.core.section_coverage",
+    "subtitle_sync_semantic_split.core.out_of_bounds_count",
+    "subtitle_sync_semantic_split.core.overlap_count",
+    "subtitle_sync_semantic_split.core.semantic_split_violations",
+    "supervisor_workflow_reliability.core.action_limit_respected",
+    "supervisor_workflow_reliability.core.approved_skill_only",
+    "supervisor_workflow_reliability.core.budget_respected",
+    "supervisor_workflow_reliability.core.knowledge_stale_blocked",
+    "supervisor_workflow_reliability.core.provider_resource_constraints",
+    "supervisor_workflow_reliability.core.publish_approval_preserved",
+    "visual_h3_artifact_validity.offline.artifact_valid",
+    "voice_intelligibility.core.audio_valid",
+    "voice_intelligibility.core.test_tone_detected"
+  ],
+  "unknown": [
+    "voice_intelligibility.core.asr_text_similarity"
+  ]
+}

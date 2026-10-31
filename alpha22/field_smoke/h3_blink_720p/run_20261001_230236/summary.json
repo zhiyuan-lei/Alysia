@@ -1,0 +1,179 @@
+{
+  "status": "GENERATED_PENDING_VISUAL_REVIEW",
+  "stages": [
+    {
+      "phase": "keyframe",
+      "exit_code": 0,
+      "elapsed": 6.0460000000020955,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1236,
+          "free_mib": 6714
+        },
+        "system_used": 8643825664
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1226,
+          "free_mib": 6724
+        },
+        "system_used": 8618381312
+      },
+      "stop_reason": null
+    },
+    {
+      "phase": "encode",
+      "exit_code": 0,
+      "elapsed": 22.57800000000134,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1226,
+          "free_mib": 6724
+        },
+        "system_used": 8613502976
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1235,
+          "free_mib": 6714
+        },
+        "system_used": 8654991360
+      },
+      "stop_reason": null
+    },
+    {
+      "phase": "sample",
+      "exit_code": 0,
+      "elapsed": 500.07800000000134,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1235,
+          "free_mib": 6714
+        },
+        "system_used": 8656326656
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1401,
+          "free_mib": 6549
+        },
+        "system_used": 9754968064
+      },
+      "stop_reason": null
+    },
+    {
+      "phase": "decode",
+      "exit_code": 0,
+      "elapsed": 63.81199999999808,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1401,
+          "free_mib": 6549
+        },
+        "system_used": 9756725248
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1232,
+          "free_mib": 6718
+        },
+        "system_used": 9234452480
+      },
+      "stop_reason": null
+    }
+  ],
+  "width": 1280,
+  "height": 736,
+  "frames": 56,
+  "steps": 20,
+  "reference_sha256": "efe0b0fc79dcc450a07b7379ed11b5921fd26e50bc24d70d1ac333eab79512bd",
+  "prompt": "A locked-off shot of the exact silver-haired, blue-eyed anime woman in the reference image, reclining in the same pose and holding the same ornate blue umbrella. Preserve her face, eye shape, long flowing silver hair, intricate blue-and-white dress, jewelry, hands, umbrella, flowers, lighting, and the entire original composition. Her eyes are open at the beginning. Around the middle of the shot, she performs one gentle natural blink: both upper eyelids smoothly lower until both eyes are fully closed for a brief instant, then smoothly reopen to the original relaxed gaze. One blink only. Her head and body remain still. Her mouth stays closed. The hair, clothing, umbrella and background remain almost completely motionless. No camera movement, no zoom, no scene transition, no new objects, no change of identity or art style. Clean stable anime linework, consistent facial anatomy, subtle believable eyelid motion. Silent scene.\n",
+  "test_only": true,
+  "last_keyframe": true,
+  "output_frames": 56,
+  "artifact": "D:\\Alysia\\alpha22\\field_smoke\\h3_blink_720p\\run_20261001_230236\\H3_blink_720p_TEST_ONLY.mp4",
+  "bytes": 1688061,
+  "sha256": "23bc51da32c5bb158a7fdffb9cbadaceeb6aa908bb7f667fbaef1d4ea5d9b88a",
+  "ffprobe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.64001f",
+        "width": 1280,
+        "height": 720,
+        "coded_width": 1280,
+        "coded_height": 720,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 28672,
+        "duration": "2.333333",
+        "bit_rate": "5782364",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "56",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc63.1.100 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "D:\\Alysia\\alpha22\\field_smoke\\h3_blink_720p\\run_20261001_230236\\H3_blink_720p_TEST_ONLY.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "2.333333",
+      "size": "1688061",
+      "bit_rate": "5787638",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf63.1.100"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "scenario_id": "alpha16_demo_a_visual",
+  "actual_source": "testing",
+  "is_testing": true,
+  "prediction_errors": [
+    {
+      "metric": "risk_score",
+      "predicted": {
+        "metric": "risk_score",
+        "estimate_type": "simulated",
+        "point_estimate": 0.19,
+        "range": null,
+        "unit": null,
+        "confidence": "medium",
+        "evidence_refs": [],
+        "assumptions": [
+          "规则化 provider/resource/approval/topic 风险合成；不是事故概率"
+        ],
+        "caveats": []
+      },
+      "actual_value": 0.25,
+      "actual_source": "testing",
+      "error": -0.06,
+      "direction_bias": "under",
+      "evidence_refs": [
+        "testing:alpha16:calibration-demo"
+      ]
+    },
+    {
+      "metric": "expected_quality_score",
+      "predicted": {
+        "metric": "expected_quality_score",
+        "estimate_type": "simulated",
+        "point_estimate": 0.58,
+        "range": null,
+        "unit": null,
+        "confidence": "low",
+        "evidence_refs": [],
+        "assumptions": [
+          "Remotion-only 使用现有程序化视觉质量基线"
+        ],
+        "caveats": []
+      },
+      "actual_value": 0.6,
+      "actual_source": "testing",
+      "error": -0.020000000000000018,
+      "direction_bias": "under",
+      "evidence_refs": [
+        "testing:alpha16:calibration-demo"
+      ]
+    }
+  ],
+  "estimator_confidence_suggestions": {},
+  "ranking_weight_suggestions": {},
+  "applies_automatically": false,
+  "created_at": "2026-08-08T16:48:40.911962+08:00"
+}

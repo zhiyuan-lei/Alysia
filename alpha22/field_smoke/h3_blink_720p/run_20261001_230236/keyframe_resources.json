@@ -1,0 +1,132 @@
+{
+  "phase": "keyframe",
+  "exit_code": 0,
+  "elapsed": 6.0460000000020955,
+  "baseline": {
+    "gpu": {
+      "used_mib": 1236,
+      "free_mib": 6714
+    },
+    "system_used": 8643825664
+  },
+  "after": {
+    "gpu": {
+      "used_mib": 1226,
+      "free_mib": 6724
+    },
+    "system_used": 8618381312
+  },
+  "stop_reason": null,
+  "samples": [
+    {
+      "elapsed": 0.014999999999417923,
+      "gpu": {
+        "used_mib": 1236,
+        "free_mib": 6714
+      },
+      "rss": 7565312,
+      "private": 1601536,
+      "system_used": 8657903616
+    },
+    {
+      "elapsed": 0.5619999999980791,
+      "gpu": {
+        "used_mib": 1236,
+        "free_mib": 6714
+      },
+      "rss": 476229632,
+      "private": 1544167424,
+      "system_used": 9152110592
+    },
+    {
+      "elapsed": 1.0930000000007567,
+      "gpu": {
+        "used_mib": 1236,
+        "free_mib": 6714
+      },
+      "rss": 521441280,
+      "private": 1588555776,
+      "system_used": 9200312320
+    },
+    {
+      "elapsed": 1.639999999999418,
+      "gpu": {
+        "used_mib": 1236,
+        "free_mib": 6714
+      },
+      "rss": 581476352,
+      "private": 1646616576,
+      "system_used": 9276026880
+    },
+    {
+      "elapsed": 2.186999999998079,
+      "gpu": {
+        "used_mib": 1238,
+        "free_mib": 6712
+      },
+      "rss": 694898688,
+      "private": 1795690496,
+      "system_used": 9387606016
+    },
+    {
+      "elapsed": 2.75,
+      "gpu": {
+        "used_mib": 1336,
+        "free_mib": 6614
+      },
+      "rss": 788054016,
+      "private": 2632052736,
+      "system_used": 9470083072
+    },
+    {
+      "elapsed": 3.2960000000020955,
+      "gpu": {
+        "used_mib": 1342,
+        "free_mib": 6608
+      },
+      "rss": 804261888,
+      "private": 2647121920,
+      "system_used": 9465245696
+    },
+    {
+      "elapsed": 3.8430000000007567,
+      "gpu": {
+        "used_mib": 1343,
+        "free_mib": 6607
+      },
+      "rss": 817258496,
+      "private": 2659758080,
+      "system_used": 9512894464
+    },
+    {
+      "elapsed": 4.389999999999418,
+      "gpu": {
+        "used_mib": 1433,
+        "free_mib": 6517
+      },
+      "rss": 1621479424,
+      "private": 3577225216,
+      "system_used": 10454896640
+    },
+    {
+      "elapsed": 4.953000000001339,
+      "gpu": {
+        "used_mib": 2043,
+        "free_mib": 5907
+      },
+      "rss": 2262208512,
+      "private": 4988817408,
+      "system_used": 10892214272
+    },
+    {
+      "elapsed": 5.514999999999418,
+      "gpu": {
+        "used_mib": 1531,
+        "free_mib": 6419
+      },
+      "rss": 2267090944,
+      "private": 4687847424,
+      "system_used": 10886451200
+    }
+  ]
+}

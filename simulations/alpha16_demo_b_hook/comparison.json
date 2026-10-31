@@ -1,0 +1,84 @@
+{
+  "scenario_id": "alpha16_demo_b_hook",
+  "ranked_candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "hook_15s",
+      "score": 0.7877
+    },
+    {
+      "rank": 2,
+      "candidate_id": "hook_5s",
+      "score": 0.7877
+    },
+    {
+      "rank": 3,
+      "candidate_id": "hook_8s",
+      "score": 0.7877
+    }
+  ],
+  "score_breakdown": [
+    {
+      "candidate_id": "hook_5s",
+      "expected_quality": 0.58,
+      "reliability": 0.9,
+      "latency": 0.9,
+      "resource_use": 0.95,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.19,
+      "experiment_value": 0.75,
+      "novelty": 0.53,
+      "total_score": 0.7877,
+      "known_fraction": 0.8889
+    },
+    {
+      "candidate_id": "hook_8s",
+      "expected_quality": 0.58,
+      "reliability": 0.9,
+      "latency": 0.9,
+      "resource_use": 0.95,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.19,
+      "experiment_value": 0.75,
+      "novelty": 0.53,
+      "total_score": 0.7877,
+      "known_fraction": 0.8889
+    },
+    {
+      "candidate_id": "hook_15s",
+      "expected_quality": 0.58,
+      "reliability": 0.9,
+      "latency": 0.9,
+      "resource_use": 0.95,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.19,
+      "experiment_value": 0.75,
+      "novelty": 0.53,
+      "total_score": 0.7877,
+      "known_fraction": 0.8889
+    }
+  ],
+  "dominant_tradeoffs": [
+    "推荐 hook_15s；quality=0.58, reliability=0.9, risk=0.19, known_fraction=0.8889",
+    "领先差异小于 0.01；证据不足以支持唯一选择，保持 no_recommendation",
+    "总分只聚合已知/模拟的可解释维度；unknown 不按 0 伪造，但会降低 known_fraction"
+  ],
+  "uncertainty": [
+    "hook_15s: monetary_cost_score=unknown",
+    "hook_5s: monetary_cost_score=unknown",
+    "hook_8s: monetary_cost_score=unknown"
+  ],
+  "recommendation": "no_recommendation",
+  "reasons_not_selected": {
+    "hook_5s": [
+      "综合可解释分数 0.7877 低于 0.7877"
+    ],
+    "hook_8s": [
+      "综合可解释分数 0.7877 低于 0.7877"
+    ]
+  },
+  "compared_at": "2026-08-08T16:48:38.797834+08:00"
+}

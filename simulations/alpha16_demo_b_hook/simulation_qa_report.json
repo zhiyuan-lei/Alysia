@@ -1,0 +1,16 @@
+{
+  "scenario_id": "alpha16_demo_b_hook",
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "candidate_limit": true,
+    "simulated_values_marked": true,
+    "uncertainty_required": true,
+    "unknown_not_fabricated": true,
+    "approval_gate_preserved": true,
+    "simulation_reality_isolation": true,
+    "finite_depth": true
+  },
+  "checked_at": "2026-08-08T16:48:38.797834+08:00"
+}

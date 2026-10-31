@@ -9,10 +9,11 @@ from alysia.providers.llm.base import BaseLLMProvider, SchemaT
 
 
 class OllamaProvider(BaseLLMProvider):
-    def __init__(self, model: str, base_url: str, timeout_sec: float = 120.0) -> None:
+    def __init__(self, model: str, base_url: str, timeout_sec: float = 120.0, *, security=None) -> None:
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.timeout_sec = timeout_sec
+        self.security = security
 
     async def generate_structured(
         self,
@@ -34,6 +35,12 @@ class OllamaProvider(BaseLLMProvider):
             ],
             "options": {"temperature": 0.2},
         }
+        if self.security is not None:
+            decision = self.security.policy.authorize_network(
+                actor="LLMProviderAdapter", url=self.base_url, action="ollama.generate",
+            )
+            if decision.decision != "allow":
+                raise PermissionError(decision.reason)
         async with httpx.AsyncClient(timeout=self.timeout_sec) as client:
             response = await client.post(f"{self.base_url}/api/chat", json=request)
             response.raise_for_status()

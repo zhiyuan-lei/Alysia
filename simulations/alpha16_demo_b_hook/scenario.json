@@ -1,0 +1,92 @@
+{
+  "scenario_id": "alpha16_demo_b_hook",
+  "objective": "比较同一 topic 的 5 秒、8 秒和 15 秒 hook",
+  "baseline_state_refs": [
+    "memory/episodes",
+    "memory/channels/main"
+  ],
+  "assumptions": [
+    {
+      "assumption_id": "hook_single_variable",
+      "statement": "除 hook 时长外保持主题、脚本深度与发布条件不变",
+      "source": "alpha16 demo design",
+      "confidence": "medium"
+    }
+  ],
+  "controllable_variables": {
+    "hook_seconds": [
+      5,
+      8,
+      15
+    ]
+  },
+  "fixed_variables": {
+    "topic": "AI Agent 的记忆为什么重要",
+    "video_duration_sec": 240
+  },
+  "candidate_actions": [
+    {
+      "candidate_id": "hook_5s",
+      "actions": [
+        {
+          "type": "content_structure"
+        }
+      ],
+      "changed_variables": {
+        "hook_seconds": 5
+      },
+      "rationale": "更快进入主题"
+    },
+    {
+      "candidate_id": "hook_8s",
+      "actions": [
+        {
+          "type": "content_structure"
+        }
+      ],
+      "changed_variables": {
+        "hook_seconds": 8
+      },
+      "rationale": "平衡背景与核心问题"
+    },
+    {
+      "candidate_id": "hook_15s",
+      "actions": [
+        {
+          "type": "content_structure"
+        }
+      ],
+      "changed_variables": {
+        "hook_seconds": 15
+      },
+      "rationale": "提供更多上下文"
+    }
+  ],
+  "horizon": "three_real_runs_after_approval",
+  "resource_budget": {
+    "max_local_vram_mb": 7600,
+    "max_ram_mb": 24576,
+    "max_wall_time_sec": null,
+    "max_cloud_cost": null,
+    "allow_unknown_resources": false
+  },
+  "approval_policy": {
+    "required_gates": [
+      "experiment_approval"
+    ],
+    "allow_auto_select": false,
+    "major_replan": false,
+    "identity_change": false,
+    "real_publish": false
+  },
+  "evaluation_metrics": [
+    "hook_seconds",
+    "relative_platform_outcome",
+    "experiment_value"
+  ],
+  "uncertainty_notes": [
+    "testing/mock episode 不作为真实平台结果证据"
+  ],
+  "source_task_ref": null,
+  "created_at": "2026-08-08T18:00:00+08:00"
+}

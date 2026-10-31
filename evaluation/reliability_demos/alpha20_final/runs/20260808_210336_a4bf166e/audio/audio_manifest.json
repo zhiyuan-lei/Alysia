@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "sample_rate": 24000,
+  "channels": 1,
+  "sample_width_bytes": 2,
+  "encoding": "pcm_s16le",
+  "pause_between_scenes_ms": 250,
+  "narration_file": "audio/narration.wav",
+  "total_duration_sec": 4.695375,
+  "scenes": [
+    {
+      "index": 1,
+      "scene_id": "s1",
+      "section_id": "body",
+      "original_text": "配音失败后，只重新生成音频、字幕和必要的编辑产物。",
+      "normalized_text": "配音失败后，只重新生成音频、字幕和必要的编辑产物",
+      "file": "audio/scenes/scene_001.wav",
+      "duration_sec": 4.695375,
+      "start_sec": 0.0,
+      "end_sec": 4.695375,
+      "provider": "fault_demo_tts",
+      "input_hash": "b23bd43964b55468b66b5f3ef7e6316d52b4543c6e98d60f73cfdec715929c35",
+      "word_timings": []
+    }
+  ]
+}

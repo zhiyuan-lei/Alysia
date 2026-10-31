@@ -8,10 +8,33 @@ __pycache__/
 
 # Virtual environments
 .venv/
+venv/
+portable-build/
 
 # Secrets and local configuration
 .env
 config.yaml
+config/*.local.yaml
+*.pem
+*.key
+auth.json
+credential*.json
+*credential*.json
+!config/credential_references.yaml
+!evaluation/security_demos/**/fake_secret_redaction.json
+
+# Local browser / publishing profiles and exported cookies
+.publish_profile/
+*.sqlite
+*.db
+
+# Model weights and local model trees
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
 
 # Generated Alysia data
 runs/*
@@ -19,14 +42,44 @@ runs/*
 assets/generated/
 memory/*.db
 memory/*.sqlite*
+plans/*
+!plans/.gitkeep
+workspace/*
+supervisor/*
+!supervisor/.gitkeep
+.planning/
+
+# Runtime logs and local audit trails
+audit/*.jsonl
+audit/*.jsonl.bak*
+supervisor/**/*.jsonl
+*.log
+
+# Large local artifacts and field-smoke media
+alpha22/field_smoke/**/*.pt
+alpha22/field_smoke/**/*.mp4
+alpha22/field_smoke/**/*.png
+alpha22/field_smoke/**/*.wav
+alpha22/field_smoke/**/*.safetensors
+alpha22/**/field_smoke/**/*.pt
+alpha22/**/field_smoke/**/*.mp4
 
 # Node
 node_modules/
 video/remotion/out/
+video/remotion/node_modules/
+control-center/dist/
+control-center/node_modules/
 
 # Editors and operating systems
 .idea/
 .vscode/
 .DS_Store
 Thumbs.db
+desktop.ini
 
+# Local scratch
+*.tmp
+*.bak
+*.bak[0-9]*
+~$*

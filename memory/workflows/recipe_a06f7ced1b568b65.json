@@ -1,0 +1,60 @@
+{
+  "recipe_id": "recipe_a06f7ced1b568b65",
+  "name": "从 storyboard 选择关键视觉场景 workflow",
+  "task_pattern": {
+    "keywords": [
+      "storyboard",
+      "选择关键视觉场景"
+    ],
+    "inputs": [
+      "storyboard"
+    ],
+    "desired_outputs": [
+      "selected_scenes"
+    ],
+    "quality_target": "standard"
+  },
+  "required_capabilities": [
+    "scene_selection@capability:stable"
+  ],
+  "steps_template": [
+    {
+      "step_id": "step_01_scene_selection",
+      "capability_id": "scene_selection",
+      "skill_id": null,
+      "owner_agent": "designer",
+      "inputs": [
+        "storyboard"
+      ],
+      "outputs": [
+        "selected_scenes"
+      ],
+      "depends_on": [],
+      "fallback": [],
+      "execution_layer": "production"
+    }
+  ],
+  "constraints": [
+    "offline",
+    "deterministic"
+  ],
+  "quality_gates": [
+    "workflow_validation"
+  ],
+  "evidence_runs": [
+    "workflow_20260808_161330_4666257f8871",
+    "workflow_20260808_161330_64a6e3a8335a",
+    "workflow_20260808_161330_87c3eb11fe6d",
+    "workflow_20260808_161330_42092d252e74",
+    "workflow_20260808_162042_e670cd74d854",
+    "workflow_20260808_162042_b39ea093227f",
+    "workflow_20260808_162043_4ff2bf82b2af",
+    "workflow_20260808_162043_d8e7c0ab186f"
+  ],
+  "success_count": 8,
+  "failure_count": 0,
+  "confidence": 0.9,
+  "status": "validated",
+  "created_at": "2026-08-08T16:13:30.058547+08:00",
+  "updated_at": "2026-08-08T16:20:43.083117+08:00"
+}

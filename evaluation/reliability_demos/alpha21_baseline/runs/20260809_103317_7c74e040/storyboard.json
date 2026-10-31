@@ -1,0 +1,17 @@
+{
+  "title": "局部恢复",
+  "target_duration_sec": 30,
+  "scenes": [
+    {
+      "id": "s1",
+      "section_id": "body",
+      "duration_sec": 30.0,
+      "narration": "配音失败后，只重新生成音频、字幕和必要的编辑产物。",
+      "visual_type": "text",
+      "visual_prompt": "",
+      "screen_text": "Local Recovery",
+      "transition": "fade",
+      "source_refs": []
+    }
+  ]
+}

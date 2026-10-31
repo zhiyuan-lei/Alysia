@@ -1,0 +1,7 @@
+{
+  "total_duration_sec": 4.0,
+  "segments": [
+    {"id": 1, "start_sec": 0.0, "end_sec": 2.8, "text": "Agent 会围绕目标调用工具"},
+    {"id": 2, "start_sec": 2.0, "end_sec": 4.8, "text": "，但可靠性仍需持续验证。"}
+  ]
+}

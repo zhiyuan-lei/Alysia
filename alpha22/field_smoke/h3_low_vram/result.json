@@ -1,0 +1,128 @@
+{
+  "run_id": "alpha22_step8_3_h3_low_vram",
+  "started_at": "2026-08-09T20:55:11.776427+08:00",
+  "profile": "ONE_LOW_VRAM_PROFILE",
+  "profile_settings": {
+    "launcher": [
+      "--novram",
+      "--cpu-vae",
+      "--disable-pinned-memory",
+      "--disable-async-offload",
+      "--reserve-vram 1"
+    ],
+    "text_encoder_device": "cpu",
+    "width": 320,
+    "height": 256,
+    "frames": 5,
+    "steps": 1,
+    "gpu_heavy_concurrency": 1
+  },
+  "h3_real_invocation": "YES",
+  "result": "FAIL",
+  "owned_comfyui_pid": 15340,
+  "provider_health": {
+    "provider": "visual.comfyui-h3",
+    "available": true,
+    "details": [
+      "可选 H3 workflow 尚未验证：['i2v', 'reference']",
+      "Low-VRAM profile 已启用；GPU-heavy job 必须串行。"
+    ],
+    "workflows": {
+      "t2v": true,
+      "i2v": false,
+      "reference": false
+    }
+  },
+  "resource_guard": {
+    "status": "safe",
+    "observed_values": {
+      "disk_free_gb": 243.553,
+      "estimated_output_mb": 64,
+      "ram_available_mb": 23195,
+      "vram_free_mb": 6764,
+      "comfyui_available": true
+    },
+    "thresholds": {
+      "min_disk_free_gb": 5.0,
+      "warning_disk_free_gb": 10.0,
+      "min_ram_available_mb": 2048,
+      "warning_ram_available_mb": 4096,
+      "min_vram_free_mb": 768,
+      "warning_vram_free_mb": 1536
+    },
+    "reasons": [],
+    "checked_at": "2026-08-09T20:55:19.908396+08:00"
+  },
+  "gpu_before_h3": {
+    "total_mib": 8188,
+    "used_mib": 1185,
+    "free_mib": 6764,
+    "utilization_percent": 4
+  },
+  "ram_before_h3": {
+    "total_mib": 32610,
+    "used_mib": 9423,
+    "available_mib": 23187,
+    "commit_limit_mib": 34658,
+    "commit_available_mib": 19457
+  },
+  "finished_at": "2026-08-09T20:55:35.534134+08:00",
+  "error_type": "ProductionFailure",
+  "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+  "resource_exhausted": false,
+  "elapsed_to_failure_seconds": 15.604,
+  "artifact": {
+    "path": null,
+    "size_bytes": null,
+    "sha256": null,
+    "validation": "FAIL_NOT_CREATED"
+  },
+  "failure_analysis": {
+    "stage": "CLIP/text-encoder load",
+    "native_crash": true,
+    "windows_exception_code": "0xc0000005",
+    "faulting_module": "torch_cpu.dll",
+    "python_trace_location": "torch.storage -> ComfyUI load_torch_file -> load_clip",
+    "cuda_oom_reported": false,
+    "system_memory_exhaustion_reported": false,
+    "provider_connection_reset": true,
+    "second_profile_attempted": false
+  },
+  "observed_resources": {
+    "ram_baseline_used_mib": 9423,
+    "ram_peak_used_mib": 23925,
+    "ram_after_service_stop_used_mib": 8906,
+    "ram_min_available_mib": 8685,
+    "commit_min_available_mib": 3518,
+    "vram_baseline_used_mib": 1185,
+    "vram_peak_used_mib": 1187,
+    "vram_after_service_stop_used_mib": 1078,
+    "sample_interval_seconds": 0.25,
+    "h3_sample_count": 54,
+    "peak_status": "MEASURED_DURING_FAILED_LOAD; NOT_A_COMPLETE_WORKLOAD_PEAK"
+  },
+  "hardware_verdict": {
+    "physical_machine_h3": "FAIL",
+    "h3_8gb_vram_envelope": "FAIL",
+    "h3_24g_envelope": "NOT_VERIFIED"
+  },
+  "resume": "NOT_EXECUTED",
+  "cleanup_final": {
+    "service_stop_method": "OWNED_PROCESS_EXITED",
+    "owned_service_exited": true,
+    "gpu_after_service_stop": {
+      "total_mib": 8188,
+      "used_mib": 1078,
+      "free_mib": 6872,
+      "utilization_percent": 19
+    },
+    "ram_after_service_stop": {
+      "total_mib": 32610,
+      "used_mib": 8906,
+      "available_mib": 23704,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22747
+    },
+    "gpu_lock_released": true
+  }
+}

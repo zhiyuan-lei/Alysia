@@ -1,0 +1,2 @@
+run_id,job_id,topic,created_at,approved_at,published_at,platform,platform_content_id,video_artifact,qa_result,publish_result,metrics_available,reflection_available,failure_count,recovery_result,evidence_path
+

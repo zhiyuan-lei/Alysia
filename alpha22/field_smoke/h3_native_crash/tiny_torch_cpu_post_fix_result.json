@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "python": "3.12.12 (main, Oct 14 2025, 21:24:50) [MSC v.1944 64 bit (AMD64)]",
+  "python_bits": 64,
+  "machine": "AMD64",
+  "torch": "2.13.0+cu130",
+  "device": "cpu",
+  "input_dtype": "torch.float32",
+  "converted_dtype": "torch.float32",
+  "matmul_result": [
+    [
+      4.0,
+      4.0
+    ],
+    [
+      10.0,
+      8.0
+    ]
+  ],
+  "torch_threads": 14,
+  "torch_interop_threads": 14,
+  "cuda_api_called": false
+}

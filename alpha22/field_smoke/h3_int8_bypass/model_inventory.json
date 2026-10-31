@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-08-09T21:33:56+08:00",
+  "comfyui_root": "D:\\ComfyUI",
+  "registered_text_encoder_directories": [
+    "D:\\ComfyUI\\models\\text_encoders",
+    "D:\\ComfyUI\\models\\clip"
+  ],
+  "active_extra_model_paths_files": [],
+  "current_nvfp4_encoder": {
+    "status": "FOUND",
+    "path": "D:\\ComfyUI\\models\\text_encoders\\qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "size_bytes": 15687142551,
+    "sha256": "35a88d51044231fe332301d7a62aa81e3f2cba62febeb446e2c1e3e0ef76f2c6",
+    "hash_source": "live Get-FileHash SHA256",
+    "manifest_source": "Comfy-Org/MiniMax-H3",
+    "manifest_revision": "eb8a16107c595128b3a578f82d2ce2f75920c355",
+    "manifest_integrity": "MATCH"
+  },
+  "int8_encoder": {
+    "status": "NOT_FOUND",
+    "filename": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+    "path": null,
+    "size_bytes": null,
+    "sha256": null,
+    "integrity": "NOT_VERIFIED",
+    "official_target_size": "approximately 27.1 GB",
+    "official_target_sha256": "bc2ced0fbea64757fa9acddccfc0b3f4819d1dcf1da6c124d690d368be283923",
+    "download_attempted": false
+  }
+}

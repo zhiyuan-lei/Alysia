@@ -1,0 +1,575 @@
+{
+  "scenario_id": "alpha16_demo_a_visual",
+  "scenario_digest": "9bc641d52221fea0ea7449761305465ff0b20635134b01cc4d814f625e362573",
+  "mode": "dry_run",
+  "candidates": [
+    {
+      "candidate_id": "remotion_only",
+      "predictions": [
+        {
+          "metric": "total_h3_seconds",
+          "estimate_type": "derived",
+          "point_estimate": 0.0,
+          "range": null,
+          "unit": "sec",
+          "confidence": "high",
+          "evidence_refs": [
+            "scenario:alpha16_demo_a_visual",
+            "candidate:remotion_only"
+          ],
+          "assumptions": [
+            "候选计划中的 total_h3_seconds 是计划参数，不是实测生成结果"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "production_latency_sec",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": "sec",
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [],
+          "caveats": [
+            "没有与该候选可比的真实 execution metrics；不使用宣传数字或 mock runtime"
+          ]
+        },
+        {
+          "metric": "expected_quality_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.58,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "Remotion-only 使用现有程序化视觉质量基线"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "reliability_score",
+          "estimate_type": "derived",
+          "point_estimate": 0.9,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [
+            "provider:visual.comfyui-h3"
+          ],
+          "assumptions": [
+            "不依赖当前 unavailable H3 provider"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "latency_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.9,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "无 H3 GPU-heavy clip，仅用于候选间相对排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "resource_efficiency_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.95,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "Remotion/FFmpeg 不需要 H3 权重常驻"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "monetary_cost",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": "currency",
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [],
+          "caveats": [
+            "本地能耗/电费没有可验证计量；沿用 alpha11 unknown policy"
+          ]
+        },
+        {
+          "metric": "experiment_value_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.51,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "changed variables 数量用于粗略实验价值排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "novelty_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.61,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "仅根据方案变量差异估计，不代表观众感知的新颖度"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "risk_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.19,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "规则化 provider/resource/approval/topic 风险合成；不是事故概率"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "approval_burden_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.8,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "审批点数量用于相对负担排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "platform_outcome_relative",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [
+            "memory/episodes/20260807_175616_cb2fbe40.json",
+            "memory/episodes/20260807_225606_b78058f8.json",
+            "memory/episodes/20260807_225658_1596ed8c.json"
+          ],
+          "assumptions": [],
+          "caveats": [
+            "真实可比内容数据不足；不预测精确播放量、粉丝数、收益或留存"
+          ]
+        }
+      ],
+      "failure_paths": [
+        "approval burden: content_review"
+      ],
+      "approval_gates_preserved": [
+        "content_review"
+      ],
+      "workflow_dry_run": {
+        "applicable": false,
+        "real_steps_executed": false
+      },
+      "evaluator_notes": {
+        "production": [],
+        "content": [],
+        "workflow": []
+      }
+    },
+    {
+      "candidate_id": "h3_two_clips",
+      "predictions": [
+        {
+          "metric": "total_h3_seconds",
+          "estimate_type": "derived",
+          "point_estimate": 10.0,
+          "range": null,
+          "unit": "sec",
+          "confidence": "high",
+          "evidence_refs": [
+            "scenario:alpha16_demo_a_visual",
+            "candidate:h3_two_clips"
+          ],
+          "assumptions": [
+            "候选计划中的 total_h3_seconds 是计划参数，不是实测生成结果"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "production_latency_sec",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": "sec",
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [],
+          "caveats": [
+            "没有与该候选可比的真实 execution metrics；不使用宣传数字或 mock runtime"
+          ]
+        },
+        {
+          "metric": "expected_quality_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.69,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "少量合格动态镜头可能提升视觉丰富度；未做真实 preview"
+          ],
+          "caveats": [
+            "VisualQA 失败会抵消提升"
+          ]
+        },
+        {
+          "metric": "reliability_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.25,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "provider health 与串行 GPU 任务数用于相对可靠性比较"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "latency_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.49,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "H3 clip 数仅用于相对时延排序，不表示真实秒数"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "resource_efficiency_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.43000000000000005,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "8GB VRAM + 24GB RAM 下 GPU-heavy clips 必须串行，且峰值资源仍 unknown"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "monetary_cost",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": "currency",
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [],
+          "caveats": [
+            "本地能耗/电费没有可验证计量；沿用 alpha11 unknown policy"
+          ]
+        },
+        {
+          "metric": "experiment_value_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.51,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "changed variables 数量用于粗略实验价值排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "novelty_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.61,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "仅根据方案变量差异估计，不代表观众感知的新颖度"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "risk_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.79,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "规则化 provider/resource/approval/topic 风险合成；不是事故概率"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "approval_burden_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.8,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "审批点数量用于相对负担排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "platform_outcome_relative",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [
+            "memory/episodes/20260807_175616_cb2fbe40.json",
+            "memory/episodes/20260807_225606_b78058f8.json",
+            "memory/episodes/20260807_225658_1596ed8c.json"
+          ],
+          "assumptions": [],
+          "caveats": [
+            "真实可比内容数据不足；不预测精确播放量、粉丝数、收益或留存"
+          ]
+        }
+      ],
+      "failure_paths": [
+        "H3/ComfyUI provider unavailable，视觉生成步骤会在执行前被 ProductionPlanner 阻断",
+        "provider availability risk: visual.comfyui-h3 unavailable",
+        "resource/OOM risk: H3 peak VRAM unknown",
+        "approval burden: content_review"
+      ],
+      "approval_gates_preserved": [
+        "content_review"
+      ],
+      "workflow_dry_run": {
+        "applicable": false,
+        "real_steps_executed": false
+      },
+      "evaluator_notes": {
+        "production": [
+          "H3 peak VRAM unknown；禁止把模型规格推算成实测峰值"
+        ],
+        "content": [],
+        "workflow": []
+      }
+    },
+    {
+      "candidate_id": "h3_five_clips",
+      "predictions": [
+        {
+          "metric": "total_h3_seconds",
+          "estimate_type": "derived",
+          "point_estimate": 25.0,
+          "range": null,
+          "unit": "sec",
+          "confidence": "high",
+          "evidence_refs": [
+            "scenario:alpha16_demo_a_visual",
+            "candidate:h3_five_clips"
+          ],
+          "assumptions": [
+            "候选计划中的 total_h3_seconds 是计划参数，不是实测生成结果"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "production_latency_sec",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": "sec",
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [],
+          "caveats": [
+            "没有与该候选可比的真实 execution metrics；不使用宣传数字或 mock runtime"
+          ]
+        },
+        {
+          "metric": "expected_quality_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.795,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "少量合格动态镜头可能提升视觉丰富度；未做真实 preview"
+          ],
+          "caveats": [
+            "VisualQA 失败会抵消提升"
+          ]
+        },
+        {
+          "metric": "reliability_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.25,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "provider health 与串行 GPU 任务数用于相对可靠性比较"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "latency_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.25,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "H3 clip 数仅用于相对时延排序，不表示真实秒数"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "resource_efficiency_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.25000000000000006,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "8GB VRAM + 24GB RAM 下 GPU-heavy clips 必须串行，且峰值资源仍 unknown"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "monetary_cost",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": "currency",
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [],
+          "caveats": [
+            "本地能耗/电费没有可验证计量；沿用 alpha11 unknown policy"
+          ]
+        },
+        {
+          "metric": "experiment_value_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.51,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "changed variables 数量用于粗略实验价值排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "novelty_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.61,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [],
+          "assumptions": [
+            "仅根据方案变量差异估计，不代表观众感知的新颖度"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "risk_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.79,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "规则化 provider/resource/approval/topic 风险合成；不是事故概率"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "approval_burden_score",
+          "estimate_type": "simulated",
+          "point_estimate": 0.8,
+          "range": null,
+          "unit": null,
+          "confidence": "medium",
+          "evidence_refs": [],
+          "assumptions": [
+            "审批点数量用于相对负担排序"
+          ],
+          "caveats": []
+        },
+        {
+          "metric": "platform_outcome_relative",
+          "estimate_type": "unknown",
+          "point_estimate": null,
+          "range": null,
+          "unit": null,
+          "confidence": "low",
+          "evidence_refs": [
+            "memory/episodes/20260807_175616_cb2fbe40.json",
+            "memory/episodes/20260807_225606_b78058f8.json",
+            "memory/episodes/20260807_225658_1596ed8c.json"
+          ],
+          "assumptions": [],
+          "caveats": [
+            "真实可比内容数据不足；不预测精确播放量、粉丝数、收益或留存"
+          ]
+        }
+      ],
+      "failure_paths": [
+        "H3/ComfyUI provider unavailable，视觉生成步骤会在执行前被 ProductionPlanner 阻断",
+        "provider availability risk: visual.comfyui-h3 unavailable",
+        "resource/OOM risk: H3 peak VRAM unknown",
+        "approval burden: content_review"
+      ],
+      "approval_gates_preserved": [
+        "content_review"
+      ],
+      "workflow_dry_run": {
+        "applicable": false,
+        "real_steps_executed": false
+      },
+      "evaluator_notes": {
+        "production": [
+          "H3 peak VRAM unknown；禁止把模型规格推算成实测峰值"
+        ],
+        "content": [],
+        "workflow": []
+      }
+    }
+  ],
+  "real_providers_called": false,
+  "real_metrics_written": false,
+  "generated_at": "2026-08-08T16:48:36.676911+08:00"
+}

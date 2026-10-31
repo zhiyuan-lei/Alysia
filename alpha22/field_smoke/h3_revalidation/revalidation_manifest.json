@@ -1,0 +1,75 @@
+{
+  "run_id": "alpha22_step8_1_h3_resource_revalidation",
+  "measured_at": "2026-08-09T20:31:16+08:00",
+  "status": "WAITING_FOR_GPU_AVAILABILITY",
+  "h3_real_invoked": false,
+  "comfyui_running": false,
+  "h3_process_running": false,
+  "baseline": {
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "driver": "596.21",
+    "vram_total_mib": 8188,
+    "vram_used_mib": 1434,
+    "vram_free_mib": 6516,
+    "gpu_utilization_percent": 32,
+    "temperature_c": 51,
+    "ram_total_gib": 31.85,
+    "ram_used_gib": 8.9,
+    "ram_available_gib": 22.94,
+    "pagefile_allocated_mib": 2048,
+    "pagefile_current_usage_mib": 34,
+    "pagefile_peak_usage_mib": 38
+  },
+  "gpu_ready_gate": {
+    "historical_minimal_h3_peak_vram_mib": 7678,
+    "initial_free_vram_mib": 6516,
+    "margin_to_historical_peak_mib": -1162,
+    "five_sample_free_vram_range_mib": [6445, 6527],
+    "five_sample_gpu_utilization_range_percent": [2, 37],
+    "ready": false,
+    "reason": "Only 6.4-6.5 GiB remained free across five samples; Step 8.1 explicitly forbids attempting the 7.678 GiB historical profile with only 6-7 GiB free."
+  },
+  "samples": [
+    {"timestamp": "2026-08-09T20:31:35.4844848+08:00", "vram_used_mib": 1423, "vram_free_mib": 6527, "gpu_utilization_percent": 26, "ram_used_gib": 8.87, "ram_available_gib": 22.97},
+    {"timestamp": "2026-08-09T20:31:37.7095085+08:00", "vram_used_mib": 1435, "vram_free_mib": 6515, "gpu_utilization_percent": 37, "ram_used_gib": 8.88, "ram_available_gib": 22.97},
+    {"timestamp": "2026-08-09T20:31:39.8294147+08:00", "vram_used_mib": 1433, "vram_free_mib": 6517, "gpu_utilization_percent": 24, "ram_used_gib": 8.82, "ram_available_gib": 23.02},
+    {"timestamp": "2026-08-09T20:31:42.0199454+08:00", "vram_used_mib": 1488, "vram_free_mib": 6462, "gpu_utilization_percent": 8, "ram_used_gib": 8.90, "ram_available_gib": 22.95},
+    {"timestamp": "2026-08-09T20:31:44.1561829+08:00", "vram_used_mib": 1505, "vram_free_mib": 6445, "gpu_utilization_percent": 2, "ram_used_gib": 8.86, "ram_available_gib": 22.98}
+  ],
+  "gpu_process_context": {
+    "driver_model": "WDDM",
+    "per_process_vram": "UNAVAILABLE",
+    "observed_contexts": [
+      "Windows desktop compositor and shell",
+      "Edge and WebView graphical processes",
+      "ChatGPT desktop",
+      "WeChat graphical processes",
+      "Microsoft Word",
+      "miHoYo launcher helper"
+    ],
+    "dedicated_compute_process_detected": false,
+    "user_process_terminated": false
+  },
+  "h3_initial_profile": {
+    "result": "NOT_EXECUTED",
+    "ram_peak": "NOT_MEASURED",
+    "vram_peak": "NOT_MEASURED",
+    "artifact": null,
+    "validation": "NOT_EXECUTED"
+  },
+  "optimization": {
+    "result": "NOT_REQUIRED",
+    "reason": "Optimization is only permitted after an initial real H3 run slightly exceeds the RAM budget; the GPU ready gate blocked before inference."
+  },
+  "hardware_verdict": {
+    "physical_machine_h3": "BLOCKED",
+    "h3_24g_envelope": "NOT_VERIFIED"
+  },
+  "end_to_end": "NOT_EXECUTED",
+  "qa_review": "NOT_EXECUTED",
+  "prepare_only": "NOT_EXECUTED",
+  "bilibili_upload_calls": 0,
+  "bilibili_submit_calls": 0,
+  "resume": "NOT_EXECUTED_NO_SUCCESSFUL_H3_TASK",
+  "recommendation": "KEEP_STEP8_BLOCKED"
+}

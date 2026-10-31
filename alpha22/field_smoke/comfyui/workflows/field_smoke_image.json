@@ -1,0 +1,33 @@
+{
+  "_alysia": {
+    "api_format": true,
+    "source": "Alpha22 Step 8 built-in ComfyUI health workflow",
+    "workflow_version": "field-smoke-1",
+    "defaults": {
+      "width": 64,
+      "height": 64,
+      "steps": 1
+    },
+    "bindings": {
+      "filename_prefix": "2.inputs.filename_prefix"
+    }
+  },
+  "prompt": {
+    "1": {
+      "class_type": "EmptyImage",
+      "inputs": {
+        "width": 64,
+        "height": 64,
+        "batch_size": 1,
+        "color": 13260
+      }
+    },
+    "2": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "filename_prefix": "alysia/alpha22_step8/TEST_ONLY_comfyui",
+        "images": ["1", 0]
+      }
+    }
+  }
+}

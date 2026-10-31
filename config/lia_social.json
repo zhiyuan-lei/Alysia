@@ -1,0 +1,47 @@
+{
+  "enabled": true,
+  "account_uid": "1021193962",
+  "current_account_name": "莉娅的谜题小屋",
+  "desired_account_name": "莉娅才不是笨蛋马",
+  "rename_status": "blocked_insufficient_coins",
+  "timezone": "Asia/Shanghai",
+  "start_hour": 21,
+  "window_minutes": 30,
+  "daily_actions": 6,
+  "daily_external_comments": 2,
+  "minimum_interval_seconds": 180,
+  "external_video_cooldown_days": 7,
+  "related_terms": [
+    "AI",
+    "人工智能",
+    "虚拟",
+    "原创动画",
+    "小剧场",
+    "马娘",
+    "奇幻",
+    "谜题",
+    "游戏剧情"
+  ],
+  "own_bvids": [
+    "BV1jKxu6nEaF",
+    "BV1VGxu6jEkz",
+    "BV1UTxG6jEvk",
+    "BV1ENx36fEVi",
+    "BV1Yvxg6JExp",
+    "BV12dx56HESn",
+    "BV1ddxV6aErm",
+    "BV1oRxV6AEjd",
+    "BV1uux569E2Y",
+    "BV125x56JEdq"
+  ],
+  "persona_path": "identity/lia_persona.md",
+  "ledger_path": "workspace/social/lia.sqlite3",
+  "browser_bridge": "DSH + Playwright over CDP (scripts/lia_social_bridge.py); user-authorized logged-in Edge profile at workspace/lia_batch_20261028/.publish_profile; no cookie extraction",
+  "schedule": {
+    "owner": "dsh",
+    "kind": "daily",
+    "time": "21:00",
+    "timezone": "Asia/Shanghai",
+    "job_id": "schedule-f5af4092-5130-48aa-bf8e-0c13e3bb1629"
+  }
+}

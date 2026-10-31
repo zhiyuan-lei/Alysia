@@ -29,3 +29,5 @@ def test_orchestrator_creates_text_pipeline_artifacts(tmp_path) -> None:
     assert state.milestone == "text_ready"
     for filename in expected & {"input.json", "run_state.json", "sources.json", "script.json", "storyboard.json", "metadata.json", "text_qa_report.json"}:
         json.loads((run_dir / filename).read_text(encoding="utf-8"))
+    assert (run_dir / "identity" / "prompt_context.writer.json").is_file()
+    assert (run_dir / "identity" / "prompt_context.director.json").is_file()

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "hook_5s",
+    "actions": [
+      {
+        "type": "content_structure"
+      }
+    ],
+    "changed_variables": {
+      "hook_seconds": 5
+    },
+    "held_constant": {
+      "topic": "AI Agent 的记忆为什么重要",
+      "video_duration_sec": 240
+    },
+    "required_capabilities": [],
+    "expected_approvals": [
+      "experiment_approval"
+    ],
+    "rationale": "更快进入主题"
+  },
+  {
+    "candidate_id": "hook_8s",
+    "actions": [
+      {
+        "type": "content_structure"
+      }
+    ],
+    "changed_variables": {
+      "hook_seconds": 8
+    },
+    "held_constant": {
+      "topic": "AI Agent 的记忆为什么重要",
+      "video_duration_sec": 240
+    },
+    "required_capabilities": [],
+    "expected_approvals": [
+      "experiment_approval"
+    ],
+    "rationale": "平衡背景与核心问题"
+  },
+  {
+    "candidate_id": "hook_15s",
+    "actions": [
+      {
+        "type": "content_structure"
+      }
+    ],
+    "changed_variables": {
+      "hook_seconds": 15
+    },
+    "held_constant": {
+      "topic": "AI Agent 的记忆为什么重要",
+      "video_duration_sec": 240
+    },
+    "required_capabilities": [],
+    "expected_approvals": [
+      "experiment_approval"
+    ],
+    "rationale": "提供更多上下文"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "failure_id": "failure_2ae7fc4fd03a461c",
+  "action": "retry_with_backoff",
+  "reason": "故障可重试且未超过阶段上限",
+  "retry_after_sec": 1.0,
+  "fallback_ref": null,
+  "checkpoint_id": null,
+  "artifact_owner": null,
+  "quality_impact": null,
+  "requires_human": false,
+  "recovery_round": 0,
+  "decided_at": "2026-08-08T20:22:46.902439+08:00"
+}

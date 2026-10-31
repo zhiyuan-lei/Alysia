@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {bundle} from '@remotion/bundler';
+import {renderMedia,renderStill,selectComposition} from '@remotion/renderer';
+const root=path.resolve(process.argv[2]);
+const out=path.join(root,'character_review');
+fs.mkdirSync(out,{recursive:true});
+const serveUrl=await bundle({entryPoint:path.join(path.dirname(fileURLToPath(import.meta.url)),'index.jsx'),publicDir:root});
+const sheet=await selectComposition({serveUrl,id:'LiaCuteSheet'});
+await renderStill({serveUrl,composition:sheet,frame:0,output:path.join(out,'lia_expression_sheet.png'),imageFormat:'png'});
+const composition=await selectComposition({serveUrl,id:'LiaCutePreview'});
+for(let i=0;i<6;i++)await renderStill({serveUrl,composition,frame:i*120+45,output:path.join(out,`pose_${i+1}.png`),imageFormat:'png',scale:.5});
+let last=-1;
+await renderMedia({serveUrl,composition,codec:'h264',crf:20,pixelFormat:'yuv420p',concurrency:4,outputLocation:path.join(out,'lia_cute_motion_preview.mp4'),onProgress:({progress})=>{const p=Math.floor(progress*10)*10;if(p!==last){last=p;console.log(`PREVIEW ${p}%`);}}});
+console.log('CUTE_PREVIEW_READY');

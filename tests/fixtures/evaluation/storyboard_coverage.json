@@ -1,0 +1,10 @@
+{
+  "good": {
+    "expected_sections": ["hook", "definition", "gap", "conclusion"],
+    "scenes": [{"section_id": "hook"}, {"section_id": "definition"}, {"section_id": "gap"}, {"section_id": "conclusion"}]
+  },
+  "missing": {
+    "expected_sections": ["hook", "definition", "gap", "conclusion"],
+    "scenes": [{"section_id": "hook"}, {"section_id": "definition"}, {"section_id": "gap"}]
+  }
+}

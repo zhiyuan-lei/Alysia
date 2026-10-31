@@ -1,0 +1,22 @@
+{
+  "1": {
+    "class_type": "EmptyImage",
+    "inputs": {"width": 320, "height": 180, "batch_size": 1, "color": 3162495}
+  },
+  "2": {
+    "class_type": "RepeatImageBatch",
+    "inputs": {"image": ["1", 0], "amount": 24}
+  },
+  "3": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {"value": "alysia/comfyui_api_calibration"}
+  },
+  "4": {
+    "class_type": "CreateVideo",
+    "inputs": {"images": ["2", 0], "fps": 24}
+  },
+  "5": {
+    "class_type": "SaveVideo",
+    "inputs": {"video": ["4", 0], "filename_prefix": ["3", 0], "format": "mp4", "codec": "auto"}
+  }
+}

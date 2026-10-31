@@ -1,0 +1,18 @@
+{
+  "good": {
+    "approved_skill_only": true,
+    "publish_approval_preserved": true,
+    "budget_respected": true,
+    "action_limit_respected": true,
+    "knowledge_stale_blocked": true,
+    "provider_resource_constraints": true
+  },
+  "bad": {
+    "approved_skill_only": false,
+    "publish_approval_preserved": false,
+    "budget_respected": false,
+    "action_limit_respected": false,
+    "knowledge_stale_blocked": false,
+    "provider_resource_constraints": false
+  }
+}

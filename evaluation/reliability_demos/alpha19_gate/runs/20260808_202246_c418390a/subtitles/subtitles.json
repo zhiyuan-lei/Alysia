@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "total_duration_sec": 4.695375,
+  "source": "deterministic",
+  "segments": [
+    {
+      "id": 1,
+      "scene_id": "s1",
+      "start_sec": 0.0,
+      "end_sec": 2.739,
+      "text": "配音失败后，只重新生成音频、",
+      "source": "deterministic"
+    },
+    {
+      "id": 2,
+      "scene_id": "s1",
+      "start_sec": 2.739,
+      "end_sec": 4.695,
+      "text": "字幕和必要的编辑产物",
+      "source": "deterministic"
+    }
+  ]
+}

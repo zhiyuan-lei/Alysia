@@ -1,0 +1,24 @@
+{
+  "run_id": "20260807_175616_cb2fbe40",
+  "platform": "bilibili",
+  "collected_at": "2026-08-07T20:00:00+08:00",
+  "source": "mock",
+  "impressions": 10000,
+  "views": 420,
+  "likes": 28,
+  "comments": 7,
+  "favorites": 19,
+  "shares": 4,
+  "followers_gained": 3,
+  "avg_view_duration_sec": 31.2,
+  "avg_view_percentage": 0.38,
+  "completion_rate": 0.31,
+  "ctr": 0.042,
+  "publish_time": null,
+  "retention_points": [
+    {"second": 0, "percentage": 1.0},
+    {"second": 10, "percentage": 0.72},
+    {"second": 30, "percentage": 0.58},
+    {"second": 60, "percentage": 0.35}
+  ]
+}

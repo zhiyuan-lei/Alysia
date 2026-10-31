@@ -1,0 +1,16 @@
+{
+  "title": "Alysia 本地创作 H3 闭环实测",
+  "scenes": [
+    {
+      "scene_id": "blue_blossoms",
+      "backend": "h3_staged_i2v",
+      "reference_image": "D:/Alysia/alpha22/field_smoke/h3_blink_720p/run_20261001_233242/reference_canvas.png",
+      "prompt": "A silver-haired anime woman reclines beneath a blue parasol in a room full of pale blue blossoms. Keep the reference composition, face, clothing, hands, legs and architecture consistent. The camera stays locked. She blinks once; a few petals drift downward, and loose strands of hair move gently in a light breeze. Motion is subtle and continuous. No cuts, no new objects, no extra limbs, no dialogue.",
+      "narration": "花瓣缓缓飘落，她轻轻眨了眨眼。",
+      "requested_duration_sec": 3.75
+    }
+  ],
+  "width": 1280,
+  "height": 720,
+  "fps": 24
+}

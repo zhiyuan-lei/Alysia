@@ -1,0 +1,18 @@
+{
+  "id": "identity_change_8de41c62d0f0",
+  "identity_version": 1,
+  "proposed_change": {
+    "content_philosophy": "证据优先，明确区分事实、推断与待验证假设；证据不足时明确说明未知与限制"
+  },
+  "reason": "alpha10 身份审计候选；尚未应用。",
+  "evidence": [
+    "manual:alpha10_identity_review"
+  ],
+  "expected_effect": "提高创作者身份与内容表达的一致性",
+  "risk": "未经跨视频验证的变更可能缩窄表达空间",
+  "approval_required": true,
+  "status": "pending",
+  "approved_by": null,
+  "created_at": "2026-08-07T21:36:53.667974+08:00",
+  "approved_at": null
+}

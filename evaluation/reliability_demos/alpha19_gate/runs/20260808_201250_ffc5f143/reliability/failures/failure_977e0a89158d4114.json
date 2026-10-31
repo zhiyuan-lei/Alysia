@@ -1,0 +1,24 @@
+{
+  "failure_id": "failure_977e0a89158d4114",
+  "run_id": "20260808_201250_ffc5f143",
+  "workflow_id": null,
+  "stage": "h3_visual",
+  "agent": null,
+  "worker": null,
+  "provider": "comfyui-h3",
+  "category": "oom",
+  "message": "CUDA out of memory in approved low-resource profile",
+  "evidence_refs": [],
+  "occurred_at": "2026-08-08T20:12:50.715585+08:00",
+  "recoverable": true,
+  "retryable": true,
+  "retry_count": 1,
+  "max_retries": 2,
+  "suggested_action": "由 RecoveryPolicyEngine 生成有限恢复决策",
+  "fallback_refs": [
+    "visual.remotion"
+  ],
+  "status": "recovered",
+  "quality_impact": null,
+  "recovery_round": 0
+}

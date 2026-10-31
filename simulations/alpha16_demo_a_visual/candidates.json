@@ -1,0 +1,82 @@
+[
+  {
+    "candidate_id": "remotion_only",
+    "actions": [
+      {
+        "type": "visual_route",
+        "provider": "remotion"
+      }
+    ],
+    "changed_variables": {
+      "h3_clip_count": 0,
+      "total_h3_seconds": 0
+    },
+    "held_constant": {
+      "topic": "为什么 AI Agent 还不是 AGI",
+      "video_duration_sec": 240,
+      "resolution": "1080p output"
+    },
+    "required_capabilities": [
+      "visual_remotion",
+      "video_qa"
+    ],
+    "expected_approvals": [
+      "content_review"
+    ],
+    "rationale": "最低资源、最高当前可执行性"
+  },
+  {
+    "candidate_id": "h3_two_clips",
+    "actions": [
+      {
+        "type": "visual_route",
+        "provider": "visual.comfyui-h3"
+      }
+    ],
+    "changed_variables": {
+      "h3_clip_count": 2,
+      "total_h3_seconds": 10
+    },
+    "held_constant": {
+      "topic": "为什么 AI Agent 还不是 AGI",
+      "video_duration_sec": 240,
+      "resolution": "1080p output"
+    },
+    "required_capabilities": [
+      "visual_h3_local",
+      "visual_qa",
+      "video_qa"
+    ],
+    "expected_approvals": [
+      "content_review"
+    ],
+    "rationale": "有限视觉增强"
+  },
+  {
+    "candidate_id": "h3_five_clips",
+    "actions": [
+      {
+        "type": "visual_route",
+        "provider": "visual.comfyui-h3"
+      }
+    ],
+    "changed_variables": {
+      "h3_clip_count": 5,
+      "total_h3_seconds": 25
+    },
+    "held_constant": {
+      "topic": "为什么 AI Agent 还不是 AGI",
+      "video_duration_sec": 240,
+      "resolution": "1080p output"
+    },
+    "required_capabilities": [
+      "visual_h3_local",
+      "visual_qa",
+      "video_qa"
+    ],
+    "expected_approvals": [
+      "content_review"
+    ],
+    "rationale": "更高视觉丰富度但资源与失败路径更多"
+  }
+]

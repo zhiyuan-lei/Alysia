@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "model": "D:\\ComfyUI\\models\\text_encoders\\qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+  "model_size_bytes": 15687142551,
+  "device": "cpu",
+  "dtype_quantization": "deployed NVFP4-AWQ component",
+  "tokenizer_config_loaded": true,
+  "short_encode_completed": true,
+  "elapsed_seconds": 50.687
+}

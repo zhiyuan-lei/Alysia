@@ -1,0 +1,62 @@
+{
+  "scenario_id": "alpha16_demo_c_recipe",
+  "ranked_candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "fast_draft",
+      "score": 0.7849
+    },
+    {
+      "rank": 2,
+      "candidate_id": "standard_quality",
+      "score": 0.7839
+    }
+  ],
+  "score_breakdown": [
+    {
+      "candidate_id": "fast_draft",
+      "expected_quality": 0.52,
+      "reliability": 0.9,
+      "latency": 0.85,
+      "resource_use": 0.95,
+      "monetary_cost": null,
+      "approval_burden": 1.0,
+      "risk": 0.15,
+      "experiment_value": 0.51,
+      "novelty": 0.61,
+      "total_score": 0.7849,
+      "known_fraction": 0.8889
+    },
+    {
+      "candidate_id": "standard_quality",
+      "expected_quality": 0.72,
+      "reliability": 0.9,
+      "latency": 0.62,
+      "resource_use": 0.95,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.19,
+      "experiment_value": 0.51,
+      "novelty": 0.61,
+      "total_score": 0.7839,
+      "known_fraction": 0.8889
+    }
+  ],
+  "dominant_tradeoffs": [
+    "推荐 fast_draft；quality=0.52, reliability=0.9, risk=0.15, known_fraction=0.8889",
+    "领先差异小于 0.01；证据不足以支持唯一选择，保持 no_recommendation",
+    "总分只聚合已知/模拟的可解释维度；unknown 不按 0 伪造，但会降低 known_fraction"
+  ],
+  "uncertainty": [
+    "fast_draft: monetary_cost_score=unknown",
+    "standard_quality: monetary_cost_score=unknown"
+  ],
+  "recommendation": "no_recommendation",
+  "reasons_not_selected": {
+    "standard_quality": [
+      "综合可解释分数 0.7839 低于 0.7849",
+      "风险更高"
+    ]
+  },
+  "compared_at": "2026-08-08T16:48:40.413583+08:00"
+}

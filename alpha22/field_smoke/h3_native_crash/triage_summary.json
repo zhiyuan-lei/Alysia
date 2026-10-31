@@ -1,0 +1,53 @@
+{
+  "run_id": "alpha22_step8_4_h3_native_runtime_triage",
+  "status": "BLOCKED",
+  "root_cause_class": "UNKNOWN_NATIVE_CRASH",
+  "runtime_baseline": {
+    "windows": "Windows 11 10.0.22631",
+    "python": "CPython 3.12.12 AMD64",
+    "comfyui_python": "D:\\ComfyUI\\.venv\\Scripts\\python.exe",
+    "python_base": "<USERPROFILE>\\AppData\\Roaming\\uv\\python\\cpython-3.12.12-windows-x86_64-none\\python.exe",
+    "torch": "2.13.0+cu130 AMD64",
+    "torch_build_cuda": "13.0",
+    "torch_cuda_available": true,
+    "cpu": "Intel Core i5-14600KF, AMD64, AVX2, 14 cores / 20 logical processors",
+    "torch_cpu_dll": "D:\\ComfyUI\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+    "torch_cpu_dll_sha256": "9a046ce316519c0d51c5a1a8e5e732aeb3716973edfdc9ffd29805b69b7ac36c"
+  },
+  "dependency_integrity": {
+    "numpy": "2.4.4 import PASS",
+    "torchvision": "0.28.0+cu130 import PASS",
+    "torchaudio": "2.11.0+cu130 import PASS",
+    "safetensors": "0.8.0 import PASS",
+    "actual_loaded_torch_cpu_dll_count": 1,
+    "foreign_torch_dll_loaded": false,
+    "pythonhome": null,
+    "pythonpath": null,
+    "dll_environment_conflict_supported_by_evidence": false
+  },
+  "layered_tests": {
+    "tiny_torch_pre_fix": "PASS",
+    "real_h3_text_encoder_pre_fix": "PASS",
+    "one_minimal_runtime_fix": "REMOVE_CPU_VAE",
+    "tiny_torch_post_fix": "PASS",
+    "real_h3_text_encoder_post_fix": "PASS",
+    "one_post_fix_full_h3": "FAIL_NATIVE_ACCESS_VIOLATION",
+    "additional_full_h3_attempts": 0
+  },
+  "native_crash": {
+    "resolved": false,
+    "exception": "0xc0000005",
+    "faulting_module": "torch_cpu.dll",
+    "fault_offset": "0x0000000008e4a279",
+    "original_and_post_fix_match": true,
+    "artifact": null,
+    "cuda_oom": false,
+    "system_ram_oom": false
+  },
+  "hardware_verdict": {
+    "physical_machine_h3": "BLOCKED",
+    "h3_8gb_vram_envelope": "NOT_VERIFIED",
+    "h3_24g_envelope": "NOT_VERIFIED"
+  },
+  "recommendation": "H3_DEPLOYMENT_CHANGE_REQUIRED"
+}

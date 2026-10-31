@@ -1,0 +1,51 @@
+{
+  "prompt_id": "e6dcab71-5cbc-4afb-81b0-6abb310fb7a0",
+  "elapsed_sec": 0.375,
+  "baseline_vram_mib": 792,
+  "sampled_peak_vram_mib": 792,
+  "sampled_incremental_vram_mib": 0,
+  "baseline_system_ram_mib": 9227,
+  "sampled_peak_system_ram_mib": 9242,
+  "outputs": {
+    "5": {
+      "images": [
+        {
+          "filename": "comfyui_api_calibration_00002_.mp4",
+          "subfolder": "alysia",
+          "type": "output"
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "e6dcab71-5cbc-4afb-81b0-6abb310fb7a0",
+          "timestamp": 1790911374936
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "e6dcab71-5cbc-4afb-81b0-6abb310fb7a0",
+          "timestamp": 1790911374937
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "e6dcab71-5cbc-4afb-81b0-6abb310fb7a0",
+          "timestamp": 1790911375165
+        }
+      ]
+    ]
+  }
+}

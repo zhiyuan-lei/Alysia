@@ -1,0 +1,109 @@
+{
+  "run_id": "alpha22_step8_field_smoke",
+  "started_at": "2026-08-09T20:21:20.616996+08:00",
+  "finished_at": "2026-08-09T20:23:23.3981367+08:00",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "vram_total_mib": 8188,
+    "physical_ram_bytes": 34193965056,
+    "physical_ram_gib": 31.85,
+    "configured_ram_budget_gib": 24,
+    "disk_c_free_gib": 54.66,
+    "disk_d_free_gib": 243.55
+  },
+  "stack": {
+    "model_tree_bytes": 42470615823,
+    "model_tree_gib": 39.554,
+    "meaning": "verified model disk footprint, not simultaneous resident memory",
+    "low_vram": true,
+    "sequential_gpu_required": true,
+    "historical_minimal_h3_peak_vram_mib": 7678,
+    "historical_minimal_h3_peak_ram_mib": 25919
+  },
+  "source_provenance": {
+    "comfyui_adapter": "REAL",
+    "comfyui_service": "REAL",
+    "h3_adapter": "NOT_INVOKED_RESOURCE_BLOCK",
+    "h3_runtime": "NOT_INVOKED_RESOURCE_BLOCK",
+    "publisher": "NOT_EXECUTED_BECAUSE_END_TO_END_BLOCKED",
+    "bilibili_remote_calls": 0
+  },
+  "comfyui_real": {
+    "result": "PASS",
+    "model_loaded": false,
+    "workflow": "built-in EmptyImage -> SaveImage",
+    "prompt_id": "695290d2-3774-47b6-924e-a43c5a63f5d5",
+    "mock": false,
+    "artifact_validation": "VALID"
+  },
+  "h3_real": {
+    "result": "BLOCKED_RESOURCE_LIMIT",
+    "invoked": false,
+    "reason": "2277-2391 MiB system-level free VRAM versus 7678 MiB existing minimum-profile peak; unrelated user GPU workload was preserved"
+  },
+  "comfyui_artifact": {
+    "path": "D:\\Alysia\\alpha22\\field_smoke\\comfyui\\TEST_ONLY_comfyui_stage_a.png",
+    "size_bytes": 434,
+    "sha256": "fb2b62bf9a61f0a6d81175fba73fe1657cf4929e8d9886205cd1a8a39f6fe83b",
+    "format": "PNG",
+    "width": 64,
+    "height": 64,
+    "validation": "VALID"
+  },
+  "h3_artifact": null,
+  "final_video_artifact": null,
+  "thumbnail_artifact": null,
+  "qa_id": null,
+  "review_id": null,
+  "publish_package_ref": null,
+  "resource_metrics": {
+    "ram_baseline_used_bytes": 16965533696,
+    "ram_stage_a_peak_used_bytes": 17040637952,
+    "ram_stage_a_after_used_bytes": 17015087104,
+    "vram_baseline_used_mib": 5672,
+    "vram_stage_a_peak_used_mib": 5673,
+    "vram_stage_a_after_used_mib": 5668,
+    "vram_after_service_stop_used_mib": 5563,
+    "h3_peak": "NOT_MEASURED_NOT_INVOKED"
+  },
+  "resume": {
+    "result": "PASS",
+    "successful_real_task_regenerated": false,
+    "hash_unchanged": true,
+    "mtime_unchanged": true,
+    "comfyui_invocation_count_before": 1,
+    "comfyui_invocation_count_after": 1
+  },
+  "disk_growth": {
+    "field_smoke_baseline_bytes": "UNAVAILABLE_DIRECTORY_CREATED_FOR_STEP_8",
+    "field_smoke_current_bytes_before_reports": 22989,
+    "known_new_comfyui_source_artifact_bytes": 434,
+    "known_new_comfyui_evidence_copy_bytes": 434,
+    "comfyui_temp_growth_bytes": "UNAVAILABLE",
+    "model_cache_modified": false
+  },
+  "cleanup": {
+    "provider_unload_called": true,
+    "resource_lock_released": true,
+    "comfyui_service_stopped": true,
+    "orphan_comfyui_process": false,
+    "orphan_h3_process": false,
+    "stale_running_task": false,
+    "stale_publish_state": false
+  },
+  "secret_scan": {
+    "field_smoke_scanned_files": 8,
+    "checkpoints_scanned_files": 9,
+    "scanner_findings": 0,
+    "supplemental_sensitive_assignment_findings": 0,
+    "result": "PASS"
+  },
+  "result": "BLOCKED_RESOURCE_LIMIT",
+  "end_to_end": "NOT_EXECUTED_H3_PREREQUISITE_BLOCKED",
+  "known_limitations": [
+    "No fresh real H3 invocation occurred in Step 8.",
+    "The configured 24 GiB RAM budget was exceeded by historical minimum-profile H3 evidence.",
+    "Real-artifact QA, human review, and PREPARE_ONLY were not eligible to run because H3 did not pass.",
+    "Bilibili LIVE, remote reconciliation, metrics, and comments remain not verified."
+  ]
+}

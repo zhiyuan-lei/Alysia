@@ -1,0 +1,14 @@
+{
+  "good": {
+    "hook": "为什么 Agent 仍然不是 AGI？",
+    "sections": ["界定概念", "解释差距", "给出判断标准"],
+    "factual_sections": [{"id": "definition", "claim_refs": ["claim-agent"]}],
+    "conclusion": "行动、验证与持续学习形成闭环后，系统才更接近通用智能。"
+  },
+  "bad": {
+    "hook": "今天谈谈 Agent",
+    "sections": ["介绍"],
+    "factual_sections": [{"id": "definition", "claim_refs": []}],
+    "conclusion": ""
+  }
+}

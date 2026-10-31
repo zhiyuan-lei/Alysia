@@ -1,0 +1,179 @@
+{
+  "status": "GENERATED_PENDING_VISUAL_REVIEW",
+  "stages": [
+    {
+      "phase": "keyframe",
+      "exit_code": 0,
+      "elapsed": 6.030999999995402,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1214,
+          "free_mib": 6736
+        },
+        "system_used": 8654692352
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1212,
+          "free_mib": 6738
+        },
+        "system_used": 8657502208
+      },
+      "stop_reason": null
+    },
+    {
+      "phase": "encode",
+      "exit_code": 0,
+      "elapsed": 23.79699999999866,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1212,
+          "free_mib": 6738
+        },
+        "system_used": 8656023552
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1210,
+          "free_mib": 6740
+        },
+        "system_used": 9030189056
+      },
+      "stop_reason": null
+    },
+    {
+      "phase": "sample",
+      "exit_code": 0,
+      "elapsed": 957.5310000000027,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1210,
+          "free_mib": 6740
+        },
+        "system_used": 9028521984
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1075,
+          "free_mib": 6875
+        },
+        "system_used": 8645820416
+      },
+      "stop_reason": null
+    },
+    {
+      "phase": "decode",
+      "exit_code": 0,
+      "elapsed": 90.875,
+      "baseline": {
+        "gpu": {
+          "used_mib": 1075,
+          "free_mib": 6875
+        },
+        "system_used": 8649490432
+      },
+      "after": {
+        "gpu": {
+          "used_mib": 1075,
+          "free_mib": 6875
+        },
+        "system_used": 9231245312
+      },
+      "stop_reason": null
+    }
+  ],
+  "width": 1280,
+  "height": 736,
+  "frames": 90,
+  "steps": 20,
+  "reference_sha256": "efe0b0fc79dcc450a07b7379ed11b5921fd26e50bc24d70d1ac333eab79512bd",
+  "prompt": "Animate the two-second reference image into a coherent 3.75-second shot. <Picture 1> is the first frame and <Picture 2> is the final frame; both depict the same silver-haired blue-eyed anime woman reclining beneath her ornate blue umbrella in the blue blossom-filled room. Preserve the same face, hairstyle, dress, jewelry, body proportions, limbs, umbrella, architecture, blue color palette, art style, and overall framing throughout. The camera is completely locked.\n\nAnimate four small, clearly visible actions with natural timing. White and pale-blue blossom petals detach from the flowering branches and drift slowly downward across the foreground, passing in front of the stationary background. A gentle breeze causes a few loose strands of her long silver hair and the thin translucent fabric near her shoulders to sway softly; do not move the whole head. Around the middle, she closes both blue eyes once and opens them again. Her raised hand beside her head slightly rotates at the wrist and gently flexes its fingers, then returns to the original pose. Her extended front leg subtly bends at the knee, her ankle shifts and her foot changes position by a few centimeters, then returns to the original relaxed pose. The hand holding the umbrella remains connected to the handle, with a tiny natural finger adjustment. By the final frame her eyes are open and her pose matches the reference again.\n\nMotion is gentle and continuous: petals and hair move throughout, the blink is brief, the hand and leg shift after the blink. Keep both arms, both legs, fingers, clothing details and facial anatomy consistent. No new objects, no extra limbs, no camera pan or zoom, no cuts, no dialogue. Silent video.\n",
+  "test_only": true,
+  "last_keyframe": true,
+  "output_frames": 90,
+  "artifact": "D:\\Alysia\\alpha22\\field_smoke\\h3_blink_720p\\run_20261001_233242\\H3_motion_720p_TEST_ONLY.mp4",
+  "bytes": 4047907,
+  "sha256": "7e9f517bdc5ef2134f9994063f41d6f27970f17297c8667d25fad1e24a578822",
+  "ffprobe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.64001f",
+        "width": 1280,
+        "height": 720,
+        "coded_width": 1280,
+        "coded_height": 720,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 46080,
+        "duration": "3.750000",
+        "bit_rate": "8631315",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "90",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc63.1.100 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "D:\\Alysia\\alpha22\\field_smoke\\h3_blink_720p\\run_20261001_233242\\H3_motion_720p_TEST_ONLY.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "3.750000",
+      "size": "4047907",
+      "bit_rate": "8635534",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf63.1.100"
+      }
+    }
+  }
+}

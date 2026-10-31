@@ -1,0 +1,13 @@
+# Findings
+
+- User supplied 5504x3072 anime illustration: silver-haired, blue-eyed character holding an umbrella, intricate icy-blue costume, blue floral architecture. Preserve identity, composition, hand positions, outfit and scene.
+- Existing MiniMaxH3ImageToVideo encodes prompt plus image via Qwen3VL and adds a VAE keyframe latent at index zero. Splitting these operations across workers preserves its conditioning structure.
+- Canvas multiples of 32; frame count 17k+5. Native 1280x736, 56 frames; final crop/trim is not upscaling.
+- Earlier real dynamic smoke succeeded below 6 GiB sampled whole-device GPU usage. No guarantee of high-resolution behavior before measurement.
+- Downloaded workflow lessons: block offload and tiled VAE, not copying incompatible Wan nodes.
+
+First output: valid native 720p/48-frame/2-second video, all compute stages pass, sampled device VRAM max 4630 MiB. Visual review of all 48 eye crops: eyes start open, close around frames 21-24 and remain closed through frame 47. Thus NOT a complete blink; do not label visual QA PASS. Need enforce return to open eyes, e.g. same supplied reference as last keyframe, not a fake reverse-loop edit.
+
+Second output run_20261001_230236: 56-frame eye sheet confirms one slow blink, both eyes fully closed in middle and open again near end. Original supplied image serves both first and last keyframe. No image-generator substitution, synthetic eyelid animation, reverse playback or upscaling. Actual 1280x720, 24 fps, 2.333333 s; file 1,688,061 bytes; SHA256 23bc51da32c5bb158a7fdffb9cbadaceeb6aa908bb7f667fbaef1d4ea5d9b88a. Whole-device sampled peak 5309 MiB; system RAM sampled peak 13005.477 MiB; owned process-tree private peak 8117.297 MiB; RSS peak 4490.934 MiB. Four compute stages total 592.514 seconds excluding preparation/packaging. Small facial/hair variation remains; not pixel-perfect animation.
+
+Expanded motion run_20261001_233242: H3 generated 1280x720, 90 frames, 24 fps, 3.75 seconds. Actual `H3_motion_720p_TEST_ONLY.mp4`, SHA256 7e9f517bdc5ef2134f9994063f41d6f27970f17297c8667d25fad1e24a578822. Video format and bitstream pass. Four stage time 1078.234 seconds including worker startup/exit; one real 20-step diffusion invocation, with first/last reference keyframes. Whole-device sampled VRAM peak 5447 MiB; system RAM sampled peak 13105.921875 MiB; owned process private peak 9067.609375 MiB. Full/face/hand/leg contact sheets visually reviewed: one open/closed/open blink and descending bright petals clearly visible; hair sways slightly, raised hand/fingers move subtly, forward ankle/foot repositions slightly. Character and framing stay recognizable. Do not portray the hand/leg changes as large gestures; see visual_review.json.

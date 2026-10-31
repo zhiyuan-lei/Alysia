@@ -1,0 +1,10 @@
+{
+  "baseline_id": "baseline_alpha17_75261fe47f27",
+  "blocking_findings": [],
+  "evaluation_id": "eval_9b5b4d65a12735189120",
+  "evidence_refs": [],
+  "invariant_failures": [],
+  "promotion_allowed": true,
+  "status": "PASS",
+  "warnings": []
+}

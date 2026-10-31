@@ -1,0 +1,10 @@
+{
+  "method": "Chronological contact sheets of full scene, face, hands, and legs sampled through all 90 frames",
+  "blink": "PASS: open, fully closed, open",
+  "petals": "PASS: bright petals visibly descend and cross the scene",
+  "hair": "PASS_SUBTLE: loose strands shift slightly while head and framing remain stable",
+  "hands": "PASS_SUBTLE: finger and wrist positions vary slightly, with umbrella grip largely maintained",
+  "leg": "PASS_SUBTLE: forward ankle and foot change position slightly, returning close to initial crossed pose",
+  "overall": "PASS_TEST_ONLY: all requested motion types are visible, but hand and leg changes are deliberately small",
+  "limitations": "Visual qualitative review; no quantitative joint-tracking or production-quality acceptance claim"
+}

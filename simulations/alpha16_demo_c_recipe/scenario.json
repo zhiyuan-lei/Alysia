@@ -1,0 +1,88 @@
+{
+  "scenario_id": "alpha16_demo_c_recipe",
+  "objective": "对 validated scene-selection recipe 做 fast draft 与 standard quality dry-run profile 比较",
+  "baseline_state_refs": [
+    "memory/workflows/recipe_a06f7ced1b568b65.json"
+  ],
+  "assumptions": [
+    {
+      "assumption_id": "single_validated_recipe",
+      "statement": "当前仓库只有一个 validated recipe，因此比较其两个执行 profile，不虚构第二个 validated recipe",
+      "source": "memory/workflows registry",
+      "confidence": "high"
+    }
+  ],
+  "controllable_variables": {
+    "quality_profile": [
+      "draft",
+      "standard"
+    ]
+  },
+  "fixed_variables": {
+    "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+    "real_steps_executed": false
+  },
+  "candidate_actions": [
+    {
+      "candidate_id": "fast_draft",
+      "actions": [
+        {
+          "type": "workflow_recipe_dry_run"
+        }
+      ],
+      "changed_variables": {
+        "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+        "quality_profile": "draft"
+      },
+      "required_capabilities": [
+        "scene_selection"
+      ],
+      "rationale": "快速内部草案"
+    },
+    {
+      "candidate_id": "standard_quality",
+      "actions": [
+        {
+          "type": "workflow_recipe_dry_run"
+        }
+      ],
+      "changed_variables": {
+        "workflow_recipe_id": "recipe_a06f7ced1b568b65",
+        "quality_profile": "standard"
+      },
+      "required_capabilities": [
+        "scene_selection"
+      ],
+      "expected_approvals": [
+        "content_review"
+      ],
+      "rationale": "标准质量门与人工审核"
+    }
+  ],
+  "horizon": "single_workflow",
+  "resource_budget": {
+    "max_local_vram_mb": 7600,
+    "max_ram_mb": 24576,
+    "max_wall_time_sec": null,
+    "max_cloud_cost": null,
+    "allow_unknown_resources": false
+  },
+  "approval_policy": {
+    "required_gates": [],
+    "allow_auto_select": false,
+    "major_replan": false,
+    "identity_change": false,
+    "real_publish": false
+  },
+  "evaluation_metrics": [
+    "workflow_valid",
+    "quality",
+    "latency",
+    "approval_burden"
+  ],
+  "uncertainty_notes": [
+    "dry-run 不执行 recipe step，不生成真实 artifact"
+  ],
+  "source_task_ref": null,
+  "created_at": "2026-08-08T18:00:00+08:00"
+}

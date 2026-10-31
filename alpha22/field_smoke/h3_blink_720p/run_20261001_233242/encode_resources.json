@@ -1,0 +1,452 @@
+{
+  "phase": "encode",
+  "exit_code": 0,
+  "elapsed": 23.79699999999866,
+  "baseline": {
+    "gpu": {
+      "used_mib": 1212,
+      "free_mib": 6738
+    },
+    "system_used": 8656023552
+  },
+  "after": {
+    "gpu": {
+      "used_mib": 1210,
+      "free_mib": 6740
+    },
+    "system_used": 9030189056
+  },
+  "stop_reason": null,
+  "samples": [
+    {
+      "elapsed": 0.01600000000325963,
+      "gpu": {
+        "used_mib": 1212,
+        "free_mib": 6738
+      },
+      "rss": 6393856,
+      "private": 1372160,
+      "system_used": 8672878592
+    },
+    {
+      "elapsed": 0.5630000000019209,
+      "gpu": {
+        "used_mib": 1203,
+        "free_mib": 6747
+      },
+      "rss": 476647424,
+      "private": 1544335360,
+      "system_used": 9147084800
+    },
+    {
+      "elapsed": 1.1090000000040163,
+      "gpu": {
+        "used_mib": 1202,
+        "free_mib": 6748
+      },
+      "rss": 520994816,
+      "private": 1588244480,
+      "system_used": 9186099200
+    },
+    {
+      "elapsed": 1.6880000000019209,
+      "gpu": {
+        "used_mib": 1202,
+        "free_mib": 6748
+      },
+      "rss": 587108352,
+      "private": 1652150272,
+      "system_used": 9268211712
+    },
+    {
+      "elapsed": 2.2340000000040163,
+      "gpu": {
+        "used_mib": 1286,
+        "free_mib": 6664
+      },
+      "rss": 736272384,
+      "private": 1942888448,
+      "system_used": 9419112448
+    },
+    {
+      "elapsed": 2.7810000000026776,
+      "gpu": {
+        "used_mib": 1302,
+        "free_mib": 6648
+      },
+      "rss": 793501696,
+      "private": 2635882496,
+      "system_used": 9462116352
+    },
+    {
+      "elapsed": 3.3280000000013388,
+      "gpu": {
+        "used_mib": 1303,
+        "free_mib": 6647
+      },
+      "rss": 804352000,
+      "private": 2646634496,
+      "system_used": 9539198976
+    },
+    {
+      "elapsed": 3.875,
+      "gpu": {
+        "used_mib": 1303,
+        "free_mib": 6647
+      },
+      "rss": 835584000,
+      "private": 2673057792,
+      "system_used": 9538019328
+    },
+    {
+      "elapsed": 4.421999999998661,
+      "gpu": {
+        "used_mib": 1285,
+        "free_mib": 6665
+      },
+      "rss": 1080659968,
+      "private": 2875428864,
+      "system_used": 9871609856
+    },
+    {
+      "elapsed": 4.969000000004598,
+      "gpu": {
+        "used_mib": 1268,
+        "free_mib": 6682
+      },
+      "rss": 2046320640,
+      "private": 3413434368,
+      "system_used": 10823585792
+    },
+    {
+      "elapsed": 5.5,
+      "gpu": {
+        "used_mib": 1268,
+        "free_mib": 6682
+      },
+      "rss": 3043586048,
+      "private": 3951374336,
+      "system_used": 11848445952
+    },
+    {
+      "elapsed": 6.063000000001921,
+      "gpu": {
+        "used_mib": 1222,
+        "free_mib": 6728
+      },
+      "rss": 3999121408,
+      "private": 4491005952,
+      "system_used": 12743503872
+    },
+    {
+      "elapsed": 6.625,
+      "gpu": {
+        "used_mib": 2056,
+        "free_mib": 5894
+      },
+      "rss": 4228366336,
+      "private": 5529563136,
+      "system_used": 12965265408
+    },
+    {
+      "elapsed": 7.171999999998661,
+      "gpu": {
+        "used_mib": 2626,
+        "free_mib": 5324
+      },
+      "rss": 4702765056,
+      "private": 6723686400,
+      "system_used": 13449191424
+    },
+    {
+      "elapsed": 7.75,
+      "gpu": {
+        "used_mib": 2626,
+        "free_mib": 5324
+      },
+      "rss": 4635123712,
+      "private": 6589620224,
+      "system_used": 13438398464
+    },
+    {
+      "elapsed": 8.31300000000192,
+      "gpu": {
+        "used_mib": 2626,
+        "free_mib": 5324
+      },
+      "rss": 4703391744,
+      "private": 6724399104,
+      "system_used": 13465423872
+    },
+    {
+      "elapsed": 8.859000000004016,
+      "gpu": {
+        "used_mib": 3744,
+        "free_mib": 4206
+      },
+      "rss": 4689858560,
+      "private": 7988432896,
+      "system_used": 13470687232
+    },
+    {
+      "elapsed": 9.406000000002678,
+      "gpu": {
+        "used_mib": 4228,
+        "free_mib": 3722
+      },
+      "rss": 4709294080,
+      "private": 8538308608,
+      "system_used": 13484490752
+    },
+    {
+      "elapsed": 9.953000000001339,
+      "gpu": {
+        "used_mib": 4180,
+        "free_mib": 3770
+      },
+      "rss": 4709298176,
+      "private": 8532402176,
+      "system_used": 13506846720
+    },
+    {
+      "elapsed": 10.51600000000326,
+      "gpu": {
+        "used_mib": 4244,
+        "free_mib": 3706
+      },
+      "rss": 4709302272,
+      "private": 8532402176,
+      "system_used": 13501214720
+    },
+    {
+      "elapsed": 11.078000000001339,
+      "gpu": {
+        "used_mib": 4243,
+        "free_mib": 3707
+      },
+      "rss": 4709302272,
+      "private": 8532402176,
+      "system_used": 13509267456
+    },
+    {
+      "elapsed": 11.625,
+      "gpu": {
+        "used_mib": 4243,
+        "free_mib": 3707
+      },
+      "rss": 4709302272,
+      "private": 8532402176,
+      "system_used": 13524832256
+    },
+    {
+      "elapsed": 12.18800000000192,
+      "gpu": {
+        "used_mib": 4244,
+        "free_mib": 3706
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13527392256
+    },
+    {
+      "elapsed": 12.75,
+      "gpu": {
+        "used_mib": 4244,
+        "free_mib": 3706
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13533376512
+    },
+    {
+      "elapsed": 13.296999999998661,
+      "gpu": {
+        "used_mib": 4229,
+        "free_mib": 3721
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13540319232
+    },
+    {
+      "elapsed": 13.844000000004598,
+      "gpu": {
+        "used_mib": 4229,
+        "free_mib": 3721
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13545979904
+    },
+    {
+      "elapsed": 14.406000000002678,
+      "gpu": {
+        "used_mib": 4244,
+        "free_mib": 3706
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13553987584
+    },
+    {
+      "elapsed": 14.953000000001339,
+      "gpu": {
+        "used_mib": 4244,
+        "free_mib": 3706
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13573529600
+    },
+    {
+      "elapsed": 15.531000000002678,
+      "gpu": {
+        "used_mib": 4250,
+        "free_mib": 3700
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13592326144
+    },
+    {
+      "elapsed": 16.07800000000134,
+      "gpu": {
+        "used_mib": 4250,
+        "free_mib": 3700
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13572980736
+    },
+    {
+      "elapsed": 16.625,
+      "gpu": {
+        "used_mib": 4250,
+        "free_mib": 3700
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13582454784
+    },
+    {
+      "elapsed": 17.17199999999866,
+      "gpu": {
+        "used_mib": 4233,
+        "free_mib": 3717
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13601210368
+    },
+    {
+      "elapsed": 17.7190000000046,
+      "gpu": {
+        "used_mib": 4233,
+        "free_mib": 3717
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13608144896
+    },
+    {
+      "elapsed": 18.26600000000326,
+      "gpu": {
+        "used_mib": 4249,
+        "free_mib": 3701
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13611048960
+    },
+    {
+      "elapsed": 18.81300000000192,
+      "gpu": {
+        "used_mib": 4246,
+        "free_mib": 3704
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13613518848
+    },
+    {
+      "elapsed": 19.375,
+      "gpu": {
+        "used_mib": 4250,
+        "free_mib": 3700
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13627248640
+    },
+    {
+      "elapsed": 19.92199999999866,
+      "gpu": {
+        "used_mib": 4252,
+        "free_mib": 3698
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13656932352
+    },
+    {
+      "elapsed": 20.4690000000046,
+      "gpu": {
+        "used_mib": 4247,
+        "free_mib": 3703
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13686751232
+    },
+    {
+      "elapsed": 21.01600000000326,
+      "gpu": {
+        "used_mib": 4226,
+        "free_mib": 3724
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13725204480
+    },
+    {
+      "elapsed": 21.57800000000134,
+      "gpu": {
+        "used_mib": 4226,
+        "free_mib": 3724
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13690195968
+    },
+    {
+      "elapsed": 22.125,
+      "gpu": {
+        "used_mib": 4180,
+        "free_mib": 3770
+      },
+      "rss": 4709302272,
+      "private": 8364310528,
+      "system_used": 13742555136
+    },
+    {
+      "elapsed": 22.67199999999866,
+      "gpu": {
+        "used_mib": 3547,
+        "free_mib": 4403
+      },
+      "rss": 1876779008,
+      "private": 6413533184,
+      "system_used": 10894970880
+    },
+    {
+      "elapsed": 23.234000000004016,
+      "gpu": {
+        "used_mib": 1200,
+        "free_mib": 6750
+      },
+      "rss": 1006882816,
+      "private": 1438994432,
+      "system_used": 9435594752
+    }
+  ]
+}

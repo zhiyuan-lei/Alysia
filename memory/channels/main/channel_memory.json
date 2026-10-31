@@ -1,0 +1,50 @@
+{
+  "channel_id": "main",
+  "channel_name": "Alysia",
+  "current_positioning": "用可验证、易理解的中文内容解释 AI、软件工程与自主智能体",
+  "content_directions": [
+    "人工智能",
+    "软件工程",
+    "自主智能体"
+  ],
+  "published_topics": [
+    {
+      "run_id": "20260807_175616_cb2fbe40",
+      "topic": "为什么AI Agent还不是AGI？",
+      "category": "科技",
+      "published_at": "2026-08-07T20:38:43.529902+08:00",
+      "source": "mock"
+    },
+    {
+      "run_id": "20260807_225606_b78058f8",
+      "topic": "为什么多 Agent 不等于多个独立进程？",
+      "category": "科技",
+      "published_at": "2026-08-07T22:56:13.241418+08:00",
+      "source": "mock"
+    },
+    {
+      "run_id": "20260807_225658_1596ed8c",
+      "topic": "Alysia 的多角色协作为什么默认串行？",
+      "category": "科技",
+      "published_at": "2026-08-07T22:57:04.730466+08:00",
+      "source": "mock"
+    }
+  ],
+  "audience_hypotheses": [
+    "对 AI 与工程实践感兴趣的中文观众"
+  ],
+  "success_cases": [],
+  "failure_cases": [],
+  "long_term_strategy": [
+    "保持人工审批；一次只验证一个内容变量，积累跨视频证据后再调整策略。"
+  ],
+  "active_experiment_ids": [],
+  "strategy_ids": [
+    "strategy_b5957857f04d",
+    "strategy_ceb89bddf626"
+  ],
+  "source_digest": "ba7e20119e447472cb2efb93862754eac35ce9fa47265f84c2f93f149bc52f7f",
+  "revision": 3,
+  "created_at": "2026-08-07T21:16:30.165997+08:00",
+  "updated_at": "2026-08-07T22:57:04.843978+08:00"
+}

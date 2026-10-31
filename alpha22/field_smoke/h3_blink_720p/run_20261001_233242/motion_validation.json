@@ -1,0 +1,40 @@
+{
+  "artifact": "D:\\Alysia\\alpha22\\field_smoke\\h3_blink_720p\\run_20261001_233242\\H3_motion_720p_TEST_ONLY.mp4",
+  "sha256": "7e9f517bdc5ef2134f9994063f41d6f27970f17297c8667d25fad1e24a578822",
+  "format_validation": "PASS",
+  "visual_action_validation": "PASS_WITH_SUBTLE_HAND_AND_LEG_MOTION_SEE_VISUAL_REVIEW_JSON",
+  "sampled_gpu_budget_pass": true,
+  "sampled_ram_budget_pass": true,
+  "stages": [
+    {
+      "phase": "keyframe",
+      "elapsed_seconds": 6.030999999995402,
+      "gpu_sampled_peak_mib": 1968,
+      "system_ram_sampled_peak_mib": 10417.4921875,
+      "process_private_sampled_peak_mib": 4757.05078125
+    },
+    {
+      "phase": "encode",
+      "elapsed_seconds": 23.79699999999866,
+      "gpu_sampled_peak_mib": 4252,
+      "system_ram_sampled_peak_mib": 13105.921875,
+      "process_private_sampled_peak_mib": 8142.765625
+    },
+    {
+      "phase": "sample",
+      "elapsed_seconds": 957.5310000000027,
+      "gpu_sampled_peak_mib": 5447,
+      "system_ram_sampled_peak_mib": 11670.20703125,
+      "process_private_sampled_peak_mib": 7929.484375
+    },
+    {
+      "phase": "decode",
+      "elapsed_seconds": 90.875,
+      "gpu_sampled_peak_mib": 4240,
+      "system_ram_sampled_peak_mib": 12842.31640625,
+      "process_private_sampled_peak_mib": 9067.609375
+    }
+  ],
+  "stage_seconds_total": 1078.2339999999967,
+  "sampling_limitation": "Whole-device GPU and RAM maxima are polling samples, not instantaneous upper bounds."
+}

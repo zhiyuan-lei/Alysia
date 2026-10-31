@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "sources": [
+    "source-1",
+    "local-h3-runtime-20260808"
+  ],
+  "claims": [
+    "local-h3-capability-observation-20260808"
+  ],
+  "conflicts": [],
+  "topics": {
+    "H3 local capability": [
+      "local-h3-capability-observation-20260808"
+    ]
+  },
+  "updated_at": "2026-08-08T18:23:32.058015+08:00"
+}

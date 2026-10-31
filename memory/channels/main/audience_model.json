@@ -1,0 +1,28 @@
+{
+  "channel_id": "main",
+  "liked_topics": [
+    {
+      "subject": "科技",
+      "signal": "unknown",
+      "confidence": 0.0,
+      "evidence_run_ids": []
+    }
+  ],
+  "common_questions": [
+    "希望下一期解释长期任务为什么容易失控？"
+  ],
+  "content_preferences": [
+    {
+      "subject": "title_style:科普型",
+      "signal": "unknown",
+      "confidence": 0.0,
+      "evidence_run_ids": []
+    }
+  ],
+  "viewing_behavior": [],
+  "caveats": [
+    "该模型只描述聚合内容反馈，不建立个人画像。",
+    "相关性信号不能替代受控实验。"
+  ],
+  "updated_at": "2026-08-07T22:57:04.843978+08:00"
+}

@@ -1,0 +1,32 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "historical_audio_noise_alpha5_1",
+      "source": "manual_historical_review",
+      "run_id": "historical_alpha5_video",
+      "kind": "observed_failure",
+      "summary": "正式成片音轨几乎完全是 220 Hz 测试音，Mock TTS 被带入渲染链路；字幕也存在机械截断。",
+      "capability_id": "audio_qa",
+      "severity": "critical",
+      "data": {
+        "occurrences": 2,
+        "observed": true,
+        "hypothesized_cause": "mock provider promotion gate missing"
+      }
+    },
+    {
+      "evidence_id": "alpha13_5_h3_runtime_unverified",
+      "source": "development_report_alpha13_5.md",
+      "run_id": "demo_alpha13_5",
+      "kind": "observed_failure",
+      "summary": "ComfyUI API、H3 权重和真实 workflow 未就绪，真实本地 H3 smoke test 尚未完成。",
+      "capability_id": "visual_h3_local",
+      "severity": "medium",
+      "data": {
+        "occurrences": 1,
+        "observed": true,
+        "mock_pipeline_passed": true
+      }
+    }
+  ]
+}

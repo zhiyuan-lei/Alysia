@@ -1,0 +1,43 @@
+{
+  "run_id": "alpha22_step8_5_h3_nvfp4_bypass_validation",
+  "status": "DOWNLOAD_REQUIRED",
+  "upstream_correlation": {
+    "issue": "Comfy-Org/ComfyUI#15397",
+    "url": "https://github.com/Comfy-Org/ComfyUI/issues/15397",
+    "correlation": "HIGH",
+    "confirmed_root_cause": false,
+    "basis": [
+      "MiniMax H3",
+      "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "Windows 0xc0000005",
+      "torch_cpu.dll",
+      "torch.storage.__getitem__ -> load_torch_file -> load_clip",
+      "no CUDA or system RAM OOM"
+    ]
+  },
+  "int8_encoder": "MODEL_COMPONENT_DOWNLOAD_REQUIRED",
+  "stages": {
+    "int8_load_torch_file": "NOT_EXECUTED",
+    "int8_text_encoder": "NOT_EXECUTED",
+    "real_h3_int8_smoke": "NOT_EXECUTED"
+  },
+  "native_crash_reproduced": "NOT_EXECUTED",
+  "artifact": null,
+  "resources": null,
+  "diagnostic_verdict": "INSUFFICIENT_EVIDENCE",
+  "hardware_verdict": {
+    "physical_machine_h3": "BLOCKED",
+    "h3_8gb_vram_envelope": "NOT_VERIFIED",
+    "h3_24g_envelope": "NOT_VERIFIED"
+  },
+  "resume": "NOT_EXECUTED",
+  "recommendation": "MODEL_COMPONENT_DOWNLOAD_REQUIRED",
+  "safety": {
+    "download_attempted": false,
+    "nvfp4_modified": false,
+    "default_encoder_modified": false,
+    "comfyui_started": false,
+    "real_h3_invocations": 0,
+    "architecture_modified": false
+  }
+}

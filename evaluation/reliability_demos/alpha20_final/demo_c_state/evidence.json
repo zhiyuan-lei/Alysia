@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "run_id": "20260808_210336_38603e5b",
+  "restored_from_backup": true,
+  "failure": {
+    "failure_id": "failure_c7f809e0791c4d31",
+    "run_id": "20260808_210336_38603e5b",
+    "workflow_id": null,
+    "stage": "run_state",
+    "agent": null,
+    "worker": null,
+    "provider": null,
+    "category": "state_corrupt",
+    "message": "run_state.json 损坏，已从 run_state.json.bak1 恢复",
+    "evidence_refs": [
+      "D:\\Alysia\\evaluation\\reliability_demos\\alpha20_final\\runs\\20260808_210336_38603e5b\\run_state.json.bak1"
+    ],
+    "occurred_at": "2026-08-08T21:03:36.872098+08:00",
+    "recoverable": true,
+    "retryable": false,
+    "retry_count": 0,
+    "max_retries": 2,
+    "suggested_action": "已恢复最近有效状态副本并记录事件",
+    "fallback_refs": [],
+    "status": "recovered",
+    "quality_impact": null,
+    "recovery_round": 0
+  },
+  "current_state_valid": true
+}

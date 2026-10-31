@@ -1,0 +1,97 @@
+{
+  "recipe_id": "recipe_d27dd6d63d718300",
+  "name": "从 storyboard 选择关键视觉场景并验证 resume workflow",
+  "task_pattern": {
+    "keywords": [
+      "resume",
+      "storyboard",
+      "选择关键视觉场景并验证"
+    ],
+    "inputs": [
+      "storyboard"
+    ],
+    "desired_outputs": [
+      "selected_scenes"
+    ],
+    "quality_target": "standard"
+  },
+  "required_capabilities": [
+    "scene_selection@capability:stable"
+  ],
+  "steps_template": [
+    {
+      "step_id": "step_01_scene_selection",
+      "capability_id": "scene_selection",
+      "skill_id": null,
+      "owner_agent": "designer",
+      "inputs": [
+        "storyboard"
+      ],
+      "outputs": [
+        "selected_scenes"
+      ],
+      "depends_on": [],
+      "fallback": [],
+      "execution_layer": "production"
+    }
+  ],
+  "constraints": [
+    "offline"
+  ],
+  "quality_gates": [
+    "workflow_validation"
+  ],
+  "evidence_runs": [
+    "workflow_20260808_161330_b1428eafcca4",
+    "workflow_20260808_162041_4949d555db4e",
+    "workflow_20260808_200959_1218d96242b3",
+    "workflow_20260808_201011_b4efab86abb9",
+    "workflow_20260808_201355_6dc3b34eaa58",
+    "workflow_20260808_201500_3b9e0738950f",
+    "workflow_20260808_201513_215ea53f1ec0",
+    "workflow_20260808_201533_326865f10841",
+    "workflow_20260808_201738_71adc7b90fdf",
+    "workflow_20260808_201949_e0d7b8b4109a",
+    "workflow_20260808_202110_8525baa05032",
+    "workflow_20260808_202334_10c2feaa6bce",
+    "workflow_20260808_203500_7491db97b6ea",
+    "workflow_20260808_203634_d38d39e18f1c",
+    "workflow_20260808_204838_bc94809f4bca",
+    "workflow_20260808_205431_c98934f01b59",
+    "workflow_20260808_205527_119693652eb3",
+    "workflow_20260808_210154_63990c79695a",
+    "workflow_20260808_210155_b424592d816b",
+    "workflow_20260809_103132_7b87a46c6e9b",
+    "workflow_20260809_103313_7ee29e31b4c9",
+    "workflow_20260809_110107_cebfda8bf52d",
+    "workflow_20260809_110307_28449d4db94b",
+    "workflow_20260809_110702_8a15d658787b",
+    "workflow_20260809_112607_dfd8d38dffa8",
+    "workflow_20260809_115125_1925ab9dc12b",
+    "workflow_20260809_115934_22e97aecc0f4",
+    "workflow_20260809_190241_fe554e0a024e",
+    "workflow_20260809_190439_65bf44aa0a63",
+    "workflow_20260809_190752_7265c06c5563",
+    "workflow_20260809_191035_b1c249b7b6ac",
+    "workflow_20260809_191504_3a963bcb6897",
+    "workflow_20260809_191814_2774f8f5197a",
+    "workflow_20260809_192419_eba24a3546f7",
+    "workflow_20261001_220113_cfaf7c52d02c",
+    "workflow_20261001_220243_d4cc68dda774",
+    "workflow_20261001_220324_c93ac0339ec3",
+    "workflow_20261002_004914_106353b7be70",
+    "workflow_20261002_011651_4ecb0aa83805",
+    "workflow_20261002_093817_25897024205e",
+    "workflow_20261002_111735_cdab2803d0c0",
+    "workflow_20261002_113244_0003b2c15931",
+    "workflow_20261031_165351_bd518ae36242",
+    "workflow_20261031_174755_59df2c1ad284",
+    "workflow_20261031_175109_4dd9b686d349"
+  ],
+  "success_count": 0,
+  "failure_count": 45,
+  "confidence": 0.0213,
+  "status": "deprecated",
+  "created_at": "2026-08-08T16:13:30.663152+08:00",
+  "updated_at": "2026-10-31T17:51:09.499523+08:00"
+}

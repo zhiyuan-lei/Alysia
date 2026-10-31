@@ -1,0 +1,153 @@
+{
+  "recipe_id": "recipe_1683fbbecc78cd87",
+  "name": "对已有视频 run 的 3 个关键 scene 做 H3 视觉增强并完成 QA workflow",
+  "task_pattern": {
+    "keywords": [
+      "3",
+      "h3",
+      "qa",
+      "run",
+      "scene",
+      "个关键",
+      "对已有视频",
+      "视觉增强并完成"
+    ],
+    "inputs": [
+      "storyboard"
+    ],
+    "desired_outputs": [
+      "video_qa_report"
+    ],
+    "quality_target": "standard"
+  },
+  "required_capabilities": [
+    "scene_selection@capability:stable",
+    "visual_planning@capability:stable",
+    "h3_visual_generation@skill:v1",
+    "visual_qa@capability:stable",
+    "editor_integration@capability:stable",
+    "video_qa@capability:stable"
+  ],
+  "steps_template": [
+    {
+      "step_id": "step_01_scene_selection",
+      "capability_id": "scene_selection",
+      "skill_id": null,
+      "owner_agent": "designer",
+      "inputs": [
+        "storyboard"
+      ],
+      "outputs": [
+        "selected_scenes"
+      ],
+      "depends_on": [],
+      "fallback": [],
+      "execution_layer": "production"
+    },
+    {
+      "step_id": "step_02_visual_planning",
+      "capability_id": "visual_planning",
+      "skill_id": null,
+      "owner_agent": "designer",
+      "inputs": [
+        "selected_scenes"
+      ],
+      "outputs": [
+        "scene_visual_plan"
+      ],
+      "depends_on": [
+        "step_01_scene_selection"
+      ],
+      "fallback": [],
+      "execution_layer": "production"
+    },
+    {
+      "step_id": "step_03_h3_visual_generation",
+      "capability_id": null,
+      "skill_id": "h3_visual_generation",
+      "owner_agent": "designer",
+      "inputs": [
+        "scene_visual_plan"
+      ],
+      "outputs": [
+        "visual_clip"
+      ],
+      "depends_on": [
+        "step_02_visual_planning"
+      ],
+      "fallback": [],
+      "execution_layer": "production"
+    },
+    {
+      "step_id": "step_04_visual_qa",
+      "capability_id": "visual_qa",
+      "skill_id": null,
+      "owner_agent": "critic",
+      "inputs": [
+        "visual_clip"
+      ],
+      "outputs": [
+        "approved_visual_clip"
+      ],
+      "depends_on": [
+        "step_03_h3_visual_generation"
+      ],
+      "fallback": [],
+      "execution_layer": "production"
+    },
+    {
+      "step_id": "step_05_editor_integration",
+      "capability_id": "editor_integration",
+      "skill_id": null,
+      "owner_agent": "editor",
+      "inputs": [
+        "approved_visual_clip"
+      ],
+      "outputs": [
+        "final_video"
+      ],
+      "depends_on": [
+        "step_04_visual_qa"
+      ],
+      "fallback": [],
+      "execution_layer": "studio"
+    },
+    {
+      "step_id": "step_06_video_qa",
+      "capability_id": "video_qa",
+      "skill_id": null,
+      "owner_agent": "critic",
+      "inputs": [
+        "final_video"
+      ],
+      "outputs": [
+        "video_qa_report"
+      ],
+      "depends_on": [
+        "step_05_editor_integration"
+      ],
+      "fallback": [],
+      "execution_layer": "studio"
+    }
+  ],
+  "constraints": [
+    "3 scenes",
+    "offline",
+    "mock allowed",
+    "sequential gpu"
+  ],
+  "quality_gates": [
+    "workflow_validation",
+    "qa:video_qa_report"
+  ],
+  "evidence_runs": [
+    "workflow_20260808_161321_df084f2a9b74",
+    "workflow_20260808_162024_b3715240be09"
+  ],
+  "success_count": 2,
+  "failure_count": 0,
+  "confidence": 0.75,
+  "status": "candidate",
+  "created_at": "2026-08-08T16:13:22.020490+08:00",
+  "updated_at": "2026-08-08T16:20:25.459834+08:00"
+}

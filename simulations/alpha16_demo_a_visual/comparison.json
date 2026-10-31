@@ -1,0 +1,87 @@
+{
+  "scenario_id": "alpha16_demo_a_visual",
+  "ranked_candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "remotion_only",
+      "score": 0.7809
+    },
+    {
+      "rank": 2,
+      "candidate_id": "h3_two_clips",
+      "score": 0.466
+    },
+    {
+      "rank": 3,
+      "candidate_id": "h3_five_clips",
+      "score": 0.4423
+    }
+  ],
+  "score_breakdown": [
+    {
+      "candidate_id": "remotion_only",
+      "expected_quality": 0.58,
+      "reliability": 0.9,
+      "latency": 0.9,
+      "resource_use": 0.95,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.19,
+      "experiment_value": 0.51,
+      "novelty": 0.61,
+      "total_score": 0.7809,
+      "known_fraction": 0.8889
+    },
+    {
+      "candidate_id": "h3_two_clips",
+      "expected_quality": 0.69,
+      "reliability": 0.25,
+      "latency": 0.49,
+      "resource_use": 0.43000000000000005,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.79,
+      "experiment_value": 0.51,
+      "novelty": 0.61,
+      "total_score": 0.466,
+      "known_fraction": 0.8889
+    },
+    {
+      "candidate_id": "h3_five_clips",
+      "expected_quality": 0.795,
+      "reliability": 0.25,
+      "latency": 0.25,
+      "resource_use": 0.25000000000000006,
+      "monetary_cost": null,
+      "approval_burden": 0.8,
+      "risk": 0.79,
+      "experiment_value": 0.51,
+      "novelty": 0.61,
+      "total_score": 0.4423,
+      "known_fraction": 0.8889
+    }
+  ],
+  "dominant_tradeoffs": [
+    "推荐 remotion_only；quality=0.58, reliability=0.9, risk=0.19, known_fraction=0.8889",
+    "总分只聚合已知/模拟的可解释维度；unknown 不按 0 伪造，但会降低 known_fraction"
+  ],
+  "uncertainty": [
+    "h3_five_clips: monetary_cost_score=unknown",
+    "h3_two_clips: monetary_cost_score=unknown",
+    "remotion_only: monetary_cost_score=unknown"
+  ],
+  "recommendation": "remotion_only",
+  "reasons_not_selected": {
+    "h3_two_clips": [
+      "综合可解释分数 0.4660 低于 0.7809",
+      "风险更高",
+      "可靠性更低"
+    ],
+    "h3_five_clips": [
+      "综合可解释分数 0.4423 低于 0.7809",
+      "风险更高",
+      "可靠性更低"
+    ]
+  },
+  "compared_at": "2026-08-08T16:48:37.199252+08:00"
+}

@@ -10,9 +10,9 @@ class Director:
     def __init__(self, provider: BaseLLMProvider) -> None:
         self.provider = provider
 
-    async def run(self, script: Script) -> Storyboard:
+    async def run(self, script: Script, *, assembled_prompt: str | None = None) -> Storyboard:
         return await self.provider.generate_structured(
-            load_prompt("director"),
+            assembled_prompt or load_prompt("director"),
             Storyboard,
             context={"script": script.model_dump(mode="json")},
         )

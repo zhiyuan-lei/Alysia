@@ -1,0 +1,11 @@
+{
+  "_alysia": {
+    "template_only": true,
+    "scene_id": "",
+    "duration_sec": 5,
+    "prompt": {},
+    "input_image": null,
+    "reference_images": []
+  },
+  "_instructions": "Replace this template with an exported ComfyUI API-format H3 reference workflow while preserving _alysia bindings."
+}

@@ -1,0 +1,4 @@
+{
+  "good": {"used_claims": [{"id": "c1", "status": "verified", "expired": false}]},
+  "bad": {"used_claims": [{"id": "c1", "status": "stale", "expired": true}, {"id": "c2", "status": "conflicted", "expired": false}]}
+}

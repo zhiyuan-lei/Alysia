@@ -1,0 +1,45 @@
+{
+  "artifact": "D:\\Alysia\\alpha22\\field_smoke\\h3_blink_720p\\run_20261001_230236\\H3_blink_720p_TEST_ONLY.mp4",
+  "sha256": "23bc51da32c5bb158a7fdffb9cbadaceeb6aa908bb7f667fbaef1d4ea5d9b88a",
+  "bytes": 1688061,
+  "format_validation": "PASS",
+  "visual_blink_validation": "PASS_SLOW_BLINK_SEE_VISUAL_REVIEW_JSON",
+  "stages": [
+    {
+      "phase": "keyframe",
+      "elapsed_seconds": 6.0460000000020955,
+      "gpu_sampled_peak_mib": 2043,
+      "process_rss_sampled_peak_mib": 2162.06640625,
+      "process_private_sampled_peak_mib": 4757.70703125,
+      "system_ram_sampled_peak_mib": 10387.625
+    },
+    {
+      "phase": "encode",
+      "elapsed_seconds": 22.57800000000134,
+      "gpu_sampled_peak_mib": 4283,
+      "process_rss_sampled_peak_mib": 4490.93359375,
+      "process_private_sampled_peak_mib": 8117.296875,
+      "system_ram_sampled_peak_mib": 13005.4765625
+    },
+    {
+      "phase": "sample",
+      "elapsed_seconds": 500.07800000000134,
+      "gpu_sampled_peak_mib": 5309,
+      "process_rss_sampled_peak_mib": 2033.0625,
+      "process_private_sampled_peak_mib": 7590.97265625,
+      "system_ram_sampled_peak_mib": 12572.5390625
+    },
+    {
+      "phase": "decode",
+      "elapsed_seconds": 63.81199999999808,
+      "gpu_sampled_peak_mib": 4623,
+      "process_rss_sampled_peak_mib": 3119.8671875,
+      "process_private_sampled_peak_mib": 8091.3984375,
+      "system_ram_sampled_peak_mib": 11961.453125
+    }
+  ],
+  "stage_time_seconds": 592.5140000000029,
+  "sampled_gpu_budget_pass": true,
+  "sampled_process_private_ram_budget_pass": true,
+  "measurement_note": "Sample maxima at about 0.5 seconds plus nvidia-smi query overhead; not unsampled instantaneous bounds."
+}

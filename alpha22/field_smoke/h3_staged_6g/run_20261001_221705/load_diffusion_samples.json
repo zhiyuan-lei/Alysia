@@ -1,0 +1,392 @@
+[
+  {
+    "time": "2026-10-01T22:17:05.465442+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1207,
+      "free_mb": 6743
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 7493,
+      "available_mb": 25117,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 23120
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:05.496548+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1207,
+      "free_mb": 6743
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 7547,
+      "available_mb": 25063,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 23067
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:06.041352+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1204,
+      "free_mb": 6746
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 7937,
+      "available_mb": 24673,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 22329
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:06.583983+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1204,
+      "free_mb": 6746
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 7995,
+      "available_mb": 24615,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 21641
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:07.129068+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1204,
+      "free_mb": 6746
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8032,
+      "available_mb": 24578,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 21610
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:07.672948+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1204,
+      "free_mb": 6746
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8067,
+      "available_mb": 24543,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 21568
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:08.219838+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1176,
+      "free_mb": 6774
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8106,
+      "available_mb": 24504,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 21512
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:08.757207+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1283,
+      "free_mb": 6667
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8229,
+      "available_mb": 24381,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 21305
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:09.286852+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1290,
+      "free_mb": 6660
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8243,
+      "available_mb": 24367,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 20667
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:09.818849+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1289,
+      "free_mb": 6661
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8284,
+      "available_mb": 24326,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 20659
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:10.351340+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1289,
+      "free_mb": 6661
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8296,
+      "available_mb": 24314,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 20653
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:10.880963+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1290,
+      "free_mb": 6660
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8314,
+      "available_mb": 24296,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 20630
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:11.413842+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1290,
+      "free_mb": 6660
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8405,
+      "available_mb": 24205,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18047
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:11.945557+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1282,
+      "free_mb": 6668
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8453,
+      "available_mb": 24157,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18046
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:12.474825+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1282,
+      "free_mb": 6668
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8407,
+      "available_mb": 24203,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18090
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:13.008836+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1273,
+      "free_mb": 6677
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8413,
+      "available_mb": 24197,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18086
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:13.549337+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8413,
+      "available_mb": 24196,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18080
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:14.093177+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8422,
+      "available_mb": 24188,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18081
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:14.622860+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8424,
+      "available_mb": 24186,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18081
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:15.153213+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8450,
+      "available_mb": 24159,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18085
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:15.682793+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1283,
+      "free_mb": 6667
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8569,
+      "available_mb": 24041,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18081
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:16.217508+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8704,
+      "available_mb": 23906,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18093
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:16.760913+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8820,
+      "available_mb": 23790,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18091
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:17.300867+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1282,
+      "free_mb": 6668
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8873,
+      "available_mb": 23737,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18090
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:17.844911+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1281,
+      "free_mb": 6669
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 9534,
+      "available_mb": 23076,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 18086
+    }
+  },
+  {
+    "time": "2026-10-01T22:17:18.390165+08:00",
+    "gpu": {
+      "total_mb": 8188,
+      "used_mb": 1175,
+      "free_mb": 6775
+    },
+    "ram": {
+      "total_mb": 32610,
+      "used_mb": 8194,
+      "available_mb": 24416,
+      "commit_limit_mb": 35800,
+      "commit_available_mb": 23198
+    }
+  }
+]

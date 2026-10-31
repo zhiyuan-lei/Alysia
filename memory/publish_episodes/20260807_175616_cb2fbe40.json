@@ -1,0 +1,33 @@
+{
+  "run_id": "20260807_175616_cb2fbe40",
+  "external_id": "mock_bv_7f9619297c94ab45",
+  "source": "mock",
+  "collected_at": "2026-08-07T20:38:43.529902+08:00",
+  "metrics_summary": {
+    "views": 420,
+    "likes": 28,
+    "comments": 7,
+    "favorites": 19,
+    "shares": 4,
+    "followers_gained": 3
+  },
+  "comment_insight": {
+    "frequent_topics": [
+      "流程图",
+      "长期任务",
+      "字幕"
+    ],
+    "positive_signals": [
+      "讲解清楚，流程图很好理解"
+    ],
+    "negative_signals": [],
+    "questions": [
+      "希望下一期解释长期任务为什么容易失控？"
+    ],
+    "possible_content_requests": [
+      "希望下一期解释长期任务为什么容易失控？"
+    ]
+  },
+  "feedback_digest": "c7664c4ea6cfd7373067970afa29be2729330ed8abcf93c2be18577b71661750",
+  "updated_at": "2026-08-07T20:38:43.545523+08:00"
+}

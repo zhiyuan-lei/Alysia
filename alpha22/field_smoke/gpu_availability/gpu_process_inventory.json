@@ -1,0 +1,107 @@
+{
+  "run_id": "alpha22_step8_2_gpu_availability",
+  "measured_at": "2026-08-09T20:42:20.482+08:00",
+  "status": "BLOCKED",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4060 Ti",
+    "driver": "596.21",
+    "driver_model": "WDDM",
+    "vram_total_mib": 8188,
+    "vram_used_mib": 1313,
+    "vram_free_mib": 6637,
+    "utilization_percent": 37,
+    "temperature_c": 49
+  },
+  "five_sample_observation": {
+    "timestamps_local": [
+      "2026-08-09T20:38:58.865+08:00",
+      "2026-08-09T20:39:00.913+08:00",
+      "2026-08-09T20:39:02.959+08:00",
+      "2026-08-09T20:39:05.009+08:00",
+      "2026-08-09T20:39:07.040+08:00"
+    ],
+    "vram_used_mib": [1337, 1319, 1319, 1318, 1317],
+    "vram_free_mib": [6613, 6631, 6631, 6632, 6633],
+    "gpu_utilization_percent": [39, 39, 38, 39, 39]
+  },
+  "measurement_notes": {
+    "nvidia_smi_per_process_vram": "N/A under WDDM",
+    "per_process_vram_source": "Windows GPU Process Memory dedicated-allocation performance counter",
+    "per_process_vram_semantics": "Estimated dedicated allocations, not exact resident VRAM; values are not used as an additive replacement for nvidia-smi total usage.",
+    "owner_values": "Reduced to scope labels; account names and command lines are not persisted."
+  },
+  "consumers": [
+    {"pid": 2916, "process": "dwm.exe", "estimated_vram_mib": 373.6, "classification": "SYSTEM", "parent": "winlogon.exe", "action_taken": "NONE"},
+    {"pid": 2276, "process": "msedge.exe", "estimated_vram_mib": 360.0, "classification": "KNOWN_USER_APP", "parent": "msedge.exe", "action_taken": "NONE"},
+    {"pid": 9544, "process": "WINWORD.EXE", "estimated_vram_mib": 234.9, "classification": "KNOWN_USER_APP", "parent": "explorer.exe", "action_taken": "NONE"},
+    {"pid": 4976, "process": "msedgewebview2.exe (Windows Widgets)", "estimated_vram_mib": 198.9, "classification": "SYSTEM", "parent": "Widgets.exe", "action_taken": "NONE"},
+    {"pid": 14452, "process": "ChatGPT.exe (Codex desktop)", "estimated_vram_mib": 149.8, "classification": "KNOWN_USER_APP", "parent": "ChatGPT.exe", "action_taken": "NONE"},
+    {"pid": 6108, "process": "explorer.exe", "estimated_vram_mib": 83.1, "classification": "SYSTEM", "parent": "exited", "action_taken": "NONE"},
+    {"pid": 13860, "process": "explorer.exe", "estimated_vram_mib": 70.4, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 5516, "process": "Weixin.exe", "estimated_vram_mib": 56.4, "classification": "KNOWN_USER_APP", "parent": "explorer.exe", "action_taken": "NONE"},
+    {"pid": 1040, "process": "csrss.exe", "estimated_vram_mib": 50.4, "classification": "SYSTEM", "parent": "system", "action_taken": "NONE"},
+    {"pid": 24000, "process": "explorer.exe", "estimated_vram_mib": 38.9, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 10828, "process": "Outline.exe", "estimated_vram_mib": 31.6, "classification": "KNOWN_USER_APP", "parent": "Outline.exe", "action_taken": "NONE"},
+    {"pid": 6676, "process": "SearchHost.exe", "estimated_vram_mib": 21.7, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 13684, "process": "TextInputHost.exe", "estimated_vram_mib": 20.5, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 11008, "process": "WeChatAppEx.exe", "estimated_vram_mib": 18.6, "classification": "KNOWN_USER_APP", "parent": "WeChatAppEx.exe", "action_taken": "NONE"},
+    {"pid": 8020, "process": "ShellExperienceHost.exe", "estimated_vram_mib": 16.7, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 22776, "process": "EdgeGameAssist.exe", "estimated_vram_mib": 13.3, "classification": "KNOWN_USER_APP", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 6760, "process": "StartMenuExperienceHost.exe", "estimated_vram_mib": 10.5, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 12344, "process": "TabTip.exe", "estimated_vram_mib": 7.8, "classification": "SYSTEM", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 13348, "process": "PhoneExperienceHost.exe", "estimated_vram_mib": 7.8, "classification": "KNOWN_USER_APP", "parent": "svchost.exe", "action_taken": "NONE"},
+    {"pid": 21952, "process": "msedge.exe", "estimated_vram_mib": 7.4, "classification": "KNOWN_USER_APP", "parent": "msedge.exe", "action_taken": "NONE"},
+    {"pid": 4, "process": "System", "estimated_vram_mib": 4.5, "classification": "SYSTEM", "parent": "System Idle Process", "action_taken": "NONE"}
+  ],
+  "alysia_leak_check": {
+    "result": "NOT_FOUND",
+    "checked_process_families": ["python.exe", "pythonw.exe", "pytest.exe", "ffmpeg.exe", "ComfyUI", "H3", "torch", "Alysia worker"],
+    "correlation": ["command line", "executable path", "parent process"],
+    "matching_process_count": 0,
+    "cleanup_performed": false
+  },
+  "ready_gate": {
+    "historical_minimal_h3_peak_vram_mib": 7678,
+    "current_free_vram_mib": 6637,
+    "raw_shortfall_to_historical_peak_mib": 1041,
+    "driver_and_desktop_headroom_required": true,
+    "resource_guard_min_free_vram_mib": 768,
+    "resource_guard_warning_free_vram_mib": 1536,
+    "resource_guard_interpretation": "The generic guard reports ample pre-launch free VRAM, but it does not reserve the historical H3 peak. The workload-specific historical profile therefore controls this gate.",
+    "ready": false,
+    "reason": "Current system-level free VRAM is 1041 MiB below the measured minimal H3 peak before allowing any WDDM driver/desktop headroom."
+  },
+  "user_action_required": {
+    "value": true,
+    "suggested_user_closures": [
+      {"pid": 2276, "process": "Microsoft Edge", "estimated_vram_mib": 360.0},
+      {"pid": 21952, "process": "Microsoft Edge", "estimated_vram_mib": 7.4},
+      {"pid": 9544, "process": "Microsoft Word", "estimated_vram_mib": 234.9},
+      {"pid": 5516, "process": "Weixin", "estimated_vram_mib": 56.4},
+      {"pid": 11008, "process": "WeChatAppEx", "estimated_vram_mib": 18.6},
+      {"pid": 10828, "process": "Outline", "estimated_vram_mib": 31.6},
+      {"pid": 22776, "process": "Edge Game Assist", "estimated_vram_mib": 13.3},
+      {"pid": 13348, "process": "Phone Link", "estimated_vram_mib": 7.8}
+    ],
+    "preserve": ["system and desktop processes", "Windows Widgets", "current Codex desktop task"],
+    "instruction": "Close only applications you recognize and do not need, then rerun Step 8.2 so actual free VRAM can be remeasured. Estimates are not guarantees of reclaimed resident VRAM."
+  },
+  "after_cleanup": {
+    "cleanup_performed": false,
+    "vram_total_mib": 8188,
+    "vram_used_mib": 1313,
+    "vram_free_mib": 6637
+  },
+  "h3_retry": {
+    "result": "NOT_EXECUTED",
+    "adapter_invoked": false,
+    "runtime_invoked": false,
+    "artifact": null,
+    "reason": "GPU ready gate failed"
+  },
+  "hardware_verdict": {
+    "physical_machine_h3": "BLOCKED",
+    "h3_24g_envelope": "NOT_VERIFIED"
+  },
+  "step8_status": "KEEP_BLOCKED"
+}

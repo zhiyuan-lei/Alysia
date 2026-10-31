@@ -1,0 +1,60 @@
+{
+  "test_only": true,
+  "run_dir": "D:\\Alysia\\alpha22\\field_smoke\\h3_staged_6g\\run_20261001_221705",
+  "status": "FAIL",
+  "stages": [
+    {
+      "stage": "load_diffusion",
+      "exit_code": 3221225477,
+      "command": [
+        "D:\\ComfyUI\\.venv\\Scripts\\python.exe",
+        "D:\\Alysia\\alpha22\\field_smoke\\h3_staged_6g\\stage_worker.py",
+        "--novram",
+        "--reserve-vram",
+        "2",
+        "--disable-async-offload",
+        "--disable-pinned-memory",
+        "--disable-smart-memory",
+        "--preview-method",
+        "none"
+      ],
+      "status": "FAIL_NATIVE_OR_STARTUP",
+      "child": {},
+      "baseline": {
+        "time": "2026-10-01T22:17:05.465442+08:00",
+        "gpu": {
+          "total_mb": 8188,
+          "used_mb": 1207,
+          "free_mb": 6743
+        },
+        "ram": {
+          "total_mb": 32610,
+          "used_mb": 7493,
+          "available_mb": 25117,
+          "commit_limit_mb": 35800,
+          "commit_available_mb": 23120
+        }
+      },
+      "after": {
+        "time": "2026-10-01T22:17:18.390165+08:00",
+        "gpu": {
+          "total_mb": 8188,
+          "used_mb": 1175,
+          "free_mb": 6775
+        },
+        "ram": {
+          "total_mb": 32610,
+          "used_mb": 8194,
+          "available_mb": 24416,
+          "commit_limit_mb": 35800,
+          "commit_available_mb": 23198
+        }
+      },
+      "sample_count": 26,
+      "observed_vram_peak_mib": 1290,
+      "observed_ram_peak_mib": 9534,
+      "elapsed_seconds": 12.938,
+      "cooperative_stop": false
+    }
+  ]
+}

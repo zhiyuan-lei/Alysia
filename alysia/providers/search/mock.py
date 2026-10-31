@@ -21,6 +21,8 @@ class MockResearchProvider(BaseResearchProvider):
                 domain="example.invalid",
                 retrieved_at=datetime.now().astimezone(),
                 note="仅用于离线演示结构，不是可用于发布的真实事实来源。",
+                source_type="unknown",
+                evidence_origin="mock",
             )
         ][:max_sources]
         return ResearchResult(

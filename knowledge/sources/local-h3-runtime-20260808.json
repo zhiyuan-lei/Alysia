@@ -1,0 +1,20 @@
+{
+  "source_id": "local-h3-runtime-20260808",
+  "url": "https://localhost.invalid/alysia/h3-runtime-observation/20260808",
+  "title": "Alysia 本机 H3 runtime observation",
+  "publisher": "Alysia local benchmark",
+  "domain": "local_system",
+  "author": null,
+  "published_at": null,
+  "retrieved_at": "2026-08-08T17:48:00+08:00",
+  "source_type": "primary",
+  "authority_score": null,
+  "freshness_class": "observed_snapshot",
+  "content_hash": "sha_6f68427b02f1070c",
+  "access_note": "evaluation\\capability_evaluation_h3_runtime.json",
+  "license": null,
+  "citation_note": "单机运行观测，不可外推为全局模型性能",
+  "reliability_notes": [],
+  "evidence_origin": "system_observation",
+  "observation_scope": "current_machine"
+}

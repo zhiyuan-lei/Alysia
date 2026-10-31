@@ -1,0 +1,13 @@
+{
+  "failure_id": "failure_312c552086534de2",
+  "action": "use_approved_fallback",
+  "reason": "重型视觉故障使用 ProductionPlan 明确批准的 fallback",
+  "retry_after_sec": 0.0,
+  "fallback_ref": "h3_low_resource",
+  "checkpoint_id": null,
+  "artifact_owner": null,
+  "quality_impact": "视觉质量/动态性可能降低；必须写入降级事件",
+  "requires_human": false,
+  "recovery_round": 0,
+  "decided_at": "2026-08-08T20:12:50.712090+08:00"
+}

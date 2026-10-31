@@ -1,0 +1,28 @@
+{
+  "claim_id": "local-h3-capability-observation-20260808",
+  "statement": "在当前本机观测中，H3 608x352 / 3.042 秒 / 6 steps 的 provider wall time 为 105.75 秒，峰值 VRAM 7678 MB。",
+  "normalized_key": "current-machine-h3-runtime-profile",
+  "topic": "H3 local capability",
+  "domain": "local_capability_observation",
+  "claim_type": "historical",
+  "status": "verified",
+  "confidence": 0.99,
+  "valid_from": null,
+  "valid_until": null,
+  "last_verified_at": "2026-08-08T17:48:00+08:00",
+  "evidence_refs": [
+    "local-h3-runtime-20260808"
+  ],
+  "contradicting_evidence_refs": [],
+  "scope": "current_machine",
+  "conditions": [
+    "RTX 4060 Ti",
+    "Alysia provider",
+    "608x352"
+  ],
+  "version": 1,
+  "supersedes_claim_id": null,
+  "freshness_policy_days": null,
+  "created_at": "2026-08-08T18:23:29.876398+08:00",
+  "updated_at": "2026-08-08T18:23:29.876398+08:00"
+}

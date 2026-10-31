@@ -1,0 +1,96 @@
+version: alpha20.1
+default: deny
+roles:
+  Supervisor:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    PUBLISH: require_approval
+    MODIFY_IDENTITY: require_approval
+    MODIFY_BUDGET: require_approval
+    APPROVE_SKILL: require_approval
+    MODIFY_POLICY: require_approval
+    SYSTEM_CONFIG: deny
+  StudioDirector:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    EXECUTE_LOCAL_TOOL: allow
+    SYSTEM_CONFIG: deny
+  ResearcherAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    NETWORK_PUBLIC: allow
+    SYSTEM_CONFIG: deny
+  WriterAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    PUBLISH: deny
+    MODIFY_IDENTITY: deny
+    MODIFY_BUDGET: deny
+    SYSTEM_CONFIG: deny
+  StoryboardDirectorAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    SYSTEM_CONFIG: deny
+  DesignerAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    SYSTEM_CONFIG: deny
+  VoiceAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    EXECUTE_LOCAL_TOOL: allow
+    SYSTEM_CONFIG: deny
+  EditorAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    EXECUTE_LOCAL_TOOL: allow
+    SYSTEM_CONFIG: deny
+  CriticAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    SYSTEM_CONFIG: deny
+  AnalystAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    SYSTEM_CONFIG: deny
+  PublisherAgent:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    PUBLISH: require_approval
+    READ_CREDENTIAL_REF: allow
+    MODIFY_IDENTITY: deny
+    MODIFY_BUDGET: deny
+    SYSTEM_CONFIG: deny
+  SkillSandbox:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    NETWORK_PUBLIC: deny
+    EXECUTE_LOCAL_TOOL: allow
+    PUBLISH: deny
+    READ_CREDENTIAL_REF: deny
+    SYSTEM_CONFIG: deny
+  WorkflowRuntime:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    EXECUTE_LOCAL_TOOL: allow
+    GPU_EXECUTE: require_approval
+    SYSTEM_CONFIG: deny
+  ComfyUI/H3 provider adapter:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    NETWORK_PUBLIC: allow
+    GPU_EXECUTE: allow
+    SYSTEM_CONFIG: deny
+  LLMProviderAdapter:
+    NETWORK_PUBLIC: allow
+    SYSTEM_CONFIG: deny
+  ControlCenterAdapter:
+    READ_ARTIFACT: allow
+    WRITE_ARTIFACT: allow
+    PUBLISH: deny
+    READ_CREDENTIAL_REF: deny
+    MODIFY_IDENTITY: deny
+    MODIFY_BUDGET: deny
+    APPROVE_SKILL: deny
+    MODIFY_POLICY: deny
+    SYSTEM_CONFIG: deny

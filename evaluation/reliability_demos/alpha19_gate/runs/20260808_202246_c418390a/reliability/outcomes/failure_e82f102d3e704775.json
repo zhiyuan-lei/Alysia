@@ -1,0 +1,10 @@
+{
+  "failure_id": "failure_e82f102d3e704775",
+  "status": "recovered",
+  "reexecuted_stages": [
+    "voice",
+    "subtitle",
+    "editor"
+  ],
+  "recorded_at": "2026-08-08 20:22:46.494798+08:00"
+}

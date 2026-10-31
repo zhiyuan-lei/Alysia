@@ -1,0 +1,17 @@
+id: technology_evolution
+purpose: 按关键约束和能力变化解释技术如何演进。
+structure:
+  - 描述早期目标与约束
+  - 标记关键转折点
+  - 对比每阶段解决和遗留的问题
+  - 解释当前状态
+  - 谨慎讨论下一步
+suitable_topics:
+  - 技术史
+  - 产品架构演进
+  - 模型能力变化
+examples:
+  - 从聊天机器人到工具型 Agent 的演进
+limitations:
+  - 时间线必须可核验
+  - 不把趋势预测写成已发生事实

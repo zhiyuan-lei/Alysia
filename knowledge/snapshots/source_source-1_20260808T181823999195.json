@@ -1,0 +1,22 @@
+{
+  "source_id": "source-1",
+  "url": "https://example.invalid/agent-agi-overview",
+  "title": "Mock：Agent 与 AGI 概念说明",
+  "publisher": "Alysia 离线测试资料",
+  "domain": "example.invalid",
+  "author": null,
+  "published_at": null,
+  "retrieved_at": "2026-08-08T18:18:22.793438+08:00",
+  "source_type": "unknown",
+  "authority_score": null,
+  "freshness_class": "unknown",
+  "content_hash": "88f06e69dc42dd507464bf6f7a1dd7c9f8e6e8dd372754d4d94c782492234e40",
+  "access_note": "仅用于离线演示结构，不是可用于发布的真实事实来源。",
+  "license": null,
+  "citation_note": null,
+  "reliability_notes": [
+    "仅用于离线演示结构，不是可用于发布的真实事实来源。"
+  ],
+  "evidence_origin": "mock",
+  "observation_scope": null
+}

@@ -1,0 +1,1532 @@
+[
+  {
+    "timestamp": "2026-08-09T20:55:12.026588+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8523,
+      "available_mib": 24087,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22079
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1087,
+      "free_mib": 6863,
+      "utilization_percent": 23
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:12.326087+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8544,
+      "available_mib": 24066,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22055
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1087,
+      "free_mib": 6863,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:12.609393+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8507,
+      "available_mib": 24103,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22119
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:12.886723+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8497,
+      "available_mib": 24113,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22117
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:13.164069+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8526,
+      "available_mib": 24084,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22066
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:13.447368+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8545,
+      "available_mib": 24065,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22059
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:13.730499+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8490,
+      "available_mib": 24120,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22136
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:14.008652+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8567,
+      "available_mib": 24043,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 22034
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:14.285464+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8719,
+      "available_mib": 23891,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 21766
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1086,
+      "free_mib": 6864,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:14.563060+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9054,
+      "available_mib": 23556,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20532
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1082,
+      "free_mib": 6868,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:14.846296+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9060,
+      "available_mib": 23550,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20544
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1082,
+      "free_mib": 6868,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:15.123569+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9069,
+      "available_mib": 23541,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20546
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1082,
+      "free_mib": 6868,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:15.412438+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9123,
+      "available_mib": 23486,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20494
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:15.689988+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9165,
+      "available_mib": 23445,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20439
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1085,
+      "free_mib": 6865,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:15.973008+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9107,
+      "available_mib": 23503,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20522
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1079,
+      "free_mib": 6871,
+      "utilization_percent": 24
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:16.261353+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9223,
+      "available_mib": 23387,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 20263
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1184,
+      "free_mib": 6766,
+      "utilization_percent": 24
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:16.544582+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9264,
+      "available_mib": 23346,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19626
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 31
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:16.827599+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9289,
+      "available_mib": 23321,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19611
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:17.105332+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9283,
+      "available_mib": 23327,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19604
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:17.382683+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9309,
+      "available_mib": 23301,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19599
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:17.660214+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9314,
+      "available_mib": 23296,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19595
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:17.948744+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9358,
+      "available_mib": 23252,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19568
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:18.237716+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9377,
+      "available_mib": 23233,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19544
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:18.515194+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9364,
+      "available_mib": 23246,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19523
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:18.798456+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9395,
+      "available_mib": 23215,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19495
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:19.081438+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9406,
+      "available_mib": 23204,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19494
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:19.358767+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9426,
+      "available_mib": 23184,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19475
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:19.636528+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9427,
+      "available_mib": 23183,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19473
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:19.914387+08:00",
+    "phase": "service_start",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9424,
+      "available_mib": 23186,
+      "commit_limit_mib": 34658,
+      "commit_available_mib": 19457
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:20.202613+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9817,
+      "available_mib": 22793,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 3993
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:20.486152+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 10677,
+      "available_mib": 21933,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 3952
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:20.774659+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 11588,
+      "available_mib": 21022,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 3930
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:21.057179+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 12421,
+      "available_mib": 20188,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4007
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:21.334963+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 13246,
+      "available_mib": 19364,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4009
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:21.634652+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 14010,
+      "available_mib": 18600,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4010
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:21.934380+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 14909,
+      "available_mib": 17700,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4019
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:22.217438+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 15763,
+      "available_mib": 16847,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4028
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1187,
+      "free_mib": 6763,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:22.495089+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 16599,
+      "available_mib": 16011,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4033
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:22.783659+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 17493,
+      "available_mib": 15117,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4035
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 4
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:23.061450+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 18231,
+      "available_mib": 14379,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4035
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 8
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:23.344297+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19030,
+      "available_mib": 13580,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4039
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 9
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:23.627807+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19835,
+      "available_mib": 12775,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4057
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 9
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:23.916340+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 20555,
+      "available_mib": 12055,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4059
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 11
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:24.193543+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 21430,
+      "available_mib": 11180,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4061
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 11
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:24.471585+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 22217,
+      "available_mib": 10392,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4061
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 13
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:24.765757+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 23051,
+      "available_mib": 9559,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4061
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 13
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:25.059560+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 23925,
+      "available_mib": 8685,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4062
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 14
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:25.353512+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 22332,
+      "available_mib": 10278,
+      "commit_limit_mib": 37784,
+      "commit_available_mib": 4066
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 16
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:25.636702+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19276,
+      "available_mib": 13334,
+      "commit_limit_mib": 45911,
+      "commit_available_mib": 17166
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 16
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:25.914309+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19371,
+      "available_mib": 13239,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 3518
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 17
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:26.241875+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19419,
+      "available_mib": 13191,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 3523
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 17
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:26.519473+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19443,
+      "available_mib": 13167,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 3524
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:26.802454+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19495,
+      "available_mib": 13114,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7143
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:27.085411+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19520,
+      "available_mib": 13090,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7117
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:27.363068+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19471,
+      "available_mib": 13139,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7185
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 18
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:27.640653+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19461,
+      "available_mib": 13148,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7179
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 18
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:27.918357+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19480,
+      "available_mib": 13130,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7169
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 23
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:28.201408+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19485,
+      "available_mib": 13125,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7167
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 23
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:28.489842+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19473,
+      "available_mib": 13137,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7167
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:28.778685+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19472,
+      "available_mib": 13138,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7168
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:29.072903+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19483,
+      "available_mib": 13127,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7166
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:29.355909+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19477,
+      "available_mib": 13133,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7166
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:29.638974+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19477,
+      "available_mib": 13132,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7167
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:29.922121+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19472,
+      "available_mib": 13137,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7167
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:30.205146+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19480,
+      "available_mib": 13130,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7168
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:30.493595+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19478,
+      "available_mib": 13132,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7157
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:30.776793+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19478,
+      "available_mib": 13132,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7123
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:31.059869+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19577,
+      "available_mib": 13033,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7097
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:31.337366+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19606,
+      "available_mib": 13004,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7104
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1183,
+      "free_mib": 6767,
+      "utilization_percent": 18
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:31.620549+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19633,
+      "available_mib": 12977,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7177
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6765,
+      "utilization_percent": 18
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:31.898252+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19707,
+      "available_mib": 12903,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7177
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 23
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:32.181355+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19795,
+      "available_mib": 12815,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7178
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 23
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:32.458944+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19834,
+      "available_mib": 12776,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7180
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:32.747386+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19866,
+      "available_mib": 12744,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7181
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:33.036470+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 20014,
+      "available_mib": 12596,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7188
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 20
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:33.319171+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 20468,
+      "available_mib": 12142,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 7189
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1185,
+      "free_mib": 6764,
+      "utilization_percent": 24
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:33.596516+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 19612,
+      "available_mib": 12998,
+      "commit_limit_mib": 48592,
+      "commit_available_mib": 17086
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1079,
+      "free_mib": 6871,
+      "utilization_percent": 24
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:33.890865+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 16849,
+      "available_mib": 15761,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 12483
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1079,
+      "free_mib": 6871,
+      "utilization_percent": 22
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:34.174259+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 14514,
+      "available_mib": 18096,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 14796
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1079,
+      "free_mib": 6871,
+      "utilization_percent": 22
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:34.457041+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 12055,
+      "available_mib": 20555,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 18899
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:34.740604+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 9164,
+      "available_mib": 23446,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22424
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:35.017493+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8954,
+      "available_mib": 23656,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22768
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:35.310189+08:00",
+    "phase": "h3",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8925,
+      "available_mib": 23685,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22769
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:35.594798+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8918,
+      "available_mib": 23692,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22756
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:35.878355+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8951,
+      "available_mib": 23659,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22713
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 22
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:36.161340+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8978,
+      "available_mib": 23632,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22691
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 22
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:36.438765+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8941,
+      "available_mib": 23669,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22749
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1080,
+      "free_mib": 6870,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:36.716431+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8908,
+      "available_mib": 23702,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22751
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1078,
+      "free_mib": 6872,
+      "utilization_percent": 21
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:37.005357+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8913,
+      "available_mib": 23697,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22747
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1078,
+      "free_mib": 6872,
+      "utilization_percent": 19
+    }
+  },
+  {
+    "timestamp": "2026-08-09T20:55:37.288080+08:00",
+    "phase": "cleanup",
+    "ram": {
+      "total_mib": 32610,
+      "used_mib": 8918,
+      "available_mib": 23692,
+      "commit_limit_mib": 35234,
+      "commit_available_mib": 22746
+    },
+    "gpu": {
+      "total_mib": 8188,
+      "used_mib": 1078,
+      "free_mib": 6872,
+      "utilization_percent": 19
+    }
+  }
+]

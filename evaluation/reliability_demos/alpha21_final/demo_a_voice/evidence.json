@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "run_id": "20260809_110306_c1541593",
+  "failure_id": "failure_13b83891767f49b2",
+  "failure_category": "tts_error",
+  "recovery_decision": "retry_with_backoff",
+  "provider_calls": 2,
+  "upstream_hashes_before": {
+    "research": "6177d172445cdb32f47d15e14f8867b05968f7a46b586e66b0f325367bd20da7",
+    "script": "6177d172445cdb32f47d15e14f8867b05968f7a46b586e66b0f325367bd20da7",
+    "storyboard": "2f64be4a3b5f1a49411caa12c717c868a20f8919bac0ab44d5f82c31159b5fa9"
+  },
+  "upstream_hashes_after": {
+    "research": "6177d172445cdb32f47d15e14f8867b05968f7a46b586e66b0f325367bd20da7",
+    "script": "6177d172445cdb32f47d15e14f8867b05968f7a46b586e66b0f325367bd20da7",
+    "storyboard": "2f64be4a3b5f1a49411caa12c717c868a20f8919bac0ab44d5f82c31159b5fa9"
+  },
+  "regenerated": [
+    "voice",
+    "subtitle",
+    "editor"
+  ],
+  "not_reexecuted": [
+    "research",
+    "script",
+    "storyboard"
+  ],
+  "testing_note": "Mock waveform is used only after the injected failure; production MockTTS gate remains unchanged."
+}

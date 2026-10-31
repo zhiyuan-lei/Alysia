@@ -1,11 +1,17 @@
 {
   "name": "@alysia/remotion",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.4",
   "private": true,
-  "description": "Alysia Remotion 最小项目骨架（尚未实现视频模板）",
+  "description": "Alysia 稳定、数据驱动的 Remotion 视频模板",
   "type": "module",
   "scripts": {
-    "check": "node -e \"console.log('Alysia Remotion skeleton ready')\""
+    "check": "remotion compositions src/index.jsx",
+    "render": "remotion render src/index.jsx VideoComposition"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.506",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.506"
   }
 }
-

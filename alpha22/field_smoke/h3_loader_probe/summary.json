@@ -1,0 +1,105 @@
+{
+  "test_only": true,
+  "status": "PASS_COMPONENT_STAGED_VIDEO_SMOKE",
+  "stages": [
+    {
+      "run": "20261001_223703_dynamic_encode",
+      "elapsed_seconds": 10.281999999999243,
+      "process_tree_rss_peak_mib": 4444.8828125,
+      "process_tree_private_peak_mib": 9373.37890625,
+      "system_ram_baseline_mib": 7791.02734375,
+      "system_ram_peak_mib": 13191.421875,
+      "gpu_baseline_mib": 1239,
+      "gpu_peak_mib": 5457,
+      "torch_allocator_counters": {
+        "event": "conditioning_saved",
+        "torch_peak_allocated": 620619776,
+        "torch_peak_reserved": 746586112
+      },
+      "status": "PASS"
+    },
+    {
+      "run": "20261001_223808_dynamic_sample",
+      "elapsed_seconds": 14.0,
+      "process_tree_rss_peak_mib": 1901.5546875,
+      "process_tree_private_peak_mib": 7964.765625,
+      "system_ram_baseline_mib": 7798.47265625,
+      "system_ram_peak_mib": 9857.765625,
+      "gpu_baseline_mib": 1238,
+      "gpu_peak_mib": 5441,
+      "torch_allocator_counters": {
+        "event": "sampled_saved",
+        "source": "D:\\Alysia\\alpha22\\field_smoke\\h3_loader_probe\\20261001_223703_dynamic_encode\\conditioning.pt",
+        "torch_peak_allocated": 318601728,
+        "torch_peak_reserved": 624951296
+      },
+      "status": "PASS"
+    },
+    {
+      "run": "20261001_223923_dynamic_decode",
+      "elapsed_seconds": 8.656000000002678,
+      "process_tree_rss_peak_mib": 2269.74609375,
+      "process_tree_private_peak_mib": 8299.48046875,
+      "system_ram_baseline_mib": 7821.4296875,
+      "system_ram_peak_mib": 10310.06640625,
+      "gpu_baseline_mib": 1238,
+      "gpu_peak_mib": 5433,
+      "torch_allocator_counters": {
+        "event": "frames_saved",
+        "shape": [
+          5,
+          256,
+          320,
+          3
+        ],
+        "source": "D:\\Alysia\\alpha22\\field_smoke\\h3_loader_probe\\20261001_223808_dynamic_sample\\sampled.pt",
+        "torch_peak_allocated": 153320448,
+        "torch_peak_reserved": 203423744
+      },
+      "status": "PASS"
+    }
+  ],
+  "elapsed_stages_total_seconds": 32.93800000000192,
+  "artifact": {
+    "path": "D:\\Alysia\\alpha22\\field_smoke\\h3_loader_probe\\20261001_223923_dynamic_decode\\TEST_ONLY_H3.mp4",
+    "bytes": 8296,
+    "sha256": "aff70744402114a46b91955a8ca9f16a15743d9013cacb402f844d0d374789bb",
+    "validation": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 320,
+          "height": 256,
+          "r_frame_rate": "24/1",
+          "nb_frames": "5"
+        }
+      ],
+      "format": {
+        "duration": "0.208333",
+        "size": "8296"
+      }
+    },
+    "bitstream_decode": "PASS",
+    "audio": "NOT_DECODED"
+  },
+  "after": {
+    "gpu_total_used_free_mib": [
+      8188,
+      1244,
+      6706
+    ],
+    "system_ram_used_mib": 8048.50390625
+  },
+  "measurement": {
+    "gpu": "whole-device sampled about once per second; not a driver-wide hard cap",
+    "ram": "owned process tree including Windows venv child; nominal 0.1 s polling, slower during GPU queries",
+    "torch": "allocator high-water marks exclude AIMDO native allocations",
+    "initial_bare_probe": "RSS was launcher-only; excluded from RAM conclusions"
+  },
+  "alysia_adapter_acceptance": "NOT_EXECUTED",
+  "alpha22_step8": "KEEP_BLOCKED",
+  "production_config_changed": false,
+  "ram_budget_gib": 24
+}

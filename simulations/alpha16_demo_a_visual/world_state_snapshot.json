@@ -1,0 +1,363 @@
+{
+  "snapshot_id": "world_256e2b04b6b22cd1",
+  "channel_state": {
+    "channel_id": "main",
+    "channel_name": "Alysia",
+    "current_positioning": "用可验证、易理解的中文内容解释 AI、软件工程与自主智能体",
+    "content_directions": [
+      "人工智能",
+      "软件工程",
+      "自主智能体"
+    ],
+    "published_topics": [
+      {
+        "run_id": "20260807_175616_cb2fbe40",
+        "topic": "为什么AI Agent还不是AGI？",
+        "category": "科技",
+        "published_at": "2026-08-07T20:38:43.529902+08:00",
+        "source": "mock"
+      },
+      {
+        "run_id": "20260807_225606_b78058f8",
+        "topic": "为什么多 Agent 不等于多个独立进程？",
+        "category": "科技",
+        "published_at": "2026-08-07T22:56:13.241418+08:00",
+        "source": "mock"
+      },
+      {
+        "run_id": "20260807_225658_1596ed8c",
+        "topic": "Alysia 的多角色协作为什么默认串行？",
+        "category": "科技",
+        "published_at": "2026-08-07T22:57:04.730466+08:00",
+        "source": "mock"
+      }
+    ],
+    "audience_hypotheses": [
+      "对 AI 与工程实践感兴趣的中文观众"
+    ],
+    "success_cases": [],
+    "failure_cases": [],
+    "long_term_strategy": [
+      "保持人工审批；一次只验证一个内容变量，积累跨视频证据后再调整策略。"
+    ],
+    "active_experiment_ids": [],
+    "strategy_ids": [
+      "strategy_b5957857f04d",
+      "strategy_ceb89bddf626"
+    ],
+    "source_digest": "ba7e20119e447472cb2efb93862754eac35ce9fa47265f84c2f93f149bc52f7f",
+    "revision": 3,
+    "created_at": "2026-08-07T21:16:30.165997+08:00",
+    "updated_at": "2026-08-07T22:57:04.843978+08:00"
+  },
+  "active_goals": [
+    {
+      "goal_id": "demo_goal",
+      "title": "30天内完成一个 AI Agent 基础四期系列",
+      "description": "完成四期有前后依赖的 AI Agent 科普内容，并验证 8 秒内进入核心问题的 hook 策略。",
+      "type": "content_series",
+      "status": "active",
+      "priority": 90,
+      "created_at": "2026-08-08T14:58:30.470396+08:00",
+      "updated_at": "2026-08-08T14:58:30.470396+08:00",
+      "start_date": "2026-08-08",
+      "target_date": "2026-09-07",
+      "success_metrics": [
+        {
+          "name": "完成内容数",
+          "target": 4.0,
+          "direction": "at_least",
+          "measurement_source": "run_state",
+          "current_value": null
+        },
+        {
+          "name": "完成 hook 实验数",
+          "target": 1.0,
+          "direction": "at_least",
+          "measurement_source": "channel_experiments",
+          "current_value": null
+        }
+      ],
+      "constraints": [
+        "只允许 mock/offline",
+        "发布和重大 replan 必须人工批准"
+      ],
+      "budget_policy": {
+        "max_runs": 4,
+        "max_cloud_cost": 0.0,
+        "currency": "CNY",
+        "max_wall_time_hours": null
+      },
+      "approval_policy": {
+        "require_content_approval": true,
+        "require_publish_approval": true,
+        "require_major_replan_approval": true,
+        "require_identity_change_approval": true
+      },
+      "stop_conditions": [
+        "完成四期内容和月底复盘",
+        "连续三次 run 失败时暂停",
+        "预算达到硬限制时暂停"
+      ],
+      "parent_goal_id": null,
+      "child_goal_ids": []
+    }
+  ],
+  "recent_content_metrics_summaries": [
+    {
+      "run_id": "20260807_175616_cb2fbe40",
+      "source": "testing",
+      "metrics_summary": {
+        "views": 420,
+        "ctr": null,
+        "completion_rate": null,
+        "avg_view_percentage": null
+      },
+      "fingerprint_summary": {
+        "title_style": "科普型",
+        "duration_sec": 82.233333,
+        "hook_length_sec": 9.300198,
+        "category": "科技"
+      }
+    },
+    {
+      "run_id": "20260807_225606_b78058f8",
+      "source": "testing",
+      "metrics_summary": {
+        "views": 420,
+        "ctr": null,
+        "completion_rate": null,
+        "avg_view_percentage": null
+      },
+      "fingerprint_summary": {
+        "title_style": "科普型",
+        "duration_sec": 66.133333,
+        "hook_length_sec": 7.479365,
+        "category": "科技"
+      }
+    },
+    {
+      "run_id": "20260807_225658_1596ed8c",
+      "source": "testing",
+      "metrics_summary": {
+        "views": 420,
+        "ctr": null,
+        "completion_rate": null,
+        "avg_view_percentage": null
+      },
+      "fingerprint_summary": {
+        "title_style": "科普型",
+        "duration_sec": 66.133333,
+        "hook_length_sec": 7.479365,
+        "category": "科技"
+      }
+    }
+  ],
+  "current_identity": {
+    "creator_name": "Alysia",
+    "version": 1,
+    "mission_statement": "用清晰、可验证的方法解释复杂技术"
+  },
+  "active_experiments": [],
+  "production_health": {
+    "execution_metric_files": 6,
+    "sequential_gpu_required": true,
+    "h3_configured": false
+  },
+  "provider_health": [
+    {
+      "provider_id": "asr.faster-whisper",
+      "health_status": "unavailable",
+      "health_details": null,
+      "estimated_vram_mb": null,
+      "gpu_heavy": true
+    },
+    {
+      "provider_id": "asr.mock",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "cover.template",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "deterministic.audio_qa",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "deterministic.metadata",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "deterministic.publish_qa",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "deterministic.text_qa",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "deterministic.video_qa",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "llm.cloud",
+      "health_status": "unavailable",
+      "health_details": "CloudLLMProvider 当前是显式占位实现",
+      "estimated_vram_mb": null,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "llm.mock",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "llm.ollama",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": null,
+      "gpu_heavy": true
+    },
+    {
+      "provider_id": "render.mock",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "render.remotion",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "research.mock",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "research.web",
+      "health_status": "unavailable",
+      "health_details": "WebResearchProvider 当前是显式占位实现",
+      "estimated_vram_mb": null,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "subtitle.deterministic",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "tts.cosyvoice",
+      "health_status": "unavailable",
+      "health_details": "缺少 cosyvoice 包或已配置本地模型目录",
+      "estimated_vram_mb": null,
+      "gpu_heavy": true
+    },
+    {
+      "provider_id": "tts.mock",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "tts.sapi",
+      "health_status": "healthy",
+      "health_details": null,
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    },
+    {
+      "provider_id": "visual.comfyui-h3",
+      "health_status": "unavailable",
+      "health_details": "缺少已配置的 ComfyUI 目录或 H3 model_path",
+      "estimated_vram_mb": null,
+      "gpu_heavy": true
+    },
+    {
+      "provider_id": "visual.mock",
+      "health_status": "healthy",
+      "health_details": "仅用于离线测试；mock artifact 不得进入 production review",
+      "estimated_vram_mb": 0,
+      "gpu_heavy": false
+    }
+  ],
+  "resource_profile": {
+    "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_total_vram_mb": 8188,
+    "gpu_used_vram_mb": 596,
+    "ram_budget_mb": 24576
+  },
+  "outstanding_approvals": [
+    {
+      "type": "content_run",
+      "id": "demo_run_ep4"
+    }
+  ],
+  "known_constraints": [
+    "single GPU heavy task at a time",
+    "local VRAM planning budget=7600 MiB",
+    "simulation may not publish or write real Analytics/Memory"
+  ],
+  "source_refs": {
+    "channel_state": [
+      "memory/channels/main/channel_memory.json"
+    ],
+    "active_goals": [
+      "supervisor/goals/demo_goal.json"
+    ],
+    "recent_content_metrics": [
+      "memory/episodes/20260807_175616_cb2fbe40.json",
+      "memory/episodes/20260807_225606_b78058f8.json",
+      "memory/episodes/20260807_225658_1596ed8c.json"
+    ],
+    "current_identity": [
+      "identity/creator_identity.yaml"
+    ],
+    "active_experiments": [],
+    "production_metrics": [
+      "runs/20260807_175616_cb2fbe40/production/execution_metrics.json",
+      "runs/20260807_225606_b78058f8/production/execution_metrics.json",
+      "runs/20260807_225658_1596ed8c/production/execution_metrics.json",
+      "runs/20260807_225723_122f581b/production/execution_metrics.json",
+      "runs/20260807_230208_43ee9a2b/production/execution_metrics.json",
+      "runs/20260808_151847_91f06d84/production/execution_metrics.json"
+    ],
+    "supervisor_projects": [
+      "supervisor/projects/demo_project_ai_agent.json"
+    ]
+  },
+  "missing_sources": [],
+  "captured_at": "2026-08-08T16:48:36.621963+08:00"
+}

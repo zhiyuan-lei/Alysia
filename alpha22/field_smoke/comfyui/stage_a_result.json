@@ -1,0 +1,72 @@
+{
+  "stage": "A_COMFYUI_HEALTH",
+  "result": "PASS",
+  "adapter": "REAL",
+  "service": "REAL_COMFYUI",
+  "model_loaded": false,
+  "workflow": "built-in EmptyImage -> SaveImage",
+  "run_id": "alpha22_step8_field_smoke",
+  "job_id": "visual_job_alpha22_step8_comfyui",
+  "started_at": "2026-08-09T20:21:20.616996+08:00",
+  "finished_at": "2026-08-09T20:21:21.944749+08:00",
+  "elapsed_seconds": 1.235,
+  "artifact": {
+    "path": "D:\\Alysia\\alpha22\\field_smoke\\comfyui\\TEST_ONLY_comfyui_stage_a.png",
+    "source_path": "D:\\ComfyUI\\output\\alysia\\alpha22_step8_field_smoke\\TEST_ONLY_comfyui_stage_a_00001_.png",
+    "size_bytes": 434,
+    "sha256": "fb2b62bf9a61f0a6d81175fba73fe1657cf4929e8d9886205cd1a8a39f6fe83b",
+    "format": "PNG",
+    "width": 64,
+    "height": 64,
+    "validation": "VALID"
+  },
+  "resources": {
+    "ram_before": {
+      "total_bytes": 34193965056,
+      "available_bytes": 17228431360,
+      "used_bytes": 16965533696
+    },
+    "ram_peak_used_bytes": 17040637952,
+    "ram_after": {
+      "total_bytes": 34193965056,
+      "available_bytes": 17178877952,
+      "used_bytes": 17015087104
+    },
+    "vram_before": {
+      "total_mib": 8188,
+      "used_mib": 5672,
+      "free_mib": 2278
+    },
+    "vram_peak_used_mib": 5673,
+    "vram_after": {
+      "total_mib": 8188,
+      "used_mib": 5668,
+      "free_mib": 2282
+    }
+  },
+  "cleanup": {
+    "provider_unload_called": true,
+    "resource_lock_released": true
+  },
+  "provider_result": {
+    "job_id": "visual_job_alpha22_step8_comfyui",
+    "scene_id": "TEST_ONLY_comfyui_stage_a",
+    "provider": "visual.comfyui",
+    "workflow_id": "field_smoke_image",
+    "workflow_version": "field-smoke-1",
+    "output_files": [
+      "D:\\ComfyUI\\output\\alysia\\alpha22_step8_field_smoke\\TEST_ONLY_comfyui_stage_a_00001_.png"
+    ],
+    "duration_sec": 1.0,
+    "resolution": "unknown",
+    "generation_time_sec": 1.0940000000009604,
+    "seed_config": {
+      "comfyui_prompt_id": "695290d2-3774-47b6-924e-a43c5a63f5d5",
+      "requested_duration_sec": 1.0,
+      "requested_frames": 39
+    },
+    "warnings": [],
+    "status": "completed",
+    "mock": false
+  }
+}

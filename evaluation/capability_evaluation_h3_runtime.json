@@ -1,0 +1,37 @@
+{
+  "evaluation_id": "h3_runtime_20260808",
+  "capability_id": "visual_h3_local",
+  "skill_id": "h3_visual_generation",
+  "status": "passed_with_constraints",
+  "maturity_recommendation": "remain_experimental",
+  "approval_required_for_maturity_change": true,
+  "evidence": {
+    "manual_comfyui_prompt_id": "20d442f2-e90b-4fba-b11e-0305dcce0871",
+    "alysia_provider_prompt_id": "da674ae1-7779-4b7b-aa57-fdc3464ea896",
+    "real_provider": "visual.comfyui-h3",
+    "mock": false,
+    "resolution": "608x352",
+    "frames": 73,
+    "fps": 24,
+    "duration_sec": 3.042,
+    "steps": 6,
+    "manual_wall_time_sec": 170.81,
+    "alysia_provider_wall_time_sec": 105.75,
+    "peak_vram_used_mb": 7678,
+    "peak_ram_used_mb": 25918.8,
+    "configured_ram_budget_gb": 24,
+    "detected_physical_ram_gib": 31.85,
+    "visual_qa_passed": true,
+    "black_ratio": 0.0,
+    "freeze_ratio": 0.0,
+    "oom": false,
+    "resource_release_verified": true
+  },
+  "constraints": [
+    "Observed RAM exceeded the configured 24 GB operating budget.",
+    "T2V is qualified; I2V and R2V remain unverified in the Alysia adapter.",
+    "GPU-heavy jobs must remain sequential.",
+    "No automatic promotion to stable is allowed."
+  ],
+  "generated_at": "2026-08-08T17:48:00+08:00"
+}

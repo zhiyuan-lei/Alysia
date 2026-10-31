@@ -1,0 +1,15 @@
+{
+  "mode": "cache-none",
+  "started_at": "2026-08-09T12:03:04.7863908+08:00",
+  "finished_at": "2026-08-09T12:04:48.3933003+08:00",
+  "wall_time_sec": 103.61,
+  "samples": 89,
+  "peak_vram_used_mb": 7708,
+  "peak_system_ram_used_mb": 26933.0,
+  "configured_vram_budget_mb": 8192,
+  "configured_ram_budget_mb": 24576,
+  "within_vram_budget": true,
+  "within_ram_budget": false,
+  "job_state": "Completed",
+  "error": null
+}

@@ -22,8 +22,8 @@
 | Git | 2.51.1.windows.1 |
 | Node.js | 24.16.0 |
 | npm | 11.13.0 |
-| FFmpeg | 未找到 |
-| Ollama | 未找到 |
+| FFmpeg | 9.0-full_build-www.gyan.dev（通过 winget 安装） |
+| Ollama | 0.32.6（本地 API 已验证） |
 | NVIDIA-SMI | 596.21 |
 | NVIDIA 驱动 | 596.21 |
 | 驱动支持的 CUDA 版本 | 13.2 |
@@ -57,11 +57,11 @@
 
 完整的直接和传递依赖已锁定在 `uv.lock`。
 
-## 缺失或有意延后的依赖
+## 已补齐、缺失或有意延后的依赖
 
-- FFmpeg：未安装或不在 PATH。后续视频/音频处理前必须补齐。
-- Ollama：未安装或不在 PATH。
-- `qwen3.5:4b`：由于 Ollama 不可用，本轮跳过模型检测；没有自动下载大模型。
+- FFmpeg：已通过 `winget` 安装 `Gyan.FFmpeg 9.0`；`ffmpeg` 与 `ffprobe` 均已验证可调用。
+- Ollama：已安装在用户目录，版本 0.32.6；后台进程与 `http://127.0.0.1:11434/api/version` 均验证正常。
+- `qwen3.5:4b`：当前模型列表为空，尚未安装；本轮遵守约束，没有自动下载大模型。
 - CUDA Toolkit / `nvcc`：未安装或不在 PATH；当前地基阶段不构成阻塞。
 - Remotion npm 包：本轮按范围只创建最小 Node 项目骨架，没有安装 Remotion 或实现模板。
 - TTS、Whisper、图像模型和大型 Agent 框架：按本轮范围有意不安装。
@@ -113,14 +113,14 @@
 ## CLI 与测试结果
 
 - `python -m alysia --help`：通过，退出码 0，显示 `doctor` 子命令。
-- `python -m alysia doctor`：通过，退出码 0；7 项可用，4 项缺失或未就绪。
-- `pytest`：通过，`3 passed in 0.51s`。
+- `python -m alysia doctor`：通过，退出码 0；9 项可用，4 项缺失或未就绪，其中 CosyVoice Python 与 faster-whisper 为可选延后项。
+- `pytest`：通过，`15 passed in 2.73s`。
 - `npm run check --prefix video/remotion`：通过，最小 Node 骨架可调用。
-- `git status`：仓库已初始化在 `main` 分支，尚无提交；本轮文件均为待跟踪文件，未擅自创建提交。
+- `git status`：仓库位于 `main` 分支；检测到已有提交 `55da646 feat: add alpha.2 text creation pipeline`，环境续配前工作区干净。本轮不修改 alpha.2 业务逻辑、不提交代码。
 
 ## 下一步建议
 
-1. 优先安装并验证 FFmpeg，因为它是后续任何可播放 MP4 流程的硬依赖。
-2. 再安装并启动 Ollama；确认服务正常后，按需执行 `ollama pull qwen3.5:4b`，不要与其他 GPU 模型同时常驻。
-3. 下一开发轮先补充可持久化的 Run/状态文件和配置加载测试，再接一个确定性的“无 AI 占位视频”渲染闭环。
-4. 在 FFmpeg 与状态持久化稳定前，不引入 TTS、Whisper、ComfyUI、LangChain 或 LangGraph。
+1. 确认要启用本地 LLM 后，再执行 `ollama pull qwen3.5:4b`；不要与其他 GPU 模型同时常驻。
+2. 模型下载完成后运行 `ollama list` 与 `python -m alysia doctor`，验证模型检测结果。
+3. CUDA Toolkit / `nvcc` 对当前运行路径不是硬依赖，不要仅为了消除 doctor 提示而安装。
+4. 当前工作区存在进行中的 TTS/ASR/worker 开发文件；本轮保持原样，先完成其自身验证再引入更多运行时组件。
