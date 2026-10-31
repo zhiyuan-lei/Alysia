@@ -29,6 +29,13 @@ def make_config(runs_dir: Path, *, retries: int = 0) -> AlysiaConfig:
             "knowledge": {"root_dir": str(runs_dir.parent / "knowledge")},
             "planning": {"plans_dir": str(runs_dir.parent / "plans")},
             "workflow": {"recipe_dir": str(runs_dir.parent / "memory" / "workflows")},
+            # 视觉任务队列与生产缓存默认落在仓库 workspace/ 下。测试必须和本机
+            # 真实队列隔离，否则并发跑两个 pytest 会互相抢占用中的 GPU job。
+            "visual_generation": {
+                "cache_dir": str(runs_dir.parent / "visual_cache"),
+                "queue_dir": str(runs_dir.parent / "visual_queue"),
+            },
+            "production": {"cache_dir": str(runs_dir.parent / "production_cache")},
             "runtime": {"retries": retries, "runs_dir": str(runs_dir)},
         }
     )
