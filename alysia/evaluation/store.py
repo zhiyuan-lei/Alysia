@@ -60,9 +60,15 @@ class EvaluationStore:
     def _write(path: Path, model: BaseModel) -> Path:
         path.parent.mkdir(parents=True, exist_ok=True)
         temp = path.with_suffix(path.suffix + ".tmp")
-        temp.write_text(
-            json.dumps(model.model_dump(mode="json"), ensure_ascii=False, indent=2, sort_keys=True, default=str),
-            encoding="utf-8",
-        )
+        # 显式 newline="\n"：默认的通用换行转换会在 Windows 上写 CRLF，
+        # 让入库的 LF 产物每次重写都变成 git diff。
+        with temp.open("w", encoding="utf-8", newline="\n") as stream:
+            stream.write(
+                json.dumps(
+                    model.model_dump(mode="json"),
+                    ensure_ascii=False, indent=2, sort_keys=True, default=str,
+                )
+            )
+            stream.flush()
         temp.replace(path)
         return path
