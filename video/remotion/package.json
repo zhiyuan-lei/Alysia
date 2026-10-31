@@ -9,7 +9,7 @@
     "render": "remotion render src/index.jsx VideoComposition"
   },
   "dependencies": {
-    "@remotion/cli": "4.0.506",
+    "@remotion/cli": "4.0.539",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "remotion": "4.0.506"
