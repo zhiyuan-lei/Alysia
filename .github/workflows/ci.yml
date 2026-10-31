@@ -63,10 +63,13 @@ jobs:
 
       - name: Working tree must stay clean
         # 测试与冒烟不允许改动已入库文件（历史上 tests/helpers.py 曾把
-        # memory/workflows 写脏）。这条断言把这个不变量钉在 CI 里。
+        # memory/workflows 写脏，EvaluationStore 曾写出 CRLF）。这条断言把这个
+        # 不变量钉在 CI 里。
+        # uv.lock 除外：Dependabot 或依赖区间变化时 uv sync 重写 lock 是预期行为。
         run: |
-          git status --porcelain
-          if (git status --porcelain) { throw "工作树被测试写脏了，检查新增的持久化路径" }
+          $dirty = git status --porcelain | Where-Object { $_ -notmatch 'uv\.lock$' }
+          $dirty
+          if ($dirty) { throw "工作树被测试写脏了，检查新增的持久化路径" }
 
       - name: Frontend tests
         working-directory: control-center
